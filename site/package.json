@@ -13,6 +13,7 @@
 		"@elegantstack/gatsby-theme-flexiblog-minimal-v2": "*",
 		"dotenv": "^16.0.1",
 		"gatsby": "^4.14.1",
+		"gatsby-plugin-manifest": "^4.19.0",
 		"gatsby-source-contentful": "^7.14.0",
 		"react": "^18.1.0",
 		"react-dom": "^18.1.0"

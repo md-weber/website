@@ -6,6 +6,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: './content/assets/favicon.png',
+      },
+    },
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
@@ -37,16 +43,16 @@ module.exports = {
     //Site Social Media Links
     social: [
       {
-        name: 'Github',
-        url: 'https://github.com/gatsbyjs'
+        name: 'Codeberg',
+        url: 'https://codeberg.org/Flutter-Explained'
       },
       {
-        name: 'Twitter',
-        url: 'https://twitter.com/gatsbyjs'
+        name: 'Matrix',
+        url: 'https://matrix.to/#/#flutter-explained:tchncs.de'
       },
       {
-        name: 'Instagram',
-        url: 'https://github.com/gatsbyjs'
+        name: 'YouTube',
+        url: 'https://www.youtube.com/c/FlutterExplained'
       }
     ],
 
