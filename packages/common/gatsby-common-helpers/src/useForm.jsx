@@ -22,6 +22,7 @@ const useForm = () => {
 
     // Mimicking form submission for demos
     if (isDemo) {
+      console.info(target, "Demo")
       setTimeout(() => {
         setSuccess(true)
         setSubmitting(false)
