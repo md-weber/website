@@ -63,7 +63,7 @@ const ContactForm = ({ handleSubmit, submitting, success }) => (
     <Box variant='forms.row'>
       <input type="checkbox" id="consent" name="consent" value="no" required />
       <input type="hidden" id="consent" name="consent" value="yes" required />
-      <p>I agree to the handling of my personal information in accordance with the  <a href="./impressum"> Flutter Explained privacy policy.</a></p>
+      <p>I agree to the handling of my personal information in accordance with the  <a href="./privacy-policy"> Flutter Explained privacy policy.</a></p>
     </Box>
     <Button
       variant={success || submitting ? 'disabled' : 'primary'}
