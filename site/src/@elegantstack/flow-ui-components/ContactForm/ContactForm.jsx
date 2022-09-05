@@ -18,9 +18,8 @@ import { Box, Label, Input, Textarea, Button, Message, Spinner } from 'theme-ui'
 
 const ContactForm = ({ handleSubmit, submitting, success }) => (
   <form
-    onSubmit={handleSubmit}
-    method='POST'
-    netlify-honeypot="bot-field" data-netlify="true" name="contact"
+  action="https://getform.io/f/4c7d67af-6bca-4a91-9e8b-474f06b8a49a" 
+  method="POST"
   >
     <input type="hidden" name="bot-field" />
     <input type="hidden" name="form-name" value="contact" />
