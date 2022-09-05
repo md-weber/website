@@ -17,12 +17,7 @@ import { Box, Label, Input, Textarea, Button, Message, Spinner } from 'theme-ui'
  */
 
 const ContactForm = ({ handleSubmit, submitting, success }) => (
-  <form
-  onSubmit={handleSubmit}
-  action="https://getform.io/f/4c7d67af-6bca-4a91-9e8b-474f06b8a49a" 
-  method="POST"
-  >
-    <input type="hidden" name="bot-field" />
+  <form action="https://getform.io/f/4c7d67af-6bca-4a91-9e8b-474f06b8a49a" method="POST">
     <input type="hidden" name="form-name" value="contact" />
 
     {success === true && (
@@ -54,15 +49,6 @@ const ContactForm = ({ handleSubmit, submitting, success }) => (
           id='contact-form-email'
           name='email'
           required
-        />
-      </Box>
-      <Box variant='forms.column'>
-        <Label htmlFor='contact-form-phone'>Phone Number</Label>
-        <Input
-          type='tel'
-          placeholder='(xxx) xxx-xxxx'
-          id='contact-form-phone'
-          name='phone'
         />
       </Box>
     </Box>
