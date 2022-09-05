@@ -18,6 +18,7 @@ import { Box, Label, Input, Textarea, Button, Message, Spinner } from 'theme-ui'
 
 const ContactForm = ({ handleSubmit, submitting, success }) => (
   <form
+  onSubmit={handleSubmit}
   action="https://getform.io/f/4c7d67af-6bca-4a91-9e8b-474f06b8a49a" 
   method="POST"
   >
