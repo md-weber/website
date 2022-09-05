@@ -6,6 +6,32 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-8K5B8SG358", // Google Analytics / GA
+          // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
+          // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: './content/assets/favicon.png',
@@ -91,19 +117,33 @@ module.exports = {
         title: 'Legal Stuff',
         items: [
           {
-            name: 'Privacy Notice',
-            slug: '/'
+            name: 'Privacy Policy',
+            slug: '/privacy-policy'
           },
           {
-            name: 'Cookie Policy',
-            slug: '/'
+            name: 'Impressum',
+            slug: '/impressum'
           },
-          {
-            name: 'Terms Of Use',
-            slug: '/'
-          }
         ]
-      }
+      },
+      {
+        resolve: `gatsby-plugin-gdpr-cookies`,
+        options: {
+          googleAnalytics: {
+            trackingId: 'G-8K5B8SG358', // leave empty if you want to disable the tracker
+            cookieName: 'gatsby-gdpr-google-analytics', // default
+            anonymize: true, // default
+            allowAdFeatures: false // default
+          },
+          googleTagManager: {
+            trackingId: 'G-8K5B8SG358', // leave empty if you want to disable the tracker
+            cookieName: 'gatsby-gdpr-google-tagmanager', // default
+            dataLayerName: 'dataLayer', // default
+          },
+          // defines the environments where the tracking should be available  - default is ["production"]
+          environments: ['production', 'development']
+        },
+      },
     ]
   }
 }

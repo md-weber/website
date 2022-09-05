@@ -13,9 +13,12 @@
 		"@elegantstack/gatsby-theme-flexiblog-minimal-v2": "*",
 		"dotenv": "^16.0.1",
 		"gatsby": "^4.14.1",
+		"gatsby-plugin-gdpr-cookies": "^2.0.9",
+		"gatsby-plugin-google-gtag": "^4.22.0",
 		"gatsby-plugin-manifest": "^4.19.0",
 		"gatsby-source-contentful": "^7.14.0",
 		"react": "^18.1.0",
+		"react-cookie-consent": "^8.0.1",
 		"react-dom": "^18.1.0"
 	},
 	"devDependencies": {
