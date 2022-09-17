@@ -128,23 +128,38 @@ module.exports = {
         ]
       },
       {
-        resolve: `gatsby-plugin-gdpr-cookies`,
+        resolve: `gatsby-plugin-google-analytics-gdpr`,
         options: {
-          googleAnalytics: {
-            trackingId: 'G-8K5B8SG358', // leave empty if you want to disable the tracker
-            cookieName: 'gatsby-gdpr-google-analytics', // default
-            anonymize: true, // default
-            allowAdFeatures: false // default
-          },
-          googleTagManager: {
-            trackingId: 'G-8K5B8SG358', // leave empty if you want to disable the tracker
-            cookieName: 'gatsby-gdpr-google-tagmanager', // default
-            dataLayerName: 'dataLayer', // default
-          },
-          // defines the environments where the tracking should be available  - default is ["production"]
-          environments: ['production', 'development']
+          // The property ID; the tracking code won't be generated without it.
+          trackingId: "G-HKQR5MMP8V", 
+          // Optional parameter (default false) - Enable analytics in development mode.
+          enableDevelopment: false, // default false
+          // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
+          anonymizeIP: true,
+          // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
+          autoStartWithCookiesEnabled: false, 
+          // Optional parameter - Configuration for react-ga and google analytics 
+          reactGaOptions: {
+              debug: true,
+              gaOptions: {
+                  sampleRate: 10
+              }
+          }
         },
       },
+      {
+        resolve: `gatsby-plugin-cookiehub-banner`,
+        options: {
+            // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
+            cookieHubId: "45f3cb02",
+            categories: [
+              { 
+                  categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.
+                  cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled' // Your custom cookie name
+              },
+            ]
+        }
+    }
     ]
   }
 }
