@@ -6,13 +6,25 @@ import {
   FaFacebook,
   FaEnvelope,
   FaLink,
-  FaGlobe
+  FaGlobe,
+  FaYoutube,
+  FaCodeBranch
 } from 'react-icons/fa'
+import {BsChatSquareText} from "react-icons/bs";
 
 export default {
   default: {
     Icon: FaLink,
     color: '#718096'
+  },
+  youtube: {
+    Icon: FaYoutube,
+  },
+  matrix: {
+    Icon: BsChatSquareText,
+  },
+  codeberg: {
+    Icon: FaCodeBranch
   },
   github: {
     Icon: FaGithub,
@@ -20,7 +32,6 @@ export default {
   },
   twitter: {
     Icon: FaTwitter,
-    color: '#1DA1F2'
   },
   instagram: {
     Icon: FaInstagram,

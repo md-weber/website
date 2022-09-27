@@ -32,6 +32,7 @@ const NavigationItem = ({
   variant,
   iconOnly
 }) => {
+  console.log(name);
   let linkProps = {
     sx: { variant: iconOnly ? 'icon' : variant }
   }
