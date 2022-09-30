@@ -156,6 +156,7 @@ module.exports = {
                 options: {
                     // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
                     cookieHubId: "45f3cb02",
+                    cookieHubV2Api: true,
                     categories: [
                         {
                             categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.

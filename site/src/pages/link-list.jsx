@@ -3,8 +3,8 @@ import {Layout, Main, Stack} from '@layout'
 import PageTitle from '@components/PageTitle'
 import Divider from '@components/Divider'
 import Seo from '@widgets/Seo'
-import {BsChatSquareText, BsLink} from 'react-icons/bs';
-import {FaCodeBranch, FaLinkedin, FaPatreon, FaTwitch, FaTwitterSquare, FaYoutubeSquare} from "react-icons/fa";
+import {BsChatSquareText, BsLink, BsPeople} from 'react-icons/bs';
+import {FaCodeBranch, FaLinkedin, FaLock, FaPatreon, FaTwitch, FaTwitterSquare, FaYoutubeSquare} from "react-icons/fa";
 import './link-list.css'
 
 const getCardBackgroundColor = (icon) => {
@@ -13,6 +13,9 @@ const getCardBackgroundColor = (icon) => {
             return "#e07768";
         case "Twitter":
             return "#6eadd4";
+        case "Onlyfans":
+            return "#01acee";
+        case "Community":
         case "LinkedIn":
             return "#0a66c2";
         case "Twitch":
@@ -32,6 +35,8 @@ const getIcon = (icon) => {
     switch (icon) {
         case "YouTube":
             return <FaYoutubeSquare className={"fa i"}/>
+        case "Community":
+            return <BsPeople className={"fa i"}/>
         case "Twitter":
             return <FaTwitterSquare className={"fa i"}/>
         case "LinkedIn":
@@ -44,6 +49,8 @@ const getIcon = (icon) => {
             return <FaPatreon className={"fa i"}/>;
         case "Matrix":
             return <BsChatSquareText className={"fa i"}/>;
+        case "Onlyfans":
+            return <FaLock className={"fa i"}/>;
         default:
             return <BsLink className={"fa i"}/>
     }
@@ -55,6 +62,12 @@ const socialMediaPresence = [
         url: "https://youtube.com/c/flutterexplained",
         subTitle: "Subscribe to our Channel if you are interested in Dart and Flutter Content",
         icon: "YouTube",
+    },
+    {
+        title: "Flutter Explained Community",
+        url: "https://flutterexplained.podia.com/flutter-explained-community",
+        subTitle: "The new community page of Flutter Explained and my future courses will be here.",
+        icon: "Community",
     },
     {
         title: "Twitter",
@@ -76,7 +89,7 @@ const socialMediaPresence = [
     },
     {
         title: "Codeberg",
-        url: "https://codeberg.org/org/Flutter-Explained",
+        url: "https://codeberg.org/Flutter-Explained",
         subTitle: "If you are searching for code examples search no more",
         icon: "Codeberg"
     },
@@ -92,6 +105,12 @@ const socialMediaPresence = [
         subTitle: "You like Discord but with Privacy join us on Matrix (FluffyChat)",
         icon: "Matrix"
     },
+    {
+        title: "Onlyfans",
+        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        subTitle: "Today everyone has that",
+        icon: "Onlyfans"
+    },
 ]
 
 const LinkList = (props) => (
@@ -106,7 +125,7 @@ const LinkList = (props) => (
                     {
                         socialMediaPresence.map((social) => {
                             return (
-                                <div className={"link-list-card"}>
+                                <div className={"link-list-card"} sx={{bg: `contentBg`}}>
                                     <a href={social.url}
                                        rel="noreferrer"
                                        target="_blank">
