@@ -107,7 +107,7 @@ const socialMediaPresence = [
     },
     {
         title: "Onlyfans",
-        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1",
         subTitle: "Today everyone has that",
         icon: "Onlyfans"
     },
@@ -125,7 +125,7 @@ const LinkList = (props) => (
                     {
                         socialMediaPresence.map((social) => {
                             return (
-                                <div className={"link-list-card"} sx={{bg: `contentBg`}}>
+                                <div className={"link-list-card"} >
                                     <a href={social.url}
                                        rel="noreferrer"
                                        target="_blank">
