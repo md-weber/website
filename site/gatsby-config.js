@@ -1,4 +1,5 @@
 require('dotenv').config()
+const fontFile = require('./src/@elegantstack/flow-ui-theme/theme/typography-fonts.json')
 
 module.exports = {
     flags: {
@@ -6,32 +7,6 @@ module.exports = {
         FAST_DEV: true,
     },
     plugins: [
-        {
-            resolve: `gatsby-plugin-google-gtag`,
-            options: {
-                // You can add multiple tracking ids and a pageview event will be fired for all of them.
-                trackingIds: [
-                    "G-8K5B8SG358", // Google Analytics / GA
-                    // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
-                    // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
-                ],
-                // This object gets passed directly to the gtag config command
-                // This config will be shared across all trackingIds
-                gtagConfig: {
-                    anonymize_ip: true,
-                    cookie_expires: 0,
-                },
-                // This object is used for configuration specific to this plugin
-                pluginConfig: {
-                    // Puts tracking script in the head instead of the body
-                    head: false,
-                    // Setting this parameter is also optional
-                    respectDNT: true,
-                    // Avoids sending pageview hits from custom paths
-                    exclude: ["/preview/**", "/do-not-track/me/too/"],
-                },
-            },
-        },
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
@@ -48,6 +23,7 @@ module.exports = {
         {
             resolve: '@elegantstack/gatsby-theme-flexiblog-minimal-v2',
             options: {
+                fonts: fontFile.fonts,
                 sources: {
                     contentful: true,
                     local: false
@@ -130,41 +106,6 @@ module.exports = {
                         slug: '/impressum'
                     },
                 ]
-            },
-            {
-                resolve: `gatsby-plugin-google-analytics-gdpr`,
-                options: {
-                    // The property ID; the tracking code won't be generated without it.
-                    trackingId: "G-HKQR5MMP8V",
-                    // Optional parameter (default false) - Enable analytics in development mode.
-                    enableDevelopment: false, // default false
-                    // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
-                    anonymizeIP: true,
-                    // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
-                    autoStartWithCookiesEnabled: false,
-                    // Optional parameter - Configuration for react-ga and google analytics
-                    reactGaOptions: {
-                        debug: true,
-                        gaOptions: {
-                            sampleRate: 10
-                        }
-                    }
-                },
-            },
-            {
-                resolve: `gatsby-plugin-cookiehub-banner`,
-                options: {
-                    // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
-                    cookieHubId: "45f3cb02",
-                    cookieHubV2Api: true,
-                    categories: [
-                        {
-                            categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.
-                            cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled' // Your custom cookie name
-                        },
-                    ]
-                }
-            }
-        ]
+            },]
     }
 }

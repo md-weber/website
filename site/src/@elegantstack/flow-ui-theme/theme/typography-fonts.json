@@ -1,0 +1,22 @@
+{
+  "fonts": {
+    "custom": {
+      "families": [
+        "Inter var"
+      ],
+      "urls": [
+        "./fonts/fonts.css"
+      ]
+    }
+  },
+  "theme": {
+    "headerFontFamily": [
+      "Inter var",
+      "sans-serif"
+    ],
+    "bodyFontFamily": [
+      "Inter var",
+      "sans-serif"
+    ]
+  }
+}
