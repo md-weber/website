@@ -4,7 +4,17 @@ import PageTitle from '@components/PageTitle'
 import Divider from '@components/Divider'
 import Seo from '@widgets/Seo'
 import {BsChatSquareText, BsLink, BsPeople} from 'react-icons/bs';
-import {FaCodeBranch, FaLinkedin, FaLock, FaPatreon, FaTwitch, FaTwitterSquare, FaYoutubeSquare} from "react-icons/fa";
+import {
+    FaBitcoin,
+    FaCodeBranch,
+    FaLinkedin,
+    FaLock,
+    FaMastodon,
+    FaPatreon,
+    FaTwitch,
+    FaTwitterSquare,
+    FaYoutubeSquare
+} from "react-icons/fa";
 import './link-list.css'
 
 const getCardBackgroundColor = (icon) => {
@@ -12,6 +22,7 @@ const getCardBackgroundColor = (icon) => {
         case "YouTube":
             return "#e07768";
         case "Twitter":
+        case "Mastodon":
             return "#6eadd4";
         case "Onlyfans":
             return "#01acee";
@@ -26,6 +37,8 @@ const getCardBackgroundColor = (icon) => {
             return "#ff424d";
         case "Matrix":
             return "#4c3e92";
+        case "Bitcoin":
+            return "#e0c868"
         default:
             return "#000"
     }
@@ -51,6 +64,10 @@ const getIcon = (icon) => {
             return <BsChatSquareText className={"fa i"}/>;
         case "Onlyfans":
             return <FaLock className={"fa i"}/>;
+        case "Mastodon":
+            return <FaMastodon className={"fa i"}/>;
+        case "Bitcoin":
+            return <FaBitcoin className={"fa i"}/>
         default:
             return <BsLink className={"fa i"}/>
     }
@@ -70,10 +87,10 @@ const socialMediaPresence = [
         icon: "Community",
     },
     {
-        title: "Twitter",
-        url: "https://twitter.com/flutter_exp",
-        subTitle: "Follow me on Twitter if you are interested in Flutter & Dart Updates",
-        icon: "Twitter"
+        title: "Mastodon",
+        url: "https://fosstodon.org/@flutterexp",
+        subTitle: "Follow me on Fosstodon if you are interested in Flutter & Dart Updates",
+        icon: "Mastodon"
     },
     {
         title: "LinkedIn",
@@ -100,6 +117,12 @@ const socialMediaPresence = [
         icon: "Patreon"
     },
     {
+        title: "Bitcoin Donation",
+        url: "https://bit.ly/donations_btc",
+        subTitle: "If you wish to support via LND or Bitcoin this is for you!",
+        icon: "Bitcoin"
+    },
+    {
         title: "Matrix / Instant Messanger",
         url: "https://matrix.to/#/#flutter-explained:tchncs.de",
         subTitle: "You like Discord but with Privacy join us on Matrix (FluffyChat)",
@@ -111,6 +134,7 @@ const socialMediaPresence = [
         subTitle: "Today everyone has that",
         icon: "Onlyfans"
     },
+
 ]
 
 const LinkList = (props) => (
@@ -125,9 +149,9 @@ const LinkList = (props) => (
                     {
                         socialMediaPresence.map((social) => {
                             return (
-                                <div className={"link-list-card"} >
+                                <div className={"link-list-card"}>
                                     <a href={social.url}
-                                       rel="noreferrer"
+                                       rel={social.title === "Mastodon" ? "me" : "noreferrer"}
                                        target="_blank">
                                         <div className={"link-row"}>
                                             <div style={{color: getCardBackgroundColor(social.icon)}}
