@@ -1,0 +1,25 @@
+import { FaTwitter, FaMastodon, FaYoutube, FaLinkedin, FaInstagram } from 'react-icons/fa';
+
+export const SocialMediaIcons = () => {
+    return (
+    <div className="social-icons">
+        <a href="https://twitter.com/flutter_exp" className="twitter">
+            <FaTwitter size={30} />
+        </a>
+        <a href="https://fosstodon.org/@flutterexp" className="mastodon">
+            <FaMastodon size={30} />
+        </a>
+        <a href="https://www.youtube.com/@flutterexplained" className="youtube">
+            <FaYoutube size={30} />
+        </a>
+        <a href="https://www.linkedin.com/in/max-weber-9889a3ba/" className="linkedin">
+            <FaLinkedin size={30} />
+        </a>
+        <a href="https://www.instagram.com/flutterexplained/" className="instagram">
+            <FaInstagram size={30} />
+        </a>
+    </div>
+    );
+}
+
+export default SocialMediaIcons;

@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Inter var';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(/fonts/Inter-roman.latin.var.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Inter var';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(/fonts/Inter-italic.latin.var.woff2) format('woff2');
+  font-named-instance: 'Italic';
+}
+
+body {
+  font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-feature-settings: 'case' 1, 'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02',
+    'cv03' 1, 'cv04' 1;
+  font-variation-settings: 'wght' 450;
+  font-variant: common-ligatures contextual;
+  letter-spacing: -0.02em;
+}
+b,
+strong,
+h3,
+h4,
+h5,
+h6 {
+  font-variation-settings: 'wght' 650;
+}
+h1 {
+  font-variation-settings: 'wght' 850;
+}
+h2 {
+  font-variation-settings: 'wght' 750;
+}
+
+@media screen and (min-device-pixel-ratio: 1.5),
+  screen and (min-resolution: 1.5dppx) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+details summary {
+  cursor: pointer;
+}
+
+img.next-image {
+  margin: 0;
+}
+
+.prose a {
+  color: #0074de;
+}
+
+.nav-line .nav-link {
+  color: #69778c;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 200px; /* adjust as needed */
+  margin: 0 auto;
+}
+
+.social-icons a {
+  color: #000;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons .twitter:hover {
+  color: #1DA1F2;
+}
+
+.social-icons .mastodon:hover {
+  color: #3088d4;
+}
+
+.social-icons .youtube:hover {
+  color: #FF0000;
+}
+
+.social-icons .linkedin:hover {
+  color: #0077b5;
+}
+
+.social-icons .instagram:hover {
+  color: #E4405F;
+}
+
+.faq-item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.faq-item h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+.faq-item .icon {
+  margin-left: 10px;
+}
+
+.faq-item.open {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-bottom:0;
+}
+
+.faq-answer.open {
+  max-height: 200px; /* Adjust this as needed */
+}
+
+
