@@ -7,8 +7,8 @@ export default {
         <time>{YEAR}</time> © Max Weber
       </small>
       <div className="footer-links">
-        <small><a href="/impressum">Impressum</a></small>
-        <small><a href="/privacy-policy">Privacy Policy</a></small>
+        <small><a href="/_impressum">Impressum</a></small>
+        <small><a href="/_privacy-policy">Privacy Policy</a></small>
         <small><a href="/feed.xml">RSS</a></small>
       </div>
       <style jsx>{`
