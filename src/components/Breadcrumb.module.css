@@ -1,0 +1,14 @@
+/* Breadcrumb.module.css */
+.breadcrumb {
+    color: white;
+    background-color: #333;
+    padding: 10px;
+}
+
+.separator {
+    margin: 0 5px;
+}
+
+.breadcrumb a:hover {
+    color: white; 
+}

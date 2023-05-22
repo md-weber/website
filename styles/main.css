@@ -101,6 +101,10 @@ img.next-image {
   color: #E4405F;
 }
 
+.social-icons > a {
+  color: lightgrey
+}
+
 .faq-item {
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -137,4 +141,11 @@ img.next-image {
   max-height: 200px; /* Adjust this as needed */
 }
 
+:is(html[class~=dark] .dark\:nx-prose-dark) :where(a):not(:where([class~=nx-not-prose] *)){
+  color: lightblue
+}
 
+.avatar {
+  box-shadow: 3px 3px lightblue;
+  border-radius: 99%
+}
