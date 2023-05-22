@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useContext } from 'react';
-import { AuthContext } from '../../auth/AuthContext';
+import { AuthContext } from '../../../src/components/AuthContext';
 import PreviewPage from './item-preview';
 
 function LoginOrCheckout(): React.ReactElement {

@@ -1,8 +1,7 @@
 import {useContext, useEffect, useState} from 'react';
-import {createClient} from "@supabase/supabase-js";
 import {Auth} from '@supabase/auth-ui-react';
 import {ThemeSupa} from "@supabase/auth-ui-shared";
-import {AuthContext} from "./AuthContext";
+import { AuthContext } from '../../src/components/AuthContext';
 
 const Authentication = () => {
     const authContext = useContext(AuthContext);
