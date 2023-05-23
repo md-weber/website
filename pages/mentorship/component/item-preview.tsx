@@ -1,12 +1,12 @@
 import React from 'react';
-import { loadStripe } from '@stripe/stripe-js';
+import {loadStripe} from '@stripe/stripe-js';
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe(
     process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-    );
-export default function PreviewPage() {
+);
+export default function ItemPreview() {
     React.useEffect(() => {
         // Check to see if this is a redirect back from Checkout
         const query = new URLSearchParams(window.location.search);
@@ -29,11 +29,10 @@ export default function PreviewPage() {
             <style jsx>
                 {`
           section {
-            background: #ffffff;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
-            width: 400px;
-            height: 112px;
+            max-width: 400px;
             border-radius: 6px;
             justify-content: space-between;
           }
@@ -54,5 +53,5 @@ export default function PreviewPage() {
         `}
             </style>
         </form>
-        );
+    );
 }

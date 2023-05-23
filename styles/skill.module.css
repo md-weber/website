@@ -1,0 +1,14 @@
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.level {
+    font-size: 1.2em;
+}
+
+.skillHeadline {
+    margin: 0;
+    text-align: left;
+}

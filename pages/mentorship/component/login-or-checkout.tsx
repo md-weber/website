@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useContext } from 'react';
-import { AuthContext } from '../../../src/components/AuthContext';
-import PreviewPage from './item-preview';
+import { AuthContext } from '../../../src/components/auth-context';
+import ItemPreview from './item-preview';
 
 function LoginOrCheckout(): React.ReactElement {
     const authContext = useContext(AuthContext);
@@ -16,7 +16,7 @@ function LoginOrCheckout(): React.ReactElement {
         <div>
             {!isLoggedIn && (<Link href="./auth/auth-page">Create your account here.</Link>)}
             {isLoggedIn && (
-                <PreviewPage />
+                <ItemPreview />
             )}
         </div>
         );
