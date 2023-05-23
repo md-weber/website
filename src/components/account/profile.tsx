@@ -4,7 +4,6 @@ import {AuthContext} from "../auth-context";
 import {useSnackbar} from "notistack";
 import Button from "@mui/material/Button";
 import styles from '../../../styles/profile.module.css';
-import { redirect } from 'next/navigation';
 
 const Profile = () => {
     const router = useRouter();
@@ -44,10 +43,6 @@ const Profile = () => {
         // TODO: Redirect to the home page
     };
     
-    if(!authContext.isLoggedIn){
-        router.push("/auth/auth-page");
-    }
-
     return (
         <div>
             <h4>Change your password here</h4>
