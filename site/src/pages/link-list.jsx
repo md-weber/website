@@ -128,13 +128,6 @@ const socialMediaPresence = [
         subTitle: "You like Discord but with Privacy join us on Matrix (FluffyChat)",
         icon: "Matrix"
     },
-    {
-        title: "Onlyfans",
-        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1",
-        subTitle: "Today everyone has that",
-        icon: "Onlyfans"
-    },
-
 ]
 
 const LinkList = (props) => (
