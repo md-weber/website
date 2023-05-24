@@ -129,7 +129,8 @@ module.exports = async ({ actions, store, cache, reporter }, pluginOptions) => {
     const { path, name } = localPath
 
     const files = glob.sync(
-      `${nodePath.resolve(program.directory, path)}/**/*{${extensions && extensions.join(',')
+      `${nodePath.resolve(program.directory, path)}/**/*{${
+        extensions && extensions.join(',')
       }}`
     )
     // Create types only if local files exist

@@ -14,7 +14,7 @@ module.exports = async (
     {
       allArticle(
         filter: { draft: { ne: true } }
-        sort: { fields: [date, title], order: DESC }
+        sort: [{ date: DESC }, { title: ASC }]
         limit: 1000
       ) {
         edges {
