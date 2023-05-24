@@ -151,7 +151,7 @@ const LinkList = (props) => (
                             return (
                                 <div className={"link-list-card"}>
                                     <a href={social.url}
-                                       rel={social.title === "Mastodon" ? "me" : "noreferrer"}
+                                       rel="noreferrer"
                                        target="_blank">
                                         <div className={"link-row"}>
                                             <div style={{color: getCardBackgroundColor(social.icon)}}
