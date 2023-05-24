@@ -12,15 +12,19 @@
 	"dependencies": {
 		"@elegantstack/gatsby-theme-flexiblog-minimal-v2": "*",
 		"dotenv": "^16.0.1",
+		"gatsby": "5.6.0",
 		"gatsby-plugin-manifest": "^4.19.0",
 		"gatsby-source-contentful": "^7.14.0",
-		"react-cookie-consent": "^8.0.1",
-		"react-icons": "^4.4.0",
-		"gatsby": "5.6.0",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-cookie-consent": "^8.0.1",
+		"react-dom": "^18.2.0",
+		"react-icons": "^4.4.0"
 	},
 	"devDependencies": {
-		"prettier": "^2.6.2"
+		"@types/node": "^20.2.3",
+		"@types/react": "^18.2.6",
+		"@types/react-dom": "^18.2.4",
+		"prettier": "^2.6.2",
+		"typescript": "^5.0.4"
 	}
 }
