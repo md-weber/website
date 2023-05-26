@@ -1,0 +1,36 @@
+.socialIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px; /* adjust as needed */
+    margin: 0 auto;
+}
+
+.socialIcons a {
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+
+.socialIcons a:hover {
+    transform: scale(1.1);
+}
+
+.socialIcons .twitter:hover {
+    color: #1DA1F2;
+}
+
+.socialIcons .mastodon:hover {
+    color: #3088d4;
+}
+
+.socialIcons .youtube:hover {
+    color: #FF0000;
+}
+
+.socialIcons .linkedin:hover {
+    color: #0077b5;
+}
+
+.socialIcons .instagram:hover {
+    color: #E4405F;
+}
+
