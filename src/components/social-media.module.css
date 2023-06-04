@@ -1,7 +1,6 @@
 .socialIcons {
     display: flex;
     justify-content: space-between;
-    width: 200px; /* adjust as needed */
     margin: 0 auto;
 }
 

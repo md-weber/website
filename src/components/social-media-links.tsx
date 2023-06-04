@@ -14,7 +14,7 @@ export const socialMediaLinks = {
 export default function SocialMediaIcons() {
     return (
         <div
-            className={`${styles.socialIcons} flex justify-between w-1/2 mx-auto pt-5 text-2xl text-gray-700 dark:text-gray-200`}>
+            className={`${styles.socialIcons} flex justify-between mx-auto pt-5 text-3xl text-gray-700 dark:text-gray-200 w-9/12`}>
             <Link href={socialMediaLinks["twitter"]} className={styles.twitter}><FaTwitter></FaTwitter></Link>
             <Link href={socialMediaLinks["mastodon"]} className={styles.mastodon}><FaMastodon></FaMastodon></Link>
             <Link href={socialMediaLinks["youtube"]} className={styles.youtube}><FaYoutube></FaYoutube></Link>
