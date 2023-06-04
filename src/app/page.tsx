@@ -32,14 +32,16 @@ export default function Home() {
 
     return (
         <>
-            <PageHeader/>
+            <div className={"h-[calc(100vh-5rem)]"}>
+                <PageHeader/>
+            </div>
             <section>
                 <div>
                     <h3 className={"text-3xl py-1 pt-10 dark:text-white"} id={"my-services"}>My services</h3>
                     <p className={"text-md py-5 leading-8 text-grey-800 dark:text-gray-200"}>I am a Full Stack Developer
-                        developer with a passion for sharing knowledge. Throughout my career, I've offered various
+                        developer with a passion for sharing knowledge. Throughout my career, I&apos;ve offered various
                         services designed to help individuals and teams master Flutter development. Here are a few
-                        key services I'm proud to offer:</p>
+                        key services I&apos;m proud to offer:</p>
 
                     <div className='lg:flex gap-5'>
                         {cards.map((card) => ServiceCard(card))}
@@ -47,5 +49,5 @@ export default function Home() {
                 </div>
             </section>
         </>
-    )
+    );
 }

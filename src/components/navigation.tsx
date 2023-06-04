@@ -1,18 +1,17 @@
-import {useRouter} from "next/navigation";
-import {Navbar} from "flowbite-react";
+import {Button, Navbar} from "flowbite-react";
+import {FaMoon, FaSun} from "react-icons/fa";
 
 export default function NavBar(props: { toggleDarkMode: () => void, darkMode: boolean }) {
-    const router = useRouter();
     return (
-        <Navbar
-            fluid
-            rounded
-        >
+        <Navbar fluid rounded>
             <Navbar.Brand href="/">
                 <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
                     Max Weber
                 </span>
             </Navbar.Brand>
+            <Button outline onClick={props.toggleDarkMode}>
+                {props.darkMode ? <FaSun/> : <FaMoon/>}
+            </Button>
             <Navbar.Toggle/>
             <Navbar.Collapse>
                 <Navbar.Link active href="/">
