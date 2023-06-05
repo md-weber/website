@@ -2,20 +2,22 @@
 
 import './globals.css'
 import {Inter} from 'next/font/google'
-import {useState} from "react";
-import NavBar from "@/components/navigation";
-import {Breadcrumb, Flowbite} from "flowbite-react";
+import {useMemo, useState} from "react";
+import NavBar from "@/components/nav-bar";
+import {Flowbite} from "flowbite-react";
 import DynamicBreadcrumb from "@/components/dynamic-breadcrumb";
 
 const inter = Inter({subsets: ['latin']})
 
 
-export default function RootLayout({
-                                       children,
-                                   }: {
-    children: React.ReactNode
-}) {
+export default function RootLayout({children,}: { children: React.ReactNode }) {
     const [darkMode, setDarkMode] = useState(false)
+
+    useMemo(() => {
+        const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+        setDarkMode(darkThemeMq.matches);
+    }, [])
+
     const toggleDarkMode = () => {
         setDarkMode(!darkMode)
     }

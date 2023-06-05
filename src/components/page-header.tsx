@@ -9,7 +9,7 @@ export default function PageHeader() {
             <div className="mx-auto max-w-screen-xl text-center px-8 lg:py-8">
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Welcome,
                     I&apos;am Max</h1>
-                <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+                <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 dark:text-gray-400">
                     As an experienced software engineer specializing in Flutter, I provide comprehensive
                     training, mentorship, and public speaking services. My goal is to empower you and your
                     team to excel in Flutter development, enabling you to create outstanding digital
@@ -21,10 +21,12 @@ export default function PageHeader() {
                 </div>
             </div>
             <SocialMediaIcons/>
-            <FaArrowDown className={"absolute bottom-0 left-1/2 text-3xl text-gray-700 animate-bounce"} onClick={() => {
-                const element = document.getElementById("my-services");
-                if (!!element) element.scrollIntoView({block: "start", behavior: "smooth"})
-            }}/>
+            <FaArrowDown
+                className={"absolute bottom-0 left-1/2 text-3xl text-gray-700 animate-bounce dark:text-gray-200"}
+                onClick={() => {
+                    const element = document.getElementById("my-services");
+                    if (!!element) element.scrollIntoView({block: "start", behavior: "smooth"})
+                }}/>
         </section>
     )
 }

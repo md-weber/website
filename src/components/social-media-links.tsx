@@ -1,4 +1,4 @@
-import {FaTwitter, FaMastodon, FaYoutube, FaLinkedin, FaInstagram} from 'react-icons/fa';
+import {FaTwitter, FaMastodon, FaYoutube, FaLinkedin, FaInstagram, FaDiscord} from 'react-icons/fa';
 import React from "react";
 import Link from "next/link";
 import styles from './social-media.module.css'
@@ -8,7 +8,8 @@ export const socialMediaLinks = {
     "mastodon": "https://fosstodon.org/@flutterexp",
     "youtube": "https://www.youtube.com/@flutterexplained",
     "linkedin": "https://www.linkedin.com/in/max-weber-9889a3ba/",
-    "instagram": "https://www.instagram.com/flutterexplained/"
+    "instagram": "https://www.instagram.com/flutterexplained/",
+    "discord": "https://discord.gg/TRSY4tGHpd"
 };
 
 export default function SocialMediaIcons() {
@@ -20,6 +21,8 @@ export default function SocialMediaIcons() {
             <Link href={socialMediaLinks["youtube"]} className={styles.youtube}><FaYoutube></FaYoutube></Link>
             <Link href={socialMediaLinks["linkedin"]} className={styles.linkedin}><FaLinkedin></FaLinkedin></Link>
             <Link href={socialMediaLinks["instagram"]} className={styles.instagram}><FaInstagram></FaInstagram></Link>
+            <Link href={socialMediaLinks["discord"]}
+                  className={`${styles.discord} hover:text-white`}><FaDiscord></FaDiscord></Link>
         </div>
     );
 }
