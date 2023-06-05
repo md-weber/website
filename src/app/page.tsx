@@ -2,7 +2,7 @@
 import publicSpeakingImage from '../../public/publicSpeakingImage.png';
 import mentoring from '../../public/mentoring.png';
 import teaching from '../../public/teaching.png';
-import ServiceCard, {CardProps} from "@/components/serviceCard";
+import ServiceCard, {CardProps} from "@/components/service-card";
 import PageHeader from "@/components/page-header";
 
 export default function Home() {
