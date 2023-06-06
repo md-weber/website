@@ -1,6 +1,7 @@
 'use client'
 import {StaticImageData} from 'next/image'
 import {Button, Card} from 'flowbite-react';
+import Link from "next/link";
 
 export interface CardProps {
     image: StaticImageData,
@@ -8,6 +9,7 @@ export interface CardProps {
     description: string,
     readMore: boolean,
     readMoreButtonText?: string;
+    readMoreLink?: string;
 }
 
 export default function ServiceCard(prop: CardProps) {
@@ -22,9 +24,10 @@ export default function ServiceCard(prop: CardProps) {
                 <div>{prop.description}</div>
             </div>
             {
-                prop.readMore && <Button gradientDuoTone={"cyanToBlue"}>
-                    <div> {prop.readMoreButtonText} </div>
-                </Button>
+                prop.readMore &&
+                <Link href={prop.readMoreLink!}><Button gradientDuoTone={"cyanToBlue"} className={"w-full"}>
+                    {prop.readMoreButtonText}
+                </Button></Link>
             }
         </Card>
     )

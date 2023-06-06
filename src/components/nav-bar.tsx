@@ -1,4 +1,4 @@
-import {Button, Navbar} from "flowbite-react";
+import {Navbar} from "flowbite-react";
 import {FaMoon, FaSun} from "react-icons/fa";
 import Link from "next/link";
 
@@ -16,17 +16,19 @@ export default function NavBar(props: { toggleDarkMode: () => void, darkMode: bo
                         <FaMoon className={"text-gray-600"}/>}
                 </div>
                 <Navbar.Toggle/>
-                <Navbar.Collapse>
-                    <Link href="/"
-                          className={"bg-blue-700 text-xl dark:text-gray-200 py-1 px-2 md:bg-transparent"}>
-                        <p> Home </p>
-                    </Link>
-                    <Link href={"/mentorship"}
-                          className={"bg-blue-700 text-xl dark:text-gray-200 py-1 px-2 md:bg-transparent"}>
-                        <p> Mentorship </p>
-                    </Link>
-                </Navbar.Collapse>
+
             </div>
+            <Navbar.Collapse className={""}>
+                <Link href="/"
+                      className={"bg-blue-700 text-xl text-white py-1 px-2 md:bg-transparent"}>
+                    <p> Home </p>
+                </Link>
+                <Link href={"/mentorship"}
+                      className={"bg-blue-700 text-xl text-white py-1 px-2 md:bg-transparent"}>
+                    <p> Mentorship </p>
+                </Link>
+            </Navbar.Collapse>
+
 
         </Navbar>
     )

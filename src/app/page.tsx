@@ -12,21 +12,24 @@ export default function Home() {
             description: "With my extensive experience in Flutter development, I provide bespoke training sessions tailored to your specific needs. It's always my goal to ensure your team gets the most out of every training session and comes away with a greater understanding of Flutter.",
             image: teaching,
             readMore: true,
-            readMoreButtonText: "Book a Training Session"
+            readMoreButtonText: "Book a Training Session",
+            readMoreLink: "/company-training"
         },
         {
             title: "Mentorship Program",
             description: "As part of my commitment to the Flutter community, I run a mentorship program offering one-on-one guidance and support. Whether you're new to Flutter or looking to take your skills to the next level, I'm here to guide you every step of the way.",
             image: mentoring,
             readMore: true,
-            readMoreButtonText: "Join the Mentorship Program"
+            readMoreButtonText: "Join the Mentorship Program",
+            readMoreLink: "/mentorship"
         },
         {
             title: "Public Speaker at Events",
             description: "Having spoken at a variety of events and conferences, I'm comfortable and experienced in conveying complex Flutter concepts to both small and large audiences. If you're looking for a speaker for your event, don't hesitate to reach out.",
             image: publicSpeakingImage,
             readMore: true,
-            readMoreButtonText: "Invite Me to Speak"
+            readMoreButtonText: "Invite Me to Speak",
+            readMoreLink: "/public-speaker"
         },
     ]
 
