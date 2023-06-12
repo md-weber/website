@@ -1,7 +1,5 @@
 'use client'
 import React from 'react';
-import {Button} from "flowbite-react";
-import Link from "next/link";
 import Image from 'next/image';
 import MentorshipTiers from "@/components/mentorship-tiers";
 import TestimonialImage from '../../../public/yvis_fricker.jpg';
@@ -89,10 +87,11 @@ const Mentorship = () => {
                             <p className="text-2xl font-medium text-gray-900 dark:text-white">&quot;I am super happy to
                                 have
                                 Max as my coding mentor. He has a vast amount of knowledge not only regarding flutter,
-                                but also about software engineering in general.
+                                but also about software engineering in general.<br/><br/>
                                 Working with him on my personal projects has improved my developer skills tremendously.
                                 Knowing that I consistently get high quality feedback helps me stay motivated and
-                                overcome roadblocks. I whole heartedly recommend Max as a mentor!&quot;</p>
+                                overcome roadblocks. I whole heartedly recommend Max as a mentor!&quot;
+                            </p>
                         </blockquote>
                         <figcaption className="flex items-center justify-center mt-6 space-x-3">
                             <Image className=" rounded-full"

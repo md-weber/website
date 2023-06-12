@@ -6,6 +6,7 @@ import {useEffect, useState} from "react";
 import NavBar from "@/components/nav-bar";
 import {Flowbite} from "flowbite-react";
 import DynamicBreadcrumb from "@/components/dynamic-breadcrumb";
+import FooterWithSocialMediaIcons from "@/components/footer";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -40,6 +41,7 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
                     <div className={"py-5"}><DynamicBreadcrumb/></div>
                     {children}
                 </main>
+                <FooterWithSocialMediaIcons/>
             </div>
             </body>
             </html>
