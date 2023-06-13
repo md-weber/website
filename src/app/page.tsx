@@ -62,25 +62,23 @@ export default function Home() {
                     informal setting.
                 </p>
 
-                <div className="flex gap-5 justify-center">
-                    <Card className="w-full sm:w-auto">
+                <div className="grid gap-5 justify-center md:flex">
+                    <Card>
                         <h4 className="font-bold text-xl dark:text-white">&quot;Beyond Flutter&quot; Podcast</h4>
-                        <p className="mt-2 text-grey-800 dark:text-gray-200">A monthly podcast that explores everything
-                            related to software engineering.
-                            Tune in for insightful discussions and expert takes on the latest trends and topics in the
-                            field.</p>
-                        <Button href="podcast.flutter-explained.dev" gradientDuoTone="cyanToBlue">
+                        <p className="mt-2 text-grey-800 dark:text-gray-200 flex-grow">A monthly podcast that explores
+                            everything related to software engineering. Tune in for insightful discussions and expert
+                            takes on the latest trends and topics in the field.</p>
+                        <Button href="https://podcast.flutter-explained.dev" gradientDuoTone="cyanToBlue">
                             Listen to the
                             Podcast</Button>
                     </Card>
 
-                    <Card className="w-full sm:w-auto mt-5 sm:mt-0">
+                    <Card>
                         <h4 className="font-bold text-xl dark:text-white">Flutter Explained YouTube
                             Channel</h4>
-                        <p className="mt-2 text-grey-800 dark:text-gray-200">Get your weekly dose of Flutter tips,
-                            tricks, and tutorials, and participate
-                            in live streaming events. Subscribe now and be a part of a community that's all about
-                            learning and growing together.</p>
+                        <p className="mt-2 text-grey-800 dark:text-gray-200 flex-grow">Get your weekly dose of Flutter
+                            tips, tricks, and tutorials, and participate in live streaming events. Subscribe now and be
+                            a part of a community that&apos;s all about learning and growing together.</p>
                         <Button href="https://www.youtube.com/@FlutterExplained" gradientDuoTone="cyanToBlue">
                             Subscribe on YouTube
                         </Button>
