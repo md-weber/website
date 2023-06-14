@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import {Button} from "flowbite-react";
+import Head from "next/head";
 
 const ProfessionalTrainingPage = () => {
     return (

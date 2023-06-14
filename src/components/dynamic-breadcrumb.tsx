@@ -1,6 +1,8 @@
+'use client'
+
 import {usePathname} from 'next/navigation';
 import Link from 'next/link';
-import {Breadcrumb} from "flowbite-react";
+import {BiCaretRight} from "react-icons/bi";
 
 export const DynamicBreadcrumb: React.FC = () => {
     const pathnames = usePathname().split('/').filter(x => x);
@@ -12,29 +14,37 @@ export const DynamicBreadcrumb: React.FC = () => {
     };
 
     return (
-        <Breadcrumb>
-            <Breadcrumb.Item>
+        <div className={"flex"}>
+            <span className={"flex items-center"}>
                 <Link href="/" passHref>
                     Home
                 </Link>
-            </Breadcrumb.Item>
+            </span>
             {pathnames.map((value, index) => {
                 const linkTo = `/${pathnames.slice(0, index + 1).join('/')}`;
                 const isLast = index === pathnames.length - 1;
 
                 if (isLast) {
-                    return <Breadcrumb.Item key={linkTo}>{capitalize(value)}</Breadcrumb.Item>
+                    return (<div key={linkTo} className={"flex items-center"}>
+                        <div>
+                            <BiCaretRight className={"mx-2"}/>
+                        </div>
+                        <span>{capitalize(value)}</span>
+                    </div>)
                 } else {
                     return (
-                        <Breadcrumb.Item key={linkTo}>
+                        <span key={linkTo} className={"flex items-center"}>
+                            <div>
+                            <BiCaretRight className={"mx-2"}/>
+                        </div>
                             <Link href={linkTo} passHref key={linkTo}>
                                 {capitalize(value)}
                             </Link>
-                        </Breadcrumb.Item>
+                        </span>
                     )
                 }
             })}
-        </Breadcrumb>
+        </div>
     );
 };
 
