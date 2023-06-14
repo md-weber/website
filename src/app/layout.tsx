@@ -28,7 +28,7 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
 
     return (
         <Flowbite>
-            <html lang="en">
+            <html lang="en" title={"Max Weber - Flutter Explained"}>
             <Head>
                 <title>Max Weber - Flutter Explained</title>
                 <meta name="author" content={"Max Weber"}/>

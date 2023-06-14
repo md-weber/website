@@ -42,7 +42,8 @@ export default function SocialMediaIcons() {
             className={`${styles.socialIcons} md:w-3/6 flex justify-between mx-auto pt-8 text-3xl text-gray-700 dark:text-gray-200  md:max-w-screen-sm`}>
             {
                 socialMediaLinks.map((link) => (
-                    <Link href={link.url} className={link.style} key={link.social}>{<link.icon/>}</Link>
+                    <Link href={link.url} className={link.style} key={link.social}
+                          aria-label={`Redirect to ${link.social}`}>{<link.icon/>}</Link>
                 ))
             }
         </div>
