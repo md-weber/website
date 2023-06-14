@@ -2,18 +2,19 @@ import {DiDart} from "react-icons/di";
 import Link from "next/link";
 import Image from "next/image";
 import {PostMetaData} from "@/components/blog/post-metadata";
+import {SiDart, SiFlutter} from "react-icons/si";
 
-const PostPreview = (props: PostMetaData)=>{
+const PostPreview = (props: PostMetaData) => {
     return (
         <article key={props.slug}
                  className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 hover:shadow-amber-500 dark:hover:shadow-amber-50 transition-all duration-300">
             <div className="flex justify-between items-center mb-5 text-gray-500">
                 <div className={"flex items-center"}>
-                          <span
-                              className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                               Category
-                          </span>
-                    <span>{props.category == "Dart" && <DiDart/>}</span>
+                    <span>{props.category == "Dart" &&
+                        <SiDart
+                            className={"hover:scale-110 hover:text-gray-700 dark:hover:text-white transition-all duration-300 "}/>}</span>
+                    <span>{props.category == "Flutter" && <SiFlutter
+                        className={"hover:scale-110 hover:text-gray-700 dark:hover:text-white transition-all duration-300"}/>}</span>
                 </div>
                 <span className="text-sm">{props.date}</span>
             </div>

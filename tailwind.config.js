@@ -8,5 +8,5 @@ module.exports = {
         './node_modules/flowbite-react/**/*.js'
     ],
     theme: {},
-    plugins: [require("flowbite/plugin")],
+    plugins: [require("flowbite/plugin"), require("@tailwindcss/typography")],
 }

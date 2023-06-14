@@ -1,10 +1,3 @@
-import * as fs from "fs";
-import Link from "next/link";
-import matter from "gray-matter";
-import {findAuthor, findCategory} from "@/components/blog/find-matter";
-import Markdown from "markdown-to-jsx";
-import {DiDart} from "react-icons/di";
-import Image from "next/image";
 import getPostMetaData from "@/components/blog/get-post-metadata";
 import PostPreview from "@/components/blog/post-preview";
 
