@@ -39,3 +39,4 @@ env.local
 env*
 
 .idea
+contentful-ssg.config.ts

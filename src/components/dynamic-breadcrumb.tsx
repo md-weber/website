@@ -13,9 +13,11 @@ export const DynamicBreadcrumb: React.FC = () => {
 
     return (
         <Breadcrumb>
-            <Link href="/" passHref>
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
-            </Link>
+            <Breadcrumb.Item>
+                <Link href="/" passHref>
+                    Home
+                </Link>
+            </Breadcrumb.Item>
             {pathnames.map((value, index) => {
                 const linkTo = `/${pathnames.slice(0, index + 1).join('/')}`;
                 const isLast = index === pathnames.length - 1;
@@ -24,10 +26,11 @@ export const DynamicBreadcrumb: React.FC = () => {
                     return <Breadcrumb.Item key={linkTo}>{capitalize(value)}</Breadcrumb.Item>
                 } else {
                     return (
-                        <Link href={linkTo} passHref key={linkTo}
-                              className={"font-medium text-blue-600 dark:text-blue-500 hover:underline"}>
-                            <Breadcrumb.Item>{capitalize(value)}</Breadcrumb.Item>
-                        </Link>
+                        <Breadcrumb.Item key={linkTo}>
+                            <Link href={linkTo} passHref key={linkTo}>
+                                {capitalize(value)}
+                            </Link>
+                        </Breadcrumb.Item>
                     )
                 }
             })}
