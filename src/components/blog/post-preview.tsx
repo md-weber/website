@@ -1,9 +1,10 @@
-import {DiDart} from "react-icons/di";
 import Link from "next/link";
 import Image from "next/image";
 import {PostMetaData} from "@/components/blog/post-metadata";
 import {SiDart, SiFlutter} from "react-icons/si";
 import Markdown from "markdown-to-jsx";
+import MaxWeber from '../../../public/images/website_weber.png'
+import MahtabTadayon from '../../../public/images/mahtab.png'
 
 const PostPreview = (props: PostMetaData) => {
     return (
@@ -31,7 +32,7 @@ const PostPreview = (props: PostMetaData) => {
                 <div className="flex items-center space-x-4">
                     <Image
                         className={"bg-teal-300 rounded-full"}
-                        src={props.author.thumbnailUrl}
+                        src={props.author.name.includes("Max") ? MaxWeber : MahtabTadayon}
                         alt={props.author.name}
                         width={30} height={30}
                     />
