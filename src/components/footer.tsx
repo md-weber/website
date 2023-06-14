@@ -48,8 +48,8 @@ export default function FooterWithSocialMediaIcons() {
                                 <Footer.Link href="/privacy-policy">
                                     Privacy Policy
                                 </Footer.Link>
-                                <Footer.Link href="/impressum">
-                                    Impressum
+                                <Footer.Link href="/imprint">
+                                    Imprint
                                 </Footer.Link>
                             </Footer.LinkGroup>
                         </div>
