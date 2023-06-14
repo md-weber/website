@@ -2,6 +2,8 @@ import * as fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import {findAuthor, findCategory} from "@/components/blog/find-matter";
+import styles from './slug.module.css';
+import getPostMetaData from "@/components/blog/get-post-metadata";
 
 const getFileForSlug = (slug: string): string => {
     const folder = "content/article/";
@@ -29,6 +31,15 @@ const getPostContent = (slug: string) => {
         category: findCategory(matterResult.data.category.id),
         author: findAuthor(matterResult.data.author.id),
     }
+}
+
+export const generateStaticParams = async () => {
+    const posts = getPostMetaData();
+
+    return posts.map(post => {
+            return {slug: post.slug}
+        }
+    );
 }
 
 const PostPage = (props: any) => {
