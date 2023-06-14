@@ -50,6 +50,16 @@ export default function Home() {
                     <div className='lg:flex gap-5'>
                         {cards.map((card) => ServiceCard(card))}
                     </div>
+                    <Card>
+                        <h4 className="font-bold text-xl dark:text-white">Sponsorship</h4>
+                        <p className="mt-2 text-grey-800 dark:text-gray-200 flex-grow">You have a great product and
+                            would like to promote it on our channel? I&apos;d love to hear about it. Please reach out to
+                            us.</p>
+                        <Button href="mailto:flutterexp@gmail.com" gradientDuoTone="cyanToBlue">
+                            Email us
+                        </Button>
+                    </Card>
+
                 </div>
             </section>
 

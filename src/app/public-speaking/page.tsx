@@ -5,14 +5,14 @@ import {Button, Card} from "flowbite-react";
 const PublicSpeakingPage = () => {
     return (
         <div className="container mx-auto px-4 text-gray-500 dark:text-gray-400 pb-16">
-            <section className="mt-4 text-center">
-                <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                     Public Speaking
-                </h1>
-                <p className="text-center mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 dark:text-gray-400">
+                </h2>
+                <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
                     Harness the power of engaging, enlightening, and inspiring tech talks for your next event.
                 </p>
-            </section>
+            </div>
 
             <section className="mt-4">
                 <h2 className="text-2xl py-1 pt-10 dark:text-white font-bold">Why Max Weber?</h2>

@@ -27,6 +27,8 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
         <Flowbite>
             <html lang="en">
             <head>
+                <script defer data-domain="flutter-explained.dev" src="https://plausible.io/js/script.js"></script>
+
                 <title>Max Weber - Flutter Explained</title>
                 <meta name="author" content={"Max Weber"}/>
                 <meta name="description"
