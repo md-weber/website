@@ -21,7 +21,7 @@ export default function NavBar(props: { toggleDarkMode: () => void, darkMode: bo
 
             </div>
             <Navbar.Collapse className={"bg-transparent"}>
-                <ul className="flex flex-col font-medium lg:flex-row lg:mt-0">
+                <ul className="flex flex-col font-medium md:flex-row lg:mt-0">
                     <li className={"border-b-gray-700 border-b-2 md:border-b-0"}>
                         <Link href="/"
                               className="block px-6 py-2 hover:text-white rounded  lg:bg-transparent lg:text-primary-700 dark:text-gray-400 hover:bg-gray-700 dark:hover:text-white transition-all duration-200"
