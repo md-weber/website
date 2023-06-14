@@ -37,9 +37,11 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
             <body className={inter.className}>
             <div className={darkMode ? 'dark' : ''}>
                 <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800 min-h-full'>
-                    <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
-                    <div className={"py-5"}><DynamicBreadcrumb/></div>
-                    {children}
+                    <div className={"max-w-screen-lg mx-auto"}>
+                        <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
+                        <div className={"py-5"}><DynamicBreadcrumb/></div>
+                        {children}
+                    </div>
                 </main>
                 <FooterWithSocialMediaIcons/>
             </div>

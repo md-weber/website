@@ -10,28 +10,37 @@ export default function NavBar(props: { toggleDarkMode: () => void, darkMode: bo
                     Max Weber
                 </span>
             </Link>
-            <div className={"flex"}>
-                <div onClick={props.toggleDarkMode} className={"rounded-lg inline-flex items-center px-2 md:px-8"}>
+            <div className={"flex flex-grow justify-end"}>
+                <div onClick={props.toggleDarkMode}
+                     className={"rounded-lg inline-flex items-center px-2 md:px-8 cursor-pointer"}>
                     {props.darkMode ? <FaSun className={"text-gray-300  text-xl"}/> :
                         <FaMoon className={"text-gray-600 text-xl"}/>}
                 </div>
                 <Navbar.Toggle/>
 
-                <Navbar.Collapse className={""}>
-                    <Link href="/"
-                          className={"bg-blue-700 text-xl dark:text-white py-1 px-2 md:bg-transparent"}>
-                        <p> Home </p>
-                    </Link>
-                    <Link href="/blog"
-                          className={"bg-blue-700 text-xl dark:text-white py-1 px-2 md:bg-transparent"}>
-                        <p> Blog </p>
-                    </Link>
-                    <Link href={"/mentorship"}
-                          className={"bg-blue-700 text-xl dark:text-white py-1 px-2 md:bg-transparent"}>
-                        <p> Mentorship </p>
-                    </Link>
-                </Navbar.Collapse>
+
             </div>
+            <Navbar.Collapse className={"bg-transparent"}>
+                <ul className="flex flex-col font-medium lg:flex-row lg:mt-0">
+                    <li className={"border-b-gray-700 border-b-2 md:border-b-0"}>
+                        <Link href="/"
+                              className="block px-6 py-2 hover:text-white rounded  lg:bg-transparent lg:text-primary-700 dark:text-gray-400 hover:bg-gray-700 dark:hover:text-white transition-all duration-200"
+                              aria-current="page">
+                            Home
+                        </Link>
+                    </li>
+                    <li className={"border-b-gray-700 border-b-2 md:border-b-0"}>
+                        <Link href="/blog"
+                              className="block px-6 py-2 hover:text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 dark:text-gray-400 hover:bg-gray-700 dark:hover:text-white transition-all duration-200"
+                              aria-current="page">Blog</Link>
+                    </li>
+                    <li>
+                        <Link href="/mentorship"
+                              className="block px-6 py-2 hover:text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 dark:text-gray-400 hover:bg-gray-700 dark:hover:text-white transition-all duration-200"
+                              aria-current="page">Mentorship</Link>
+                    </li>
+                </ul>
+            </Navbar.Collapse>
 
         </Navbar>
     )
