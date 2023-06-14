@@ -17,9 +17,9 @@ export default function PageHeader() {
             <div className="mx-auto max-w-screen-xl text-center px-8 lg:py-8">
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                     Hi, I&apos;am Max,</h1>
-                <h3 className="mb-4 text-2xl tracking-tight leading-none text-gray-500 md:text-5xl lg:text-2xl dark:text-gray-300">
+                <h2 className="mb-4 text-2xl tracking-tight leading-none text-gray-500 md:text-5xl lg:text-2xl dark:text-gray-300">
                     Software Engineer, Trainer and Speaker
-                </h3>
+                </h2>
                 <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 dark:text-gray-400">
                     As an experienced software engineer specializing in Flutter, I provide comprehensive
                     training, mentorship, and public speaking services. My goal is to empower you and your
