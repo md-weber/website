@@ -39,7 +39,7 @@ export const socialMediaLinks = [
 export default function SocialMediaIcons() {
     return (
         <div
-            className={`${styles.socialIcons} flex justify-between mx-auto pt-5 text-3xl text-gray-700 dark:text-gray-200 w-9/12 md:max-w-screen-sm`}>
+            className={`${styles.socialIcons} md:w-3/6 flex justify-between mx-auto pt-8 text-3xl text-gray-700 dark:text-gray-200  md:max-w-screen-sm`}>
             {
                 socialMediaLinks.map((link) => (
                     <Link href={link.url} className={link.style} key={link.social}>{<link.icon/>}</Link>

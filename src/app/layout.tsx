@@ -15,7 +15,7 @@ const inter = Inter({subsets: ['latin']})
 
 
 export default function RootLayout({children,}: { children: React.ReactNode }) {
-    const [darkMode, setDarkMode] = useState(false)
+    const [darkMode, setDarkMode] = useState(true)
 
     useEffect(() => {
         const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
@@ -41,7 +41,7 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
             <Script src="./scripts/consent.js" strategy={"lazyOnload"}/>
             <body className={inter.className}>
             <div className={darkMode ? 'dark' : ''}>
-                <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800 min-h-full'>
+                <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 min-h-full'>
                     <div className={"max-w-screen-lg mx-auto pt-4"}>
                         <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
                         <div className={"py-5"}><DynamicBreadcrumb/></div>

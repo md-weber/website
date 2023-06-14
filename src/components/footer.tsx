@@ -6,7 +6,7 @@ import React from "react";
 
 export default function FooterWithSocialMediaIcons() {
     return (
-        <Footer container className={"mx-auto rounded-none pt-16"}>
+        <Footer container className={"mx-auto rounded-none pt-16 dark:bg-gray-900"}>
             <div className="w-full justify-center">
                 <div className="w-full flex justify-center md:grid-cols-2">
                     <div className="grid gap-16 mt-2 grid-cols-2 md:grid-cols-4 ">

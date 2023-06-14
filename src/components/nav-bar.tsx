@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function NavBar(props: { toggleDarkMode: () => void, darkMode: boolean }) {
     return (
-        <Navbar fluid rounded>
+        <Navbar fluid rounded className={"dark:bg-gray-900"}>
             <Link href={"/"}>
                 <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
                     Max Weber

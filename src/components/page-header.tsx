@@ -13,7 +13,7 @@ export default function PageHeader() {
     }
 
     return (
-        <section className="bg-white dark:bg-gray-900 py-8 lg:py-16">
+        <section className="bg-white dark:bg-gray-900 py-8 mt-16 lg:py-16">
             <div className="mx-auto max-w-screen-xl text-center px-8 lg:py-8">
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                     Hi, I&apos;am Max,</h1>
