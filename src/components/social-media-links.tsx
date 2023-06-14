@@ -1,28 +1,50 @@
-import {FaTwitter, FaMastodon, FaYoutube, FaLinkedin, FaInstagram, FaDiscord} from 'react-icons/fa';
+import {
+    FaTwitter,
+    FaMastodon,
+    FaYoutube,
+    FaLinkedin,
+    FaInstagram,
+    FaDiscord,
+    FaGithub,
+} from 'react-icons/fa';
 import React from "react";
 import Link from "next/link";
 import styles from './social-media.module.css'
 
-export const socialMediaLinks = {
-    "twitter": "https://twitter.com/flutter_exp",
-    "mastodon": "https://fosstodon.org/@flutterexp",
-    "youtube": "https://www.youtube.com/@flutterexplained",
-    "linkedin": "https://www.linkedin.com/in/max-weber-9889a3ba/",
-    "instagram": "https://www.instagram.com/flutterexplained/",
-    "discord": "https://discord.gg/TRSY4tGHpd"
-};
+export const socialMediaLinks = [
+    {"social": "github", "url": "https://github.com/md-weber", "style": styles.github, "icon": FaGithub},
+    {"social": "mastodon", "url": "https://fosstodon.org/@flutterexp", "style": styles.mastodon, "icon": FaMastodon},
+    {
+        "social": "youtube",
+        "url": "https://www.youtube.com/@flutterexplained",
+        "style": styles.youtube,
+        "icon": FaYoutube
+    },
+    {"social": "twitter", "url": "https://twitter.com/flutter_exp", "style": styles.twitter, "icon": FaTwitter},
+    {
+        "social": "linkedin",
+        "url": "https://www.linkedin.com/in/max-weber-9889a3ba/",
+        "style": styles.linkedin,
+        "icon": FaLinkedin
+    },
+    {
+        "social": "instagram",
+        "url": "https://www.instagram.com/flutterexplained/",
+        "style": styles.instagram,
+        "icon": FaInstagram
+    },
+    {"social": "discord", "url": "https://discord.gg/TRSY4tGHpd", "style": styles.discord, "icon": FaDiscord},
+]
 
 export default function SocialMediaIcons() {
     return (
         <div
             className={`${styles.socialIcons} flex justify-between mx-auto pt-5 text-3xl text-gray-700 dark:text-gray-200 w-9/12 md:max-w-screen-sm`}>
-            <Link href={socialMediaLinks["twitter"]} className={styles.twitter}><FaTwitter></FaTwitter></Link>
-            <Link href={socialMediaLinks["mastodon"]} className={styles.mastodon}><FaMastodon></FaMastodon></Link>
-            <Link href={socialMediaLinks["youtube"]} className={styles.youtube}><FaYoutube></FaYoutube></Link>
-            <Link href={socialMediaLinks["linkedin"]} className={styles.linkedin}><FaLinkedin></FaLinkedin></Link>
-            <Link href={socialMediaLinks["instagram"]} className={styles.instagram}><FaInstagram></FaInstagram></Link>
-            <Link href={socialMediaLinks["discord"]}
-                  className={`${styles.discord} hover:text-white`}><FaDiscord></FaDiscord></Link>
+            {
+                socialMediaLinks.map((link) => (
+                    <Link href={link.url} className={link.style} key={link.social}>{<link.icon/>}</Link>
+                ))
+            }
         </div>
     );
 }
