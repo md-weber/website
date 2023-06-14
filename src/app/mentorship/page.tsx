@@ -27,8 +27,14 @@ const mentorshipFAQ: FAQProps["faqItems"] = [
 const Mentorship = () => {
     return (
         <div className={"m-auto"}>
-            <h2 className="text-4xl font-semibold text-gray-800 dark:text-white">Mentorship Program</h2>
-
+            <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    Mentorship Program
+                </h2>
+                <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                    Welcome to your journey!
+                </p>
+            </div>
             <section className="mt-6">
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Program Overview</h3>
                 <p className="my-2 text-gray-600 dark:text-gray-400">Welcome to the Full-Stack Mastery Program, a

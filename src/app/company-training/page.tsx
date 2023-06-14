@@ -6,16 +6,15 @@ const ProfessionalTrainingPage = () => {
     return (
         <>
             <div className="p-8 text-gray-500 dark:text-gray-400">
-                <section className="mb-8">
-                    <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                    <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                         Professional Flutter Training for Companies
-                    </h1>
-                    <p className="text-center mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 dark:text-gray-400">
+                    </h2>
+                    <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
                         Improve your team&apos;s Flutter skills with a customized training program. Suitable for
                         companies and teams of all sizes.
                     </p>
-                </section>
-
+                </div>
                 <section className="mb-8">
                     <h2 className="text-2xl py-1 pt-10 dark:text-white">Why Choose My Training Program?</h2>
                     <p className="mt-2  text-gray-500 dark:text-gray-400">

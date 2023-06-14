@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {PostMetaData} from "@/components/blog/post-metadata";
 import {SiDart, SiFlutter} from "react-icons/si";
+import Markdown from "markdown-to-jsx";
 
 const PostPreview = (props: PostMetaData) => {
     return (
@@ -23,7 +24,9 @@ const PostPreview = (props: PostMetaData) => {
                     {props.title}
                 </Link>
             </h2>
-            <p className="mb-5 font-light text-gray-500 dark:text-gray-400">{props.preview}</p>
+            <article className={"prose dark:prose-invert my-5"}>
+                <Markdown>{props.preview}</Markdown>
+            </article>
             <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-4">
                     <Image
