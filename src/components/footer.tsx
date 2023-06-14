@@ -57,7 +57,7 @@ export default function FooterWithSocialMediaIcons() {
                 </div>
                 <Footer.Divider/>
                 <div className="w-full flex items-center justify-between">
-                    <Footer.Copyright by="Max Weber" href="#" year={new Date().getFullYear()}/>
+                    <Footer.Copyright by="Max Weber" href="/" year={new Date().getFullYear()}/>
                     <div className="flex space-x-2 justify-center md:space-x-4">
                         {socialMediaLinks.map((link) => (
                             <Footer.Icon href={link.url} icon={link.icon} key={link.social}/>

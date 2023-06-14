@@ -12,23 +12,26 @@ export default function NavBar(props: { toggleDarkMode: () => void, darkMode: bo
             </Link>
             <div className={"flex"}>
                 <div onClick={props.toggleDarkMode} className={"rounded-lg inline-flex items-center px-2 md:px-8"}>
-                    {props.darkMode ? <FaSun className={"text-gray-300"}/> :
-                        <FaMoon className={"text-gray-600"}/>}
+                    {props.darkMode ? <FaSun className={"text-gray-300  text-xl"}/> :
+                        <FaMoon className={"text-gray-600 text-xl"}/>}
                 </div>
                 <Navbar.Toggle/>
 
+                <Navbar.Collapse className={""}>
+                    <Link href="/"
+                          className={"bg-blue-700 text-xl dark:text-white py-1 px-2 md:bg-transparent"}>
+                        <p> Home </p>
+                    </Link>
+                    <Link href="/blog"
+                          className={"bg-blue-700 text-xl dark:text-white py-1 px-2 md:bg-transparent"}>
+                        <p> Blog </p>
+                    </Link>
+                    <Link href={"/mentorship"}
+                          className={"bg-blue-700 text-xl dark:text-white py-1 px-2 md:bg-transparent"}>
+                        <p> Mentorship </p>
+                    </Link>
+                </Navbar.Collapse>
             </div>
-            <Navbar.Collapse className={""}>
-                <Link href="/"
-                      className={"bg-blue-700 text-xl text-white py-1 px-2 md:bg-transparent"}>
-                    <p> Home </p>
-                </Link>
-                <Link href={"/mentorship"}
-                      className={"bg-blue-700 text-xl text-white py-1 px-2 md:bg-transparent"}>
-                    <p> Mentorship </p>
-                </Link>
-            </Navbar.Collapse>
-
 
         </Navbar>
     )
