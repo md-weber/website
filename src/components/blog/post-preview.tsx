@@ -18,7 +18,7 @@ const PostPreview = (props: PostMetaData) => {
                     <span>{props.category == "Flutter" && <SiFlutter
                         className={"hover:scale-110 hover:text-gray-700 dark:hover:text-white transition-all duration-300"}/>}</span>
                 </div>
-                <span className="text-sm">{props.date}</span>
+                <span className="text-sm">{Intl.DateTimeFormat('en-GB').format(props.date)}</span>
             </div>
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 <Link href={`/blog/${props.slug}`}>
@@ -40,7 +40,7 @@ const PostPreview = (props: PostMetaData) => {
                         className="font-medium dark:text-white"> {props.author.name} </span>
                 </div>
                 <Link href="#"
-                   className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                      className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
                     Read more
                     <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
                          xmlns="http://www.w3.org/2000/svg">

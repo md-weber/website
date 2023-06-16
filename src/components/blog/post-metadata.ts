@@ -2,7 +2,7 @@ export interface PostMetaData {
     title: string;
     slug: string;
     body: string;
-    date: string;
+    date: Date;
     preview?: any;
     category: string;
     author: { name: string, thumbnailUrl: string }

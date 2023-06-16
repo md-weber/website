@@ -3,9 +3,11 @@ import PostPreview from "@/components/blog/post-preview";
 
 export default function Blog() {
     const postMetaData = getPostMetaData();
-    const postPreviews = postMetaData.map((metadata) => {
-        return (<PostPreview {...metadata} key={metadata.slug}/>)
-    })
+    const postPreviews = postMetaData
+        .sort((a, b) => a.date.getTime() > new Date(b.date).getTime() ? -1 : 1)
+        .map((metadata) => {
+            return (<PostPreview {...metadata} key={metadata.slug}/>)
+        })
     return (
         <div className={"m-auto"}>
             <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
