@@ -20,7 +20,7 @@ export default function PageHeader() {
                 <h2 className="mb-4 text-2xl tracking-tight leading-none text-gray-500 md:text-5xl lg:text-2xl dark:text-gray-300">
                     Software Engineer, Trainer and Speaker
                 </h2>
-                <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 dark:text-gray-400">
+                <p className="pb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 dark:text-gray-400 lg:max-w-screen-lg lg:m-auto lg:pb-16">
                     As an experienced software engineer specializing in Flutter, I provide comprehensive
                     training, mentorship, and public speaking services. My goal is to empower you and your
                     team to excel in Flutter development, enabling you to create outstanding digital
