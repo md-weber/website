@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 const PrivacyPolicy = () => (
     <div>
@@ -20,28 +21,32 @@ const PrivacyPolicy = () => (
                 <h5>Google Search Console</h5>
                 <p>
                     We use Google Search Console to understand how users interact with our website in Google Search
-                    results.
-                    Google Search Console provides us with anonymized data about our search traffic, but does not
-                    identify
-                    individual users.
+                    results. Google Search Console provides us with anonymized data about our search traffic, but does
+                    not
+                    identify individual users.
+
+                    Please check their privacy policy here: <Link href={"https://policies.google.com/privacy?hl=en-GB"}>Google
+                    Search Console - Privacy Policy</Link>
                 </p>
 
                 <h4 className={"pt-2 font-bold"}>Vercel Analytics</h4>
                 <p>
                     We use Vercel Analytics to understand how users interact with our website. Vercel Analytics collects
-                    data
-                    about our traffic and usage patterns. The data collected is anonymized and does not include
-                    personally
-                    identifiable information.
+                    data about our traffic and usage patterns. The data collected is anonymized and does not include
+                    personally identifiable information.
+                </p>
+                <p>Please check their privacy policy here: <Link href={"https://vercel.com/legal/privacy-policy"}>
+                    Vercel Analytics - Privacy Policy
+                </Link>
                 </p>
 
                 <h4>YouTube Cookies</h4>
                 <p>
                     We embed videos from our official YouTube channel. When you watch these videos, YouTube may store
-                    cookies on
-                    your device. Please refer to YouTube&apos;s privacy policy for more information.
+                    cookies on your device. Please refer to <Link
+                    href={"https://www.youtube.com/howyoutubeworks/our-commitments/protecting-user-data/"}>YouTube&apos;s
+                    privacy policy</Link> for more information.
                 </p>
-
             </div>
 
             <div>
