@@ -12,10 +12,10 @@ export default function NavBar() {
     return (
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" className="flex items-center">
+                <Link href="/" className="flex items-center">
                     <span
                         className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Max Weber</span>
-                </a>
+                </Link>
                 <div className={"flex-grow justify-end flex md:px-8"}>
                     <ThemeSwitch/>
                 </div>
