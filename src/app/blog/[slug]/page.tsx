@@ -3,6 +3,8 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import {findAuthor, findCategory} from "@/components/blog/find-matter";
 import getPostMetaData from "@/components/blog/get-post-metadata";
+import StructuredData from "@/components/meta/structured-data";
+import {PostMetaData} from "@/components/blog/post-metadata";
 
 const getFileForSlug = (slug: string): string => {
     const folder = "content/article/";
@@ -18,7 +20,7 @@ const getFileForSlug = (slug: string): string => {
     }
     throw Error("File not found");
 }
-const getPostContent = (slug: string) => {
+const getPostContent = (slug: string): PostMetaData => {
     const file = getFileForSlug(slug);
     const fileContents = fs.readFileSync(`content/article/${file}`, "utf8");
     const matterResult = matter(fileContents);
@@ -41,11 +43,30 @@ export const generateStaticParams = async () => {
     );
 }
 
+function getStructuredData(content: PostMetaData) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: content.title,
+        description: content.preview,
+        author: [
+            {
+                '@type': 'Person',
+                name: content.author.name,
+            },
+        ],
+        datePublished: content.date,
+    };
+}
+
 const PostPage = (props: any) => {
     const slug = props.params.slug;
     const content = getPostContent(slug);
+    const structuredData = getStructuredData(content);
     return (
         <div className={"m-auto w-100"}>
+            <StructuredData data={structuredData}/>
+
             <article className={"prose prose-gray lg:prose-xl dark:prose-invert m-auto"}>
                 <h1>{content.title}</h1>
                 <Markdown>{content.body}</Markdown>
