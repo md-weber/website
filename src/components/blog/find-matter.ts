@@ -1,7 +1,7 @@
 import fs from "fs";
 import matter from "gray-matter";
 
-export const findAuthor = (authorId: string) => {
+export const findAuthor = (authorId: string): { name: string, thumbnailUrl: string } => {
     const fileContents = fs.readFileSync(`content/author/${authorId}.md`, "utf8");
     const matterResult = matter(fileContents);
     return {

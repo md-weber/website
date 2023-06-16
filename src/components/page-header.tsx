@@ -13,8 +13,8 @@ export default function PageHeader() {
     }
 
     return (
-        <section className="bg-white dark:bg-gray-900 py-8 mt-16 lg:py-16">
-            <div className="mx-auto max-w-screen-xl text-center px-8 lg:py-8">
+        <section className="bg-white dark:bg-gray-900 md:py-8 mt-16 lg:py-16">
+            <div className="mx-auto text-center px-4 lg:py-8">
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                     Hi, I&apos;am Max,</h1>
                 <h2 className="mb-4 text-2xl tracking-tight leading-none text-gray-500 md:text-5xl lg:text-2xl dark:text-gray-300">

@@ -3,7 +3,6 @@ import {Inter} from 'next/font/google'
 import DynamicBreadcrumb from "@/components/dynamic-breadcrumb";
 import FooterWithSocialMediaIcons from "@/components/footer";
 import {Analytics} from '@vercel/analytics/react';
-import Head from "next/head";
 import Script from "next/script";
 import {Metadata} from "next";
 import NavBar from "@/components/nav-bar";
@@ -25,8 +24,8 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         <Script src="./scripts/consent.js" strategy={"lazyOnload"}/>
         <body className={inter.className}>
         <Providers>
-            <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 min-h-full'>
-                <div className={"max-w-screen-lg mx-auto pt-4"}>
+            <main className='bg-white px-5 md:px-20 lg:px-40 dark:bg-gray-900 min-h-full'>
+                <div className={"mx-auto pt-4"}>
                     <NavBar/>
                     <div className={"py-5"}><DynamicBreadcrumb/></div>
                     {children}
