@@ -21,6 +21,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en" title={"Max Weber - Flutter Explained"}>
         <Script
+            id={"cookieyes-script"}
             src={`https://cdn-cookieyes.com/client_data/79720f07458d2632a2da54e2/script.js`}>
         </Script>
         <body className={inter.className}>
