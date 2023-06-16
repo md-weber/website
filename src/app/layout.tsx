@@ -20,8 +20,9 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en" title={"Max Weber - Flutter Explained"}>
-        <Script src="https://cookiehub.net/c2/45f3cb02.js"/>
-        <Script src="./scripts/consent.js"/>
+        <Script
+            src={`https://cdn-cookieyes.com/client_data/79720f07458d2632a2da54e2/script.js`}>
+        </Script>
         <body className={inter.className}>
         <Providers>
             <main className='bg-white px-5 md:px-20 lg:px-40 dark:bg-gray-900 min-h-full'>
