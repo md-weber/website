@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://flutter-explained.dev
+
+# Sitemaps
+Sitemap: https://flutter-explained.dev/sitemap.xml

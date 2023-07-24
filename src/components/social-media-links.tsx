@@ -39,10 +39,10 @@ export const socialMediaLinks = [
 export default function SocialMediaIcons() {
     return (
         <div
-            className={`${styles.socialIcons} md:w-3/6 flex justify-between mx-auto pt-8 text-3xl text-gray-700 dark:text-gray-200  md:max-w-screen-sm`}>
+            className={`grid grid-cols-4 gap-4 md:w-3/6 md:flex md:justify-between mx-auto pt-8 text-3xl text-gray-700 dark:text-gray-200 md:max-w-screen-sm`}>
             {
                 socialMediaLinks.map((link) => (
-                    <Link href={link.url} className={link.style} key={link.social}
+                    <Link href={link.url} className={`${link.style} m-auto`} key={link.social}
                           aria-label={`Redirect to ${link.social}`}>{<link.icon/>}</Link>
                 ))
             }

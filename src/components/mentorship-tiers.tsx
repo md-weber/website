@@ -4,28 +4,30 @@ import {Button, Card} from "flowbite-react";
 
 const MentorshipTiers = () => {
     const tiers = [
-        /*{
+        {
             name: "Starter",
-            price: "150 €",
+            price: "199 €",
             hours: "1 Hour",
             description: "Ideal for those who need guidance on specific topics or issues. Get your questions answered and clarify your doubts.",
-            target: "People new to the field or those who need answers to specific questions."
-        },*/
+            target: "People new to the field or those who need answers to specific questions.",
+            checkoutLink: "https://flutterexplained.gumroad.com/l/mentorship"
+        },
         {
-            name: "Mentorship",
-            price: "229 € / month",
-            hours: "on demand learning",
+            name: "Journeyman",
+            price: "729 €",
+            hours: "5 Hours",
+            description: "Perfect for learners seeking comprehensive guidance. We will dive deeper into your chosen topics and cover them thoroughly.",
+            target: "Learners who are familiar with the basics and want to delve deeper into specific topics.",
+            checkoutLink: "https://flutterexplained.gumroad.com/l/mentorship"
+        },
+        {
+            name: "Masterclass",
+            price: "1500 €",
+            hours: "12 Hours",
             description: "In-depth mentoring over a longer period, we will cover multiple areas of your choice, giving you a well-rounded understanding.",
             target: "Individuals seeking in-depth understanding and knowledge in their field of interest.",
-            checkoutLink: "https://flutterexplained.gumroad.com/l/ydgtfV"
+            checkoutLink: "https://flutterexplained.gumroad.com/l/mentorship"
         },
-        /*        {
-                    name: "Journeyman",
-                    price: "550 €",
-                    hours: "4 Hours / month",
-                    description: "Perfect for learners seeking comprehensive guidance. We will dive deeper into your chosen topics and cover them thoroughly.",
-                    target: "Learners who are familiar with the basics and want to delve deeper into specific topics."
-                },*/
     ];
 
     return (

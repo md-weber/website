@@ -1,9 +1,3 @@
-.socialIcons {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-
 .socialIcons a {
     transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
