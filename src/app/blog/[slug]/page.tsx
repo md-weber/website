@@ -1,10 +1,10 @@
 import * as fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-import {findAuthor, findCategory} from "@/components/blog/find-matter";
+import { findAuthor, findCategory } from "@/components/blog/find-matter";
 import getPostMetaData from "@/components/blog/get-post-metadata";
 import StructuredData from "@/components/meta/structured-data";
-import {PostMetaData} from "@/components/blog/post-metadata";
+import { PostMetaData } from "@/components/blog/post-metadata";
 
 const getFileForSlug = (slug: string): string => {
     const folder = "content/article/";
@@ -38,8 +38,8 @@ export const generateStaticParams = async () => {
     const posts = getPostMetaData();
 
     return posts.map(post => {
-            return {slug: post.slug}
-        }
+        return { slug: post.slug }
+    }
     );
 }
 
@@ -64,11 +64,11 @@ const PostPage = (props: any) => {
     const content = getPostContent(slug);
     const structuredData = getStructuredData(content);
     return (
-        <div className={"m-auto w-100"}>
-            <StructuredData data={structuredData}/>
+        <div className={"m-auto w-100 prose prose-invert sm:prose-2xl"}>
+            <StructuredData data={structuredData} />
 
-            <article className={"prose prose-gray lg:prose-xl dark:prose-invert m-auto"}>
-                <h1>{content.title}</h1>
+            <article>
+                <h2>{content.title}</h2>
                 <Markdown>{content.body}</Markdown>
             </article>
         </div>

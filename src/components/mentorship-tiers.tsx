@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import {Button, Card} from "flowbite-react";
+import { Button, Card } from "flowbite-react";
 
 const MentorshipTiers = () => {
     const tiers = [
@@ -31,23 +31,22 @@ const MentorshipTiers = () => {
     ];
 
     return (
-        <div className="flex gap-5 flex-wrap lg:flex-nowrap py-4">
+        <div className="flex gap-4 flex-wrap lg:flex-nowrap py-4 prose dark:prose-invert prose-xl">
             {tiers.map((tier, index) => (
-                <Card key={index}>
+                <div key={index} className='bg-slate-800 p-4 rounded-lg flex flex-col '>
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <p>{tier.name}</p>
+                        {tier.name}
                     </h5>
-                    <p className={"font-normal text-gray-800 dark:text-gray-300"}><b>{tier.price} for {tier.hours}</b>
-                    </p>
+                    <h6 className={"font-normal text-gray-800 dark:text-gray-300"}><b>{tier.price} for {tier.hours}</b></h6>
                     <p className={"font-normal text-gray-700 dark:text-gray-400"}>{tier.description}</p>
-                    <p className="font-bold tracking-tight text-gray-900 dark:text-white"><b>Who is this for:</b></p>
+                    <h6 className="font-bold tracking-tight text-gray-900 dark:text-white"><b>Who is this for:</b></h6>
                     <p className={"font-normal text-gray-700 dark:text-gray-400 flex-grow"}>{tier.target}</p>
                     <div className="justify-end card-actions">
                         <Button href={tier.checkoutLink} gradientDuoTone={"cyanToBlue"} outline>
                             Checkout
                         </Button>
                     </div>
-                </Card>
+                </div>
             ))}
         </div>
     );

@@ -29,7 +29,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
             <main className='bg-white px-5 md:px-20 lg:px-40 dark:bg-gray-900 min-h-full'>
                 <div className={"mx-auto pt-4"}>
                     <NavBar/>
-                    <div className={"py-5"}><DynamicBreadcrumb/></div>
+                    <div><DynamicBreadcrumb/></div>
                     {children}
                 </div>
             </main>

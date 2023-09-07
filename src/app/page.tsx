@@ -2,9 +2,10 @@
 import publicSpeakingImage from '../../public/publicSpeakingImage.png';
 import mentoring from '../../public/mentoring.png';
 import teaching from '../../public/teaching.png';
-import ServiceCard, {CardProps} from "@/components/service-card";
+import ServiceCard, { CardProps } from "@/components/service-card";
 import PageHeader from "@/components/page-header";
-import {Button, Card} from "flowbite-react";
+import { Button, Card } from "flowbite-react";
+import Image from "next/image";
 
 export default function Home() {
     const cards: CardProps[] = [
@@ -37,9 +38,9 @@ export default function Home() {
     return (
         <>
             <div className={"h-[calc(100vh-5rem)]"}>
-                <PageHeader/>
+                <PageHeader />
             </div>
-            <section>
+            <section className="prose dark:prose-invert md:prose-xl m-auto">
                 <div>
                     <h3 className={"text-3xl py-1 pt-10 dark:text-white"} id={"my-services"}>My services</h3>
                     <p className={"text-md py-5 leading-8 text-grey-800 dark:text-gray-200"}>I am a Full Stack Developer
@@ -63,7 +64,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section>
+            <section className="prose dark:prose-invert m-auto md:prose-xl">
                 <h3 className="text-3xl py-1 pt-10 dark:text-white">Other Ways to Learn</h3>
                 <p className="text-md py-5 leading-8 text-grey-800 dark:text-gray-200">
                     In addition to the services I offer, you can also learn from me through my podcast and YouTube

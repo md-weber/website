@@ -1,10 +1,11 @@
 'use client'
 import React from 'react';
-import {Button, Card} from "flowbite-react";
+import { Button, Card } from "flowbite-react";
+import Link from 'next/link';
 
 const PublicSpeakingPage = () => {
     return (
-        <div className="container mx-auto px-4 text-gray-500 dark:text-gray-400 pb-16">
+        <div className="container mx-auto px-4 prose dark:prose-invert pb-16">
             <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
                 <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                     Public Speaking
@@ -46,7 +47,7 @@ const PublicSpeakingPage = () => {
                     <Card className={"my-2"}>
                         <p className={"dark:text-white font-bold"}>Fluttercon 2023</p>
                         <p className={"flex-grow"}>The beautiful world of Flutter Testing</p>
-                        <Button href={"https://www.youtube.com/live/BafFTK-YClo?feature=share&t=9367"}>Watch
+                        <Button href={"https://www.droidcon.com/2023/08/07/the-beautiful-world-of-testing-in-flutter-mastering-unit-widget-and-integration-tests/"}>Watch
                             now</Button>
                     </Card>
                 </div>
@@ -55,7 +56,7 @@ const PublicSpeakingPage = () => {
             <section className="mt-4">
                 <h2 className="text-2xl py-1 pt-4 dark:text-white font-bold">Topics I Cover</h2>
                 <p className="mt-2 text-lg">
-                    My areas of expertise include Flutter, Dart, and cross-platform mobile application development.
+                    My areas of expertise include <Link href={"https://flutter.dev"}>Flutter</Link>, <Link href="https://dart.dev/">Dart</Link>, and cross-platform mobile application development.
                     However, the range of topics I cover is not limited to these. Depending on your event’s theme, I can
                     adapt the talk to cover various aspects of software development, team collaboration, project
                     management, and more.
@@ -70,12 +71,12 @@ const PublicSpeakingPage = () => {
                 </p>
                 <div className="mt-4 flex">
                     <Button className={"flex-1"} href={"https://calendly.com/flutterexp/session"}
-                            gradientDuoTone={"cyanToBlue"}>
+                        gradientDuoTone={"cyanToBlue"}>
                         Book a Consultation
                     </Button>
                     <div className={"px-1"}></div>
                     <Button className={"flex-1"} href={"mailto:info@flutter-explained.dev"}
-                            gradientDuoTone={"cyanToBlue"} outline>
+                        gradientDuoTone={"cyanToBlue"} outline>
                         Email me
                     </Button>
                 </div>

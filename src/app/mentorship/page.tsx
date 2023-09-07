@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import MentorshipTiers from "@/components/mentorship-tiers";
 import TestimonialImage from '../../../public/yvis_fricker.jpg';
-import FAQSection, {FAQProps} from "@/components/faq-section";
+import FAQSection, { FAQProps } from "@/components/faq-section";
 
 const mentorshipFAQ: FAQProps["faqItems"] = [
     {
@@ -26,9 +26,9 @@ const mentorshipFAQ: FAQProps["faqItems"] = [
 
 const Mentorship = () => {
     return (
-        <div className={"m-auto"}>
+        <div className={"m-auto prose dark:prose-invert prose-xl"}>
             <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-                <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                <h2>
                     Mentorship Program
                 </h2>
                 <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
@@ -67,16 +67,16 @@ const Mentorship = () => {
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">A Special Welcome Note</h3>
                 <div className="mt-4">
                     <iframe className={"aspect-video w-full lg:w-1/2"}
-                            src="https://www.youtube.com/embed/8nJpxM4TvH0"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen></iframe>
+                        src="https://www.youtube.com/embed/8nJpxM4TvH0"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen></iframe>
                 </div>
             </section>
 
             <section className="mt-6">
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Mentorship Program Packages</h3>
-                <MentorshipTiers/>
+                <MentorshipTiers />
             </section>
 
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 py-2">What my customers say</h3>
@@ -84,16 +84,16 @@ const Mentorship = () => {
                 <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
                     <figure className="max-w-screen-md mx-auto">
                         <svg className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27"
-                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                                fill="currentColor"/>
+                                fill="currentColor" />
                         </svg>
                         <blockquote>
                             <p className="text-2xl font-medium text-gray-900 dark:text-white">&quot;I am super happy to
                                 have
                                 Max as my coding mentor. He has a vast amount of knowledge not only regarding flutter,
-                                but also about software engineering in general.<br/><br/>
+                                but also about software engineering in general.<br /><br />
                                 Working with him on my personal projects has improved my developer skills tremendously.
                                 Knowing that I consistently get high quality feedback helps me stay motivated and
                                 overcome roadblocks. I whole heartedly recommend Max as a mentor!&quot;
@@ -101,8 +101,8 @@ const Mentorship = () => {
                         </blockquote>
                         <figcaption className="flex items-center justify-center mt-6 space-x-3">
                             <Image className=" rounded-full"
-                                   src={TestimonialImage}
-                                   alt="profile picture" width={50} height={50}/>
+                                src={TestimonialImage}
+                                alt="profile picture" width={50} height={50} />
                             <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                                 <div className="pr-3 font-medium text-gray-900 dark:text-white">Yvis Fricker</div>
                             </div>
@@ -114,7 +114,7 @@ const Mentorship = () => {
             <section className="mt-6">
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 pb-4">Frequently Asked
                     Questions</h3>
-                <FAQSection faqItems={mentorshipFAQ}/>
+                <FAQSection faqItems={mentorshipFAQ} />
             </section>
 
         </div>
