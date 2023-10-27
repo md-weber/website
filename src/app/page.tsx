@@ -4,8 +4,6 @@ import mentoring from "../../public/mentoring.png";
 import teaching from "../../public/teaching.png";
 import ServiceCard, { CardProps } from "@/components/service-card";
 import PageHeader from "@/components/page-header";
-import { Button, Card } from "flowbite-react";
-import Image from "next/image";
 
 export default function Home() {
   const cards: CardProps[] = [
@@ -70,19 +68,20 @@ export default function Home() {
             </p>
           </div>
           {cards.map((card) => ServiceCard(card))}
-          <Card className={"mt-2"}>
+          <div className={"card mt-2"}>
             <h4 className="font-bold text-xl dark:text-white">Sponsorship</h4>
             <p className="mt-2 text-grey-800 dark:text-gray-200 flex-grow">
               You have a great product and would like to promote it on our
               channel? I&apos;d love to hear about it. Please reach out to us.
             </p>
-            <Button
-              href="mailto:flutterexp@gmail.com"
-              gradientDuoTone="cyanToBlue"
+            <button
+              className="btn"
+              // href="mailto:flutterexp@gmail.com"
+              // gradientDuoTone="cyanToBlue"
             >
               Email us
-            </Button>
-          </Card>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -98,7 +97,7 @@ export default function Home() {
         </p>
 
         <div className="grid gap-5 justify-center md:flex">
-          <Card>
+          <div className="card">
             <h4 className="font-bold text-xl dark:text-white">
               &quot;Beyond Flutter&quot; Podcast
             </h4>
@@ -107,15 +106,15 @@ export default function Home() {
               engineering. Tune in for insightful discussions and expert takes
               on the latest trends and topics in the field.
             </p>
-            <Button
-              href="https://podcast.flutter-explained.dev"
-              gradientDuoTone="cyanToBlue"
+            <button
+            // href="https://podcast.flutter-explained.dev"
+            // gradientDuoTone="cyanToBlue"
             >
               Listen to the Podcast
-            </Button>
-          </Card>
+            </button>
+          </div>
 
-          <Card>
+          <div className="card">
             <h4 className="font-bold text-xl dark:text-white">
               Flutter Explained YouTube Channel
             </h4>
@@ -125,13 +124,13 @@ export default function Home() {
               of a community that&apos;s all about learning and growing
               together.
             </p>
-            <Button
-              href="https://www.youtube.com/@FlutterExplained"
-              gradientDuoTone="cyanToBlue"
+            <button
+            // href="https://www.youtube.com/@FlutterExplained"
+            // gradientDuoTone="cyanToBlue"
             >
               Subscribe on YouTube
-            </Button>
-          </Card>
+            </button>
+          </div>
         </div>
       </section>
     </>

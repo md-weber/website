@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "flowbite-react";
 import { FaArrowDown } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
@@ -39,14 +38,10 @@ export default function PageHeader() {
         </div>
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <Link onClick={smoothScrollingToService()} href={""}>
-            <Button gradientDuoTone={"cyanToBlue"} className={"w-full"}>
-              Lets work together
-            </Button>
+            <button className={"btn w-full"}>Lets work together</button>
           </Link>
           <Link href={"/about-me"}>
-            <Button gradientDuoTone={"cyanToBlue"} outline className={"w-full"}>
-              More about me
-            </Button>
+            <button className={"w-full btn btn-outline"}>More about me</button>
           </Link>
         </div>
       </div>

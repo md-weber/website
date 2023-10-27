@@ -20,8 +20,6 @@
     "daisyui": "^3.9.3",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
-    "flowbite": "^1.6.5",
-    "flowbite-react": "^0.4.4",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.2.1",
     "next": "13.4.3",

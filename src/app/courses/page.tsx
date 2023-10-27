@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CourseOverview() {
   return (
@@ -8,7 +9,6 @@ export default function CourseOverview() {
         <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
           Here you find the courses I am offering.
         </p>
-        <p className="font-bold sm:text-xl">Currently under construction.</p>
         <Image
           className="mx-auto"
           src={"/images/under_construction.png"}
@@ -16,6 +16,10 @@ export default function CourseOverview() {
           width={300}
           height={300}
         ></Image>
+      </div>
+      <div className="text-grey-50 dark: text-grey-950">
+        If you cannot wait you can checkout the progress{" "}
+        <Link href="/courses/flutter-ci-cd">here</Link>
       </div>
     </div>
   );
