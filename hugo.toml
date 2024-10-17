@@ -1,6 +1,6 @@
 baseURL = 'https://flutter-explained.dev'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Max Weber - Developer, Publisher and Father'
 
 theme = "PaperMod"
 enableRobotsTXT = true
@@ -16,8 +16,8 @@ minifyOutput = true
 [params]
 social = true
 env = "production"
-title = "ExampleSite"
-description = "ExampleSite description"
+title = "Max Weber"
+description = "Developer, Publisher and Father"
 keywords = ["Blog", "Portfolio", "PaperMod"]
 author = "Me"
 images = ["<link or path of image for opengraph, twitter-cards>"]
@@ -70,7 +70,7 @@ name = "Tags"
 url = "tags"
 
 [params.homeInfoParams]
-Title = "Hi there 👋"
+Title = "Max Weber"
 Content = "Welcome to my blog"
 
 [[params.socialIcons]]
@@ -86,12 +86,6 @@ name = "github"
 url = "https://github.com/"
 
 [params.analytics.google]
-SiteVerificationTag = "XYZabc"
-
-[params.analytics.bing]
-SiteVerificationTag = "XYZabc"
-
-[params.analytics.yandex]
 SiteVerificationTag = "XYZabc"
 
 [params.cover]
