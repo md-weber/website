@@ -1,4 +1,4 @@
-baseURL = 'https://flutter-explained.dev'
+baseUrl = 'https://flutter-explained.dev'
 languageCode = 'en-us'
 title = 'Max Weber - Developer, Publisher and Father'
 
@@ -19,13 +19,13 @@ env = "production"
 title = "Max Weber"
 description = "Developer, Publisher and Father"
 keywords = ["Blog", "Portfolio", "PaperMod"]
-author = "Me"
+author = "Max Weber"
 images = ["<link or path of image for opengraph, twitter-cards>"]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
 disableThemeToggle = false
 ShowReadingTime = true
-ShowShareButtons = true
+ShowShareButtons = false
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = false
@@ -108,23 +108,23 @@ minMatchCharLength = 0
 limit = 10
 keys = ["title", "permalink", "summary", "content"]
 
-[[menu.main]]
-identifier = "categories"
-name = "categories"
-url = "/categories/"
-weight = 10
+# [[menu.main]]
+# identifier = "categories"
+# name = "categories"
+# url = "/categories/"
+# weight = 10
 
-[[menu.main]]
-identifier = "tags"
-name = "tags"
-url = "/tags/"
-weight = 20
+# [[menu.main]]
+# identifier = "tags"
+# name = "tags"
+# url = "/tags/"
+# weight = 20
 
-[[menu.main]]
-identifier = "example"
-name = "example.org"
-url = "https://example.org"
-weight = 30
+# [[menu.main]]
+# identifier = "example"
+# name = "example.org"
+# url = "https://example.org"
+# weight = 30
 
 [markup.highlight]
 noClasses = false
