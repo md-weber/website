@@ -53,13 +53,13 @@ icon = "/apple-touch-icon.png"
 iconHeight = 35
 
 [params.profileMode]
-enabled = false
-title = "ExampleSite"
-subtitle = "This is subtitle"
-imageUrl = "<img location>"
+enabled = true
+title = "Max Weber"
+subtitle = "Code is only a tool \n\n Website is Work in Progress 🚧"
+imageUrl = "profile_max.webp"
 imageWidth = 120
 imageHeight = 120
-imageTitle = "my image"
+imageTitle = "Max Weber - Developer"
 
 [[params.profileMode.buttons]]
 name = "Posts"
@@ -79,11 +79,11 @@ url = "https://x.com/"
 
 [[params.socialIcons]]
 name = "stackoverflow"
-url = "https://stackoverflow.com"
+url = "https://stackoverflow.com/users/3690032/max-weber"
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/"
+url = "https://github.com/md-weber"
 
 [params.analytics.google]
 SiteVerificationTag = "XYZabc"
@@ -94,7 +94,7 @@ hiddenInList = true
 hiddenInSingle = true
 
 [params.editPost]
-URL = "https://github.com/<path_to_repo>/content"
+URL = "https://github.com/md-weber/content"
 Text = "Suggest Changes"
 appendFilePath = true
 
