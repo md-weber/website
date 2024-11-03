@@ -11,14 +11,6 @@
     </image>
     <generator>Hugo -- 0.136.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Why I still love Flutter</title>
-      <link>http://localhost:1313/posts/why_i_still_love_flutter/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/why_i_still_love_flutter/</guid>
-      <description>Today I want to speak about why after so many years I still believe Flutter is a great tool</description>
-    </item>
   </channel>
 </rss>
