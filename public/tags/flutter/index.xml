@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Flutter on Max Weber - Developer, Publisher and Father</title>
+    <link>http://localhost:1313/tags/flutter/</link>
+    <description>Recent content in Flutter on Max Weber - Developer, Publisher and Father</description>
+    <image>
+      <title>Max Weber - Developer, Publisher and Father</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.136.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Apr 2021 14:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Analysis &amp; Linting in Flutter and Dart</title>
+      <link>http://localhost:1313/posts/code-analysis-and-linting-in-flutter-and-dart/</link>
+      <pubDate>Thu, 01 Apr 2021 14:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/code-analysis-and-linting-in-flutter-and-dart/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Top 7 Flutter Packages</title>
+      <link>http://localhost:1313/posts/top-7-flutter-packages/</link>
+      <pubDate>Sun, 06 Dec 2020 22:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/top-7-flutter-packages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Step-by-Step guide for Flutter JSON Serialization</title>
+      <link>http://localhost:1313/posts/step-by-step-guide-for-flutter-json-serialization/</link>
+      <pubDate>Sun, 05 Apr 2020 22:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/step-by-step-guide-for-flutter-json-serialization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Setup a Flutter Web Project on GitHub Pages</title>
+      <link>http://localhost:1313/posts/setup-a-flutter-web-project-on-github-pages/</link>
+      <pubDate>Wed, 12 Feb 2020 22:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/setup-a-flutter-web-project-on-github-pages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How I started with Flutter</title>
+      <link>http://localhost:1313/posts/how-i-started-with-flutter/</link>
+      <pubDate>Tue, 11 Feb 2020 22:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/how-i-started-with-flutter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flutter Project - Scrum Poker App</title>
+      <link>http://localhost:1313/posts/flutter-project-scrum-poker-app/</link>
+      <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/flutter-project-scrum-poker-app/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub Actions - For a Flutter Developer</title>
+      <link>http://localhost:1313/posts/github-actions-for-a-flutter-developer/</link>
+      <pubDate>Mon, 09 Sep 2019 22:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/github-actions-for-a-flutter-developer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flutter Journal App - Full Project with Chingu</title>
+      <link>http://localhost:1313/posts/flutter-journal-app-full-project-with-chingu/</link>
+      <pubDate>Mon, 02 Sep 2019 22:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/flutter-journal-app-full-project-with-chingu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Six Weeks with Chingu to feel like a Software Developer</title>
+      <link>http://localhost:1313/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</link>
+      <pubDate>Sun, 25 Aug 2019 22:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>I go on a Chingu Journey, with Flutter, Dart and Aqueduct</title>
+      <link>http://localhost:1313/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</link>
+      <pubDate>Sun, 25 Aug 2019 08:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

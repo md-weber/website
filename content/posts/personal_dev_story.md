@@ -3,12 +3,12 @@ author: "Max Weber"
 title: "My personal career path"
 date: "2024-11-03"
 description: "In this article I want to tell you about my personal development story"
-tags: ["personal-development"]
+tags: ["Personal Development"]
 ShowToc: true
 ShowBreadCrumbs: true
 ---
 
-# My view of being a Software Engineering
+# My view of being a Software Engineer
 
 ## TLDR
 

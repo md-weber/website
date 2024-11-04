@@ -1,4 +1,4 @@
-baseUrl = 'https://flutter-explained.dev'
+baseUrl = 'https://flutter-explained.dev/'
 languageCode = 'en-us'
 title = 'Max Weber - Developer, Publisher and Father'
 
@@ -70,7 +70,7 @@ name = "Tags"
 url = "tags"
 
 [params.homeInfoParams]
-Title = "Max Weber"
+Title = "Hi there \U0001F44B"
 Content = "Welcome to my blog"
 
 [[params.socialIcons]]
@@ -86,7 +86,7 @@ name = "github"
 url = "https://github.com/md-weber"
 
 [params.analytics.google]
-SiteVerificationTag = "XYZabc"
+SiteVerificationTag = ""
 
 [params.cover]
 hidden = true
