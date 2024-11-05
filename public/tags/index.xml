@@ -77,6 +77,20 @@
       <description></description>
     </item>
     <item>
+      <title>JSON</title>
+      <link>https://flutter-explained.dev/tags/json/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/json/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Serialization</title>
+      <link>https://flutter-explained.dev/tags/serialization/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/serialization/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Flutter Web</title>
       <link>https://flutter-explained.dev/tags/flutter-web/</link>
       <pubDate>Wed, 12 Feb 2020 22:00:00 +0000</pubDate>

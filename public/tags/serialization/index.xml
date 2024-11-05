@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Serialization on Max Weber - Developer, Publisher and Father</title>
+    <link>https://flutter-explained.dev/tags/serialization/</link>
+    <description>Recent content in Serialization on Max Weber - Developer, Publisher and Father</description>
+    <image>
+      <title>Max Weber - Developer, Publisher and Father</title>
+      <url>https://flutter-explained.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://flutter-explained.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.136.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://flutter-explained.dev/tags/serialization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Step-by-Step guide for Flutter JSON Serialization</title>
+      <link>https://flutter-explained.dev/posts/step-by-step-guide-for-flutter-json-serialization/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/posts/step-by-step-guide-for-flutter-json-serialization/</guid>
+      <description>In this article I want to tell you about my personal development story</description>
+    </item>
+  </channel>
+</rss>

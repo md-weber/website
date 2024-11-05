@@ -1,4 +1,8 @@
-# Imprint
+---
+title: "Imprint"
+showBreadcrumbs: false
+searchHidden: true
+---
 
 ## Information according to § 5 TMG
 

@@ -1,9 +1,9 @@
 ---
 title: "Data Privacy Policy (GDPR)"
-menus: "footer"
+showBreadcrumbs: false
+showToc: true
+searchHidden: true
 ---
-
-# Data Privacy Policy (GDPR)
 
 Last updated: 05.11.2024
 
