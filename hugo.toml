@@ -128,3 +128,7 @@ keys = ["title", "permalink", "summary", "content"]
 
 [markup.highlight]
 noClasses = false
+
+[privacy.youtube]
+disable = false
+privacyEnhanced = true

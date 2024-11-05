@@ -1,5 +1,9 @@
 items:
-  - title: Google Anaytics
-    description: This code gives us insight into the number of people that visit our website, where they are from and what they are clicking on. We follow the guidelines of the Dutch Government, which describe how to use Google Analytics without requiring explicit consent.
+  - title: YouTube
+    description: This code will be used to integrate YouTube videos right into my website so you can see them on relevant blog posts.
     is_functional: false
-    script_file: ga.js
+    script_file: embed.js
+  - title: YouTube Embed Player
+    description: This code will be used to integrate YouTube videos right into my website so you can see them on relevant blog posts.
+    is_functional: false
+    script_file: www-embed-player.js

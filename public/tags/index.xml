@@ -2,127 +2,134 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Max Weber - Developer, Publisher and Father</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://flutter-explained.dev/tags/</link>
     <description>Recent content in Tags on Max Weber - Developer, Publisher and Father</description>
     <image>
       <title>Max Weber - Developer, Publisher and Father</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://flutter-explained.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://flutter-explained.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.136.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://flutter-explained.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Personal Development</title>
-      <link>http://localhost:1313/tags/personal-development/</link>
+      <link>https://flutter-explained.dev/tags/personal-development/</link>
       <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/personal-development/</guid>
+      <guid>https://flutter-explained.dev/tags/personal-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Dart</title>
-      <link>http://localhost:1313/tags/dart/</link>
-      <pubDate>Wed, 03 Aug 2022 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dart/</guid>
+      <link>https://flutter-explained.dev/tags/dart/</link>
+      <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/dart/</guid>
       <description></description>
     </item>
     <item>
-      <title>Server</title>
-      <link>http://localhost:1313/tags/server/</link>
-      <pubDate>Wed, 03 Aug 2022 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/server/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backend</title>
-      <link>http://localhost:1313/tags/backend/</link>
-      <pubDate>Fri, 08 Apr 2022 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/backend/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DevOps</title>
-      <link>http://localhost:1313/tags/devops/</link>
-      <pubDate>Fri, 08 Apr 2022 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/devops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Flutter</title>
-      <link>http://localhost:1313/tags/flutter/</link>
-      <pubDate>Thu, 01 Apr 2021 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/flutter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linting</title>
-      <link>http://localhost:1313/tags/linting/</link>
-      <pubDate>Thu, 01 Apr 2021 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linting/</guid>
+      <title>Sockets</title>
+      <link>https://flutter-explained.dev/tags/sockets/</link>
+      <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/sockets/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:1313/tags/tutorial/</link>
-      <pubDate>Thu, 01 Apr 2021 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tutorial/</guid>
+      <link>https://flutter-explained.dev/tags/tutorial/</link>
+      <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backend</title>
+      <link>https://flutter-explained.dev/tags/backend/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>https://flutter-explained.dev/tags/devops/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flutter</title>
+      <link>https://flutter-explained.dev/tags/flutter/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/flutter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linter</title>
+      <link>https://flutter-explained.dev/tags/linter/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/linter/</guid>
       <description></description>
     </item>
     <item>
       <title>Packages</title>
-      <link>http://localhost:1313/tags/packages/</link>
+      <link>https://flutter-explained.dev/tags/packages/</link>
       <pubDate>Sun, 06 Dec 2020 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/packages/</guid>
+      <guid>https://flutter-explained.dev/tags/packages/</guid>
       <description></description>
     </item>
     <item>
       <title>Flutter Web</title>
-      <link>http://localhost:1313/tags/flutter-web/</link>
+      <link>https://flutter-explained.dev/tags/flutter-web/</link>
       <pubDate>Wed, 12 Feb 2020 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/flutter-web/</guid>
+      <guid>https://flutter-explained.dev/tags/flutter-web/</guid>
       <description></description>
     </item>
     <item>
       <title>Journey</title>
-      <link>http://localhost:1313/tags/journey/</link>
+      <link>https://flutter-explained.dev/tags/journey/</link>
       <pubDate>Tue, 11 Feb 2020 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/journey/</guid>
+      <guid>https://flutter-explained.dev/tags/journey/</guid>
       <description></description>
     </item>
     <item>
       <title>Project</title>
-      <link>http://localhost:1313/tags/project/</link>
+      <link>https://flutter-explained.dev/tags/project/</link>
       <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/project/</guid>
+      <guid>https://flutter-explained.dev/tags/project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTML</title>
+      <link>https://flutter-explained.dev/tags/html/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/html/</guid>
       <description></description>
     </item>
     <item>
       <title>Website</title>
-      <link>http://localhost:1313/tags/website/</link>
-      <pubDate>Fri, 27 Sep 2019 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/website/</guid>
+      <link>https://flutter-explained.dev/tags/website/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/website/</guid>
       <description></description>
     </item>
     <item>
       <title>Web</title>
-      <link>http://localhost:1313/tags/web/</link>
+      <link>https://flutter-explained.dev/tags/web/</link>
       <pubDate>Mon, 02 Sep 2019 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/web/</guid>
+      <guid>https://flutter-explained.dev/tags/web/</guid>
       <description></description>
     </item>
     <item>
       <title>GitHub</title>
-      <link>http://localhost:1313/tags/github/</link>
+      <link>https://flutter-explained.dev/tags/github/</link>
       <pubDate>Sun, 25 Aug 2019 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/github/</guid>
+      <guid>https://flutter-explained.dev/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Aqueduct</title>
-      <link>http://localhost:1313/tags/aqueduct/</link>
+      <link>https://flutter-explained.dev/tags/aqueduct/</link>
       <pubDate>Sun, 25 Aug 2019 08:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/aqueduct/</guid>
+      <guid>https://flutter-explained.dev/tags/aqueduct/</guid>
       <description></description>
     </item>
   </channel>

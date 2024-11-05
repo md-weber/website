@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Personal Development on Max Weber - Developer, Publisher and Father</title>
-    <link>http://localhost:1313/tags/personal-development/</link>
+    <link>https://flutter-explained.dev/tags/personal-development/</link>
     <description>Recent content in Personal Development on Max Weber - Developer, Publisher and Father</description>
     <image>
       <title>Max Weber - Developer, Publisher and Father</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://flutter-explained.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://flutter-explained.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.136.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/personal-development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://flutter-explained.dev/tags/personal-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My personal career path</title>
-      <link>http://localhost:1313/posts/personal_dev_story/</link>
+      <link>https://flutter-explained.dev/posts/personal_dev_story/</link>
       <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/personal_dev_story/</guid>
+      <guid>https://flutter-explained.dev/posts/personal_dev_story/</guid>
       <description>In this article I want to tell you about my personal development story</description>
     </item>
     <item>
       <title>How I started with Flutter</title>
-      <link>http://localhost:1313/posts/how-i-started-with-flutter/</link>
+      <link>https://flutter-explained.dev/posts/how-i-started-with-flutter/</link>
       <pubDate>Tue, 11 Feb 2020 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-i-started-with-flutter/</guid>
+      <guid>https://flutter-explained.dev/posts/how-i-started-with-flutter/</guid>
       <description></description>
     </item>
     <item>
       <title>Clone a Website From Scratch</title>
-      <link>http://localhost:1313/posts/clone-a-website-from-scratch/</link>
-      <pubDate>Fri, 27 Sep 2019 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/clone-a-website-from-scratch/</guid>
-      <description></description>
+      <link>https://flutter-explained.dev/posts/clone-a-website-from-scratch/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/posts/clone-a-website-from-scratch/</guid>
+      <description>In this article I want to tell you about my personal development story</description>
     </item>
     <item>
       <title>Six Weeks with Chingu to feel like a Software Developer</title>
-      <link>http://localhost:1313/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</link>
+      <link>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</link>
       <pubDate>Sun, 25 Aug 2019 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</guid>
+      <guid>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</guid>
       <description></description>
     </item>
   </channel>

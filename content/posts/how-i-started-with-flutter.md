@@ -1,12 +1,7 @@
 ---
-sys:
-  id: 1pBGOuUNIs2ZV1fpWbyLy2
-  contentType: article
-  createdAt: '2022-07-03T17:18:37.235Z'
-  updatedAt: '2022-11-09T20:40:20.325Z'
 title: How I started with Flutter
 slug: how-i-started-with-flutter
-date: '2020-02-11T22:00:00.000Z'
+date: "2020-02-11T22:00:00.000Z"
 author:
   id: 6xfcZwoP5xpGVTAFhJb76r
   contentType: author
@@ -20,7 +15,7 @@ heroImage:
   url: >-
     //images.ctfassets.net/573xlmlwok2s/1FuAkrnBCA1CDEHR4K6Sx6/27feb17344fbdb18940961317587530c/1.webp
   title: Flutter Journey - Hero
-  description: ''
+  description: ""
   width: 1000
   height: 500
   fileSize: 63398

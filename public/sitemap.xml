@@ -2,111 +2,120 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://flutter-explained.dev/</loc>
     <lastmod>2024-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/personal_dev_story/</loc>
+    <loc>https://flutter-explained.dev/posts/personal_dev_story/</loc>
     <lastmod>2024-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/personal-development/</loc>
+    <loc>https://flutter-explained.dev/tags/personal-development/</loc>
     <lastmod>2024-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://flutter-explained.dev/posts/</loc>
     <lastmod>2024-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://flutter-explained.dev/tags/</loc>
     <lastmod>2024-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/a-terminal-real-time-application-with-dart-sockets/</loc>
-    <lastmod>2022-08-03T22:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/posts/a-terminal-real-time-application-with-dart-sockets/</loc>
+    <lastmod>2022-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dart/</loc>
-    <lastmod>2022-08-03T22:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/tags/dart/</loc>
+    <lastmod>2022-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/server/</loc>
-    <lastmod>2022-08-03T22:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/tags/sockets/</loc>
+    <lastmod>2022-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/backend/</loc>
-    <lastmod>2022-04-08T22:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/tags/tutorial/</loc>
+    <lastmod>2022-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/deploy-dart-server-on-heroku/</loc>
-    <lastmod>2022-04-08T22:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/tags/backend/</loc>
+    <lastmod>2022-04-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/devops/</loc>
-    <lastmod>2022-04-08T22:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/posts/deploy-dart-server-on-heroku/</loc>
+    <lastmod>2022-04-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/code-analysis-and-linting-in-flutter-and-dart/</loc>
-    <lastmod>2021-04-01T14:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/tags/devops/</loc>
+    <lastmod>2022-04-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/flutter/</loc>
-    <lastmod>2021-04-01T14:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/posts/code-analysis-and-linting-in-flutter-and-dart/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linting/</loc>
-    <lastmod>2021-04-01T14:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/tags/flutter/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tutorial/</loc>
-    <lastmod>2021-04-01T14:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/tags/linter/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/packages/</loc>
+    <loc>https://flutter-explained.dev/tags/packages/</loc>
     <lastmod>2020-12-06T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/top-7-flutter-packages/</loc>
+    <loc>https://flutter-explained.dev/posts/top-7-flutter-packages/</loc>
     <lastmod>2020-12-06T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/firebase-hosting-for-flutter-web-projects-in-4-easy-steps/</loc>
+    <loc>https://flutter-explained.dev/posts/firebase-hosting-for-flutter-web-projects-in-4-easy-steps/</loc>
     <lastmod>2020-04-16T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/step-by-step-guide-for-flutter-json-serialization/</loc>
+    <loc>https://flutter-explained.dev/posts/step-by-step-guide-for-flutter-json-serialization/</loc>
     <lastmod>2020-04-05T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/flutter-navigation-everything-you-need-to-know/</loc>
+    <loc>https://flutter-explained.dev/posts/flutter-navigation-everything-you-need-to-know/</loc>
     <lastmod>2020-03-27T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/flutter-web/</loc>
+    <loc>https://flutter-explained.dev/tags/flutter-web/</loc>
     <lastmod>2020-02-12T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/setup-a-flutter-web-project-on-github-pages/</loc>
+    <loc>https://flutter-explained.dev/posts/setup-a-flutter-web-project-on-github-pages/</loc>
     <lastmod>2020-02-12T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/how-i-started-with-flutter/</loc>
+    <loc>https://flutter-explained.dev/posts/how-i-started-with-flutter/</loc>
     <lastmod>2020-02-11T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/journey/</loc>
+    <loc>https://flutter-explained.dev/tags/journey/</loc>
     <lastmod>2020-02-11T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/flutter-project-scrum-poker-app/</loc>
+    <loc>https://flutter-explained.dev/posts/flutter-project-scrum-poker-app/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/project/</loc>
+    <loc>https://flutter-explained.dev/tags/project/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/clone-a-website-from-scratch/</loc>
-    <lastmod>2019-09-27T14:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/posts/clone-a-website-from-scratch/</loc>
+    <lastmod>2019-09-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/website/</loc>
-    <lastmod>2019-09-27T14:00:00+00:00</lastmod>
+    <loc>https://flutter-explained.dev/tags/html/</loc>
+    <lastmod>2019-09-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/github-actions-for-a-flutter-developer/</loc>
+    <loc>https://flutter-explained.dev/tags/website/</loc>
+    <lastmod>2019-09-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://flutter-explained.dev/posts/github-actions-for-a-flutter-developer/</loc>
     <lastmod>2019-09-09T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/flutter-journal-app-full-project-with-chingu/</loc>
+    <loc>https://flutter-explained.dev/posts/flutter-journal-app-full-project-with-chingu/</loc>
     <lastmod>2019-09-02T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web/</loc>
+    <loc>https://flutter-explained.dev/tags/web/</loc>
     <lastmod>2019-09-02T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/github/</loc>
+    <loc>https://flutter-explained.dev/tags/github/</loc>
     <lastmod>2019-08-25T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</loc>
+    <loc>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</loc>
     <lastmod>2019-08-25T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/aqueduct/</loc>
+    <loc>https://flutter-explained.dev/tags/aqueduct/</loc>
     <lastmod>2019-08-25T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</loc>
+    <loc>https://flutter-explained.dev/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</loc>
     <lastmod>2019-08-25T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://flutter-explained.dev/imprint/</loc>
+  </url><url>
+    <loc>https://flutter-explained.dev/posts/2v2vc0idntrgvhaainv1k/</loc>
+  </url><url>
+    <loc>https://flutter-explained.dev/categories/</loc>
+  </url><url>
+    <loc>https://flutter-explained.dev/data-privacy/</loc>
   </url>
 </urlset>

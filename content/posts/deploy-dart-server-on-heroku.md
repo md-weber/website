@@ -52,7 +52,7 @@ The most convenient way to create a new Heroku app is via the CLI. For that, ope
 
 it will create a random app name for you.
 
-`bash
+```bash
 
 heroku create fe-dart-server
 
@@ -60,19 +60,17 @@ Creating ⬢ fe-dart-server... done
 
 https://fe-dart-server.herokuapp.com/ | https://git.heroku.com/fe-dart-server.git
 
-`
+```
 
 As a result, Heroku delivers us two URLs. The first one is the URL directly to our app. Currently, we do not have an application running on `https://fe-dart-server.herokuapp.com/`.Therefore, you will find the documentation link of Heroku if you open it. The second link is the internal git server of Heroku, from which it will use your source code to build the project. We will need to add a new remote to git to push our Dart project.
 
-`bash
+```bash
 
 # If you have not initialized your project with git
-
 git init
-
 git add remote heroku https://git.heroku.com/fe-dart-server.git
 
-`
+```
 
 ** Hint: It could be that if your project was already in git, it was already added with the Heroku create command**
 
@@ -102,17 +100,11 @@ Now it is time to set the Dart URL and our `BUILDPACK_URL`for our Heroku app by 
 
 heroku config:set DART_SDK_URL=https://storage.googleapis.com/dart-archive/channels/stable/release/2.16.2/sdk/dartsdk-linux-x64-release.zip
 
-
-
 Setting DART_SDK_URL and restarting ⬢ fe-dart-server... done, v3
 
 DART_SDK_URL: https://storage.googleapis.com/dart-archive/channels/stable/release/2.16.2/sdk/dartsdk-linux-x64-release.zip
 
-
-
 heroku config:add BUILDPACK_URL=https://github.com/igrigorik/heroku-buildpack-dart.git
-
-
 
 Setting BUILDPACK_URL and restarting ⬢ fe-dart-server... done, v4
 
