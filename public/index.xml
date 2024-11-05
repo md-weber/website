@@ -42,18 +42,18 @@
       <description>In this article I want to tell you about my personal development story</description>
     </item>
     <item>
-      <title>Top 7 Flutter Packages</title>
+      <title>Repositories that are worth mentioning</title>
       <link>https://flutter-explained.dev/posts/top-7-flutter-packages/</link>
-      <pubDate>Sun, 06 Dec 2020 22:00:00 +0000</pubDate>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/top-7-flutter-packages/</guid>
-      <description></description>
+      <description>In this article we want to discover some cool repos that exists out there.</description>
     </item>
     <item>
       <title>Firebase Hosting for Flutter Web Projects in 4 easy steps</title>
       <link>https://flutter-explained.dev/posts/firebase-hosting-for-flutter-web-projects-in-4-easy-steps/</link>
-      <pubDate>Thu, 16 Apr 2020 22:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/firebase-hosting-for-flutter-web-projects-in-4-easy-steps/</guid>
-      <description></description>
+      <description>If you create a web project in Flutter it is worth thinking about how to deploy it. In this tutorial you will learn exactly that.</description>
     </item>
     <item>
       <title>Step-by-Step guide for Flutter JSON Serialization</title>
