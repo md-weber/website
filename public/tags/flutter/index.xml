@@ -42,53 +42,134 @@
       <description>In this article I want to tell you about my personal development story</description>
     </item>
     <item>
+      <title>Flutter Navigation – Everything you need to know</title>
+      <link>https://flutter-explained.dev/posts/flutter-navigation-everything-you-need-to-know/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/posts/flutter-navigation-everything-you-need-to-know/</guid>
+      <description>&lt;p&gt;Navigation is in every application a vital part, and the benefit of Flutter
+is, that it already contains an excellent routing system built-in. The benefit
+of a built-in routing system is a huge advantage that we have as flutter
+developers. As always, we have to know about the hidden traps and understand
+the tools so that we can decide for the best option for a given use case.&lt;/p&gt;
+&lt;p&gt;With a good routing strategy, you have a lot fewer problems in the future, and
+it also helps you to reduce boilerplate and maintenance cost in the long run.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Setup a Flutter Web Project on GitHub Pages</title>
       <link>https://flutter-explained.dev/posts/setup-a-flutter-web-project-on-github-pages/</link>
-      <pubDate>Wed, 12 Feb 2020 22:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/setup-a-flutter-web-project-on-github-pages/</guid>
-      <description></description>
+      <description>&lt;p&gt;To enable flutter web, you have to set up your Flutter CLI properly, and after
+that, you have to make sure you are on the right channel. Today when I write
+this post, Flutter web is still in beta, so we have to select a branch that
+supports beta features.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; flutter channel
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Flutter channels:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* master
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; dev
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* beta
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; stable
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The master channel is the current tip of development. It contains the newest
+changes in the framework but it is also vulnerable to breaking changes. So
+that means in the worst case something is going wrong. The beta channel is a
+code selection of the flutter team once a month to a branch that contains the
+newest released features. It is selected and more stable. So if you want to
+try around, this would be the channel to go.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I started with Flutter</title>
       <link>https://flutter-explained.dev/posts/how-i-started-with-flutter/</link>
-      <pubDate>Tue, 11 Feb 2020 22:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/how-i-started-with-flutter/</guid>
-      <description></description>
+      <description>&lt;p&gt;I searched for a strongly typed language that shows me errors before I am
+falling for them. Now after one and a half year I can say that I transformed
+from an Angular 2+ engineer to a Flutter engineer and I even started my own
+Youtube Channel with the topic FlutterExplained.&lt;/p&gt;
+&lt;h2 id=&#34;first-steps&#34;&gt;First steps&lt;/h2&gt;
+&lt;p&gt;I started by creating some smaller prototypes. Without knowing the Dart
+Language, I wanted to create my first web app, which I did with the help of
+&lt;a href=&#34;https://dev.to/chingu&#34;&gt;Chingu&lt;/a&gt;. Chingu is a platform where you collaborate
+with other members of a community to create a new project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flutter Project - Scrum Poker App</title>
       <link>https://flutter-explained.dev/posts/flutter-project-scrum-poker-app/</link>
-      <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/flutter-project-scrum-poker-app/</guid>
-      <description></description>
+      <description>&lt;p&gt;First, I want to start by creating a clear picture of what we want to achieve.
+I work currently on a Scrum Team, we always have to carry around our cards for
+sprint poker. These cards are old, dirty and very often used from a lot of
+teams and so I decided to change that with an app, once and for all.&lt;/p&gt;
+&lt;h2 id=&#34;scrum-poker-app&#34;&gt;Scrum Poker App&lt;/h2&gt;
+&lt;p&gt;If you have never worked in a Scrum Team before, you maybe never heard the
+term Scrum Poker. To explain the whole idea, would probably be too much for
+that story, but if you are interested &lt;a href=&#34;https://medium.com/@ravindraprasad&#34;&gt;Ravindra
+Prasad&lt;/a&gt; wrote an excellent
+&lt;a href=&#34;https://ravindraelicherla.medium.com/story-point-estimation-and-planning-poker-3a0938a6b5ca&#34;&gt;article&lt;/a&gt;
+about that topic.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitHub Actions - For a Flutter Developer</title>
       <link>https://flutter-explained.dev/posts/github-actions-for-a-flutter-developer/</link>
-      <pubDate>Mon, 09 Sep 2019 22:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/github-actions-for-a-flutter-developer/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;github-actions--can-i-eat-that&#34;&gt;GitHub Actions — Can I eat that?&lt;/h2&gt;
+&lt;p&gt;The short answer is no, but if you want to build, pack and deploy your app, it
+is maybe something for you. &lt;a href=&#34;https://github.com/features/actions&#34;&gt;Github
+Actions&lt;/a&gt; is the CI / CD project from
+GitHub. The CI / CD allows us to set up workflows for different scenarios of
+our app. It gives us the possibility to build our app, test our application
+and also to publish at the end our APK. The best thing is that you dont even
+have to leave your GitHub page.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flutter Journal App - Full Project with Chingu</title>
       <link>https://flutter-explained.dev/posts/flutter-journal-app-full-project-with-chingu/</link>
-      <pubDate>Mon, 02 Sep 2019 22:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/flutter-journal-app-full-project-with-chingu/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Six Weeks with Chingu to feel like a Software Developer</title>
-      <link>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</link>
-      <pubDate>Sun, 25 Aug 2019 22:00:00 +0000</pubDate>
-      <guid>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</guid>
-      <description></description>
+      <description>If you create a web project in Flutter it is worth thinking about how to deploy it. In this tutorial you will learn exactly that.</description>
     </item>
     <item>
       <title>I go on a Chingu Journey, with Flutter, Dart and Aqueduct</title>
       <link>https://flutter-explained.dev/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</link>
-      <pubDate>Sun, 25 Aug 2019 08:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</guid>
-      <description></description>
+      <description>&lt;p&gt;keywords:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Flutter&lt;/li&gt;
+&lt;li&gt;Dart&lt;/li&gt;
+&lt;li&gt;Personal Development
+tags:&lt;/li&gt;
+&lt;li&gt;Flutter&lt;/li&gt;
+&lt;li&gt;Dart&lt;/li&gt;
+&lt;li&gt;Aqueduct&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After six months of travel, we decided to stay in New Zealand, and I got some
+work as a software engineer very quickly. The work there is good with a lot of
+friendly people around me. But currently, I am not happy anymore with Angular
+as a technology stack. But to do private projects is quite hard, and somehow
+the motivation is missing that pushes you to completion until my girlfriend
+had an excellent idea.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Six Weeks with Chingu to feel like a Software Developer</title>
+      <link>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</guid>
+      <description>&lt;p&gt;In January 2018 I started to realize my dream and learn how to code with
+Udacity. I took a six-month Intro to Programming course and started to learn
+HTML, CSS, JavaScript and Python. At this time I had my full-time job in
+Germany in Sales with my background of M.Sc in Industrial Engineering.&lt;/p&gt;
+&lt;p&gt;That was a tough time for me to focus on learning every day after eight hours
+of work. Even if on weekends, I had to spend time to learn and submit my
+exercises and projects. I was never in such a short time so often frustrated
+and stuck in problems, like this six months. But I was never so amazed and
+motivated to learn something, that I couldn’t give it up. After six hard
+months, I managed to get my first certificate in programming from Udacity.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

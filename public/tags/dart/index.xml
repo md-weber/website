@@ -28,39 +28,54 @@
       <description>In this article I want to tell you about my personal development story</description>
     </item>
     <item>
-      <title>How I started with Flutter</title>
-      <link>https://flutter-explained.dev/posts/how-i-started-with-flutter/</link>
-      <pubDate>Tue, 11 Feb 2020 22:00:00 +0000</pubDate>
-      <guid>https://flutter-explained.dev/posts/how-i-started-with-flutter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Flutter Project - Scrum Poker App</title>
-      <link>https://flutter-explained.dev/posts/flutter-project-scrum-poker-app/</link>
-      <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
-      <guid>https://flutter-explained.dev/posts/flutter-project-scrum-poker-app/</guid>
-      <description></description>
+      <title>Flutter Navigation – Everything you need to know</title>
+      <link>https://flutter-explained.dev/posts/flutter-navigation-everything-you-need-to-know/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/posts/flutter-navigation-everything-you-need-to-know/</guid>
+      <description>&lt;p&gt;Navigation is in every application a vital part, and the benefit of Flutter
+is, that it already contains an excellent routing system built-in. The benefit
+of a built-in routing system is a huge advantage that we have as flutter
+developers. As always, we have to know about the hidden traps and understand
+the tools so that we can decide for the best option for a given use case.&lt;/p&gt;
+&lt;p&gt;With a good routing strategy, you have a lot fewer problems in the future, and
+it also helps you to reduce boilerplate and maintenance cost in the long run.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitHub Actions - For a Flutter Developer</title>
       <link>https://flutter-explained.dev/posts/github-actions-for-a-flutter-developer/</link>
-      <pubDate>Mon, 09 Sep 2019 22:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/github-actions-for-a-flutter-developer/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;github-actions--can-i-eat-that&#34;&gt;GitHub Actions — Can I eat that?&lt;/h2&gt;
+&lt;p&gt;The short answer is no, but if you want to build, pack and deploy your app, it
+is maybe something for you. &lt;a href=&#34;https://github.com/features/actions&#34;&gt;Github
+Actions&lt;/a&gt; is the CI / CD project from
+GitHub. The CI / CD allows us to set up workflows for different scenarios of
+our app. It gives us the possibility to build our app, test our application
+and also to publish at the end our APK. The best thing is that you dont even
+have to leave your GitHub page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Flutter Journal App - Full Project with Chingu</title>
+      <link>https://flutter-explained.dev/posts/flutter-journal-app-full-project-with-chingu/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/posts/flutter-journal-app-full-project-with-chingu/</guid>
+      <description>If you create a web project in Flutter it is worth thinking about how to deploy it. In this tutorial you will learn exactly that.</description>
     </item>
     <item>
       <title>Six Weeks with Chingu to feel like a Software Developer</title>
       <link>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</link>
-      <pubDate>Sun, 25 Aug 2019 22:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>I go on a Chingu Journey, with Flutter, Dart and Aqueduct</title>
-      <link>https://flutter-explained.dev/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</link>
-      <pubDate>Sun, 25 Aug 2019 08:00:00 +0000</pubDate>
-      <guid>https://flutter-explained.dev/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</guid>
-      <description></description>
+      <description>&lt;p&gt;In January 2018 I started to realize my dream and learn how to code with
+Udacity. I took a six-month Intro to Programming course and started to learn
+HTML, CSS, JavaScript and Python. At this time I had my full-time job in
+Germany in Sales with my background of M.Sc in Industrial Engineering.&lt;/p&gt;
+&lt;p&gt;That was a tough time for me to focus on learning every day after eight hours
+of work. Even if on weekends, I had to spend time to learn and submit my
+exercises and projects. I was never in such a short time so often frustrated
+and stuck in problems, like this six months. But I was never so amazed and
+motivated to learn something, that I couldn’t give it up. After six hard
+months, I managed to get my first certificate in programming from Udacity.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

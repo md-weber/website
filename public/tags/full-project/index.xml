@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tutorial on Max Weber - Developer, Publisher and Father</title>
-    <link>https://flutter-explained.dev/tags/tutorial/</link>
-    <description>Recent content in Tutorial on Max Weber - Developer, Publisher and Father</description>
+    <title>Full Project on Max Weber - Developer, Publisher and Father</title>
+    <link>https://flutter-explained.dev/tags/full-project/</link>
+    <description>Recent content in Full Project on Max Weber - Developer, Publisher and Father</description>
     <image>
       <title>Max Weber - Developer, Publisher and Father</title>
       <url>https://flutter-explained.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -11,22 +11,8 @@
     </image>
     <generator>Hugo -- 0.136.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Aug 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://flutter-explained.dev/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>A terminal real time application with Dart Sockets</title>
-      <link>https://flutter-explained.dev/posts/a-terminal-real-time-application-with-dart-sockets/</link>
-      <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://flutter-explained.dev/posts/a-terminal-real-time-application-with-dart-sockets/</guid>
-      <description>In this article I want to tell you about my personal development story</description>
-    </item>
-    <item>
-      <title>Code Analysis &amp; Linting in Flutter and Dart</title>
-      <link>https://flutter-explained.dev/posts/code-analysis-and-linting-in-flutter-and-dart/</link>
-      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://flutter-explained.dev/posts/code-analysis-and-linting-in-flutter-and-dart/</guid>
-      <description>In this article I want to tell you about my personal development story</description>
-    </item>
+    <lastBuildDate>Sat, 12 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://flutter-explained.dev/tags/full-project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flutter Project - Scrum Poker App</title>
       <link>https://flutter-explained.dev/posts/flutter-project-scrum-poker-app/</link>

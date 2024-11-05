@@ -98,24 +98,38 @@
       <description></description>
     </item>
     <item>
+      <title>Web</title>
+      <link>https://flutter-explained.dev/tags/web/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/web/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Flutter Web</title>
       <link>https://flutter-explained.dev/tags/flutter-web/</link>
-      <pubDate>Wed, 12 Feb 2020 22:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/tags/flutter-web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub</title>
+      <link>https://flutter-explained.dev/tags/github/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Journey</title>
       <link>https://flutter-explained.dev/tags/journey/</link>
-      <pubDate>Tue, 11 Feb 2020 22:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/tags/journey/</guid>
       <description></description>
     </item>
     <item>
-      <title>Project</title>
-      <link>https://flutter-explained.dev/tags/project/</link>
-      <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
-      <guid>https://flutter-explained.dev/tags/project/</guid>
+      <title>Full Project</title>
+      <link>https://flutter-explained.dev/tags/full-project/</link>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/full-project/</guid>
       <description></description>
     </item>
     <item>
@@ -133,24 +147,10 @@
       <description></description>
     </item>
     <item>
-      <title>Web</title>
-      <link>https://flutter-explained.dev/tags/web/</link>
-      <pubDate>Mon, 02 Sep 2019 22:00:00 +0000</pubDate>
-      <guid>https://flutter-explained.dev/tags/web/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>GitHub</title>
-      <link>https://flutter-explained.dev/tags/github/</link>
-      <pubDate>Sun, 25 Aug 2019 22:00:00 +0000</pubDate>
-      <guid>https://flutter-explained.dev/tags/github/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Aqueduct</title>
-      <link>https://flutter-explained.dev/tags/aqueduct/</link>
-      <pubDate>Sun, 25 Aug 2019 08:00:00 +0000</pubDate>
-      <guid>https://flutter-explained.dev/tags/aqueduct/</guid>
+      <title>GitHub Actions</title>
+      <link>https://flutter-explained.dev/tags/github-actions/</link>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/tags/github-actions/</guid>
       <description></description>
     </item>
   </channel>

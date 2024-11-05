@@ -11,14 +11,27 @@
     </image>
     <generator>Hugo -- 0.136.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Sep 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://flutter-explained.dev/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flutter Navigation – Everything you need to know</title>
+      <link>https://flutter-explained.dev/posts/flutter-navigation-everything-you-need-to-know/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/posts/flutter-navigation-everything-you-need-to-know/</guid>
+      <description>&lt;p&gt;Navigation is in every application a vital part, and the benefit of Flutter
+is, that it already contains an excellent routing system built-in. The benefit
+of a built-in routing system is a huge advantage that we have as flutter
+developers. As always, we have to know about the hidden traps and understand
+the tools so that we can decide for the best option for a given use case.&lt;/p&gt;
+&lt;p&gt;With a good routing strategy, you have a lot fewer problems in the future, and
+it also helps you to reduce boilerplate and maintenance cost in the long run.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Flutter Journal App - Full Project with Chingu</title>
       <link>https://flutter-explained.dev/posts/flutter-journal-app-full-project-with-chingu/</link>
-      <pubDate>Mon, 02 Sep 2019 22:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/flutter-journal-app-full-project-with-chingu/</guid>
-      <description></description>
+      <description>If you create a web project in Flutter it is worth thinking about how to deploy it. In this tutorial you will learn exactly that.</description>
     </item>
   </channel>
 </rss>

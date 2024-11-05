@@ -12,8 +12,6 @@ Running the first server is a fantastic experience for every developer.
 
 It gives you many options and possibilities and improves your general understanding of software engineering. After we learned in my previous [videos](https://www.youtube.com/watch?v=kYM-wlOhQ3I&list=PLq83k-ITj6lQuw6asmdEbuNCV6vVwqT5c) already how to start a server locally, we want in this article to learn how to make our services available on the world wide web so that you can access them from every device.
 
-<iframe title=\"Deploy Dart Server to Heroku - Server Deployment Tutorial\" width=\"560\" height=\"315\" src=\"https://tube.tchncs.de/videos/embed/ae379d04-06b4-4984-beaf-dad4f1c6783a\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-same-origin allow-scripts allow-popups\"></iframe>
-
 ## Deployment
 
 > Software deployment includes all activities that make a software system available to use. - [Wikipedia](https://en.wikipedia.org/wiki/Software_deployment)
@@ -219,3 +217,5 @@ var server = await shelf_io.serve(
 ## Wrapping up
 
 Great, we did it. With these steps, we published our server to Heroku and made our very first deployment possible. The next milestone is to create a helpful app out of this server. We were maybe starting with a small quiz app that allows you and your friends to learn more about development. For that, you will probably need more insights into the [shelf_router package](https://pub.dev/packages/shelf_router) or an even bigger solution like [Conduit](https://conduit.dev). Feel free to share your first examples with me on Twitter with the Hashtag [`#FlutterExplained`](https://twitter.com/intent/tweet?hashtags=FlutterExplained). I cannot wait to see your results!
+
+Thank you for reading, stay curious and if you have time consider supporting me on [Patreon](https://patreon.com/dev_cafe).

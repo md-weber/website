@@ -11,14 +11,33 @@
     </image>
     <generator>Hugo -- 0.136.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Feb 2020 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://flutter-explained.dev/tags/flutter-web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setup a Flutter Web Project on GitHub Pages</title>
       <link>https://flutter-explained.dev/posts/setup-a-flutter-web-project-on-github-pages/</link>
-      <pubDate>Wed, 12 Feb 2020 22:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/setup-a-flutter-web-project-on-github-pages/</guid>
-      <description></description>
+      <description>&lt;p&gt;To enable flutter web, you have to set up your Flutter CLI properly, and after
+that, you have to make sure you are on the right channel. Today when I write
+this post, Flutter web is still in beta, so we have to select a branch that
+supports beta features.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; flutter channel
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Flutter channels:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* master
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; dev
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;* beta
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; stable
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The master channel is the current tip of development. It contains the newest
+changes in the framework but it is also vulnerable to breaking changes. So
+that means in the worst case something is going wrong. The beta channel is a
+code selection of the flutter team once a month to a branch that contains the
+newest released features. It is selected and more stable. So if you want to
+try around, this would be the channel to go.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

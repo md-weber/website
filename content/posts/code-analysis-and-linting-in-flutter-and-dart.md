@@ -197,8 +197,7 @@ and many people would say that it is not worth the effort. But if the
 conversation and discussion start now, you have the right tools to join the
 discussion and give some valuable insights.
 
-Thank you for reading and let me know what you are thinking about Linting
-rules down in the description below!
+Thank you for reading, stay curious and if you have time consider supporting me on [Patreon](https://patreon.com/dev_cafe).
 
 [1]: https://yaml.org/
 [2]: //images.ctfassets.net/573xlmlwok2s/2rmD7l23zolo5Zl0r2WBCO/0e84e485ce3e6d7ac7dfcd633d4a238d/single_quote.png

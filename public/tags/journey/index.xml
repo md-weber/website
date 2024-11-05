@@ -11,14 +11,44 @@
     </image>
     <generator>Hugo -- 0.136.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Feb 2020 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://flutter-explained.dev/tags/journey/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I started with Flutter</title>
       <link>https://flutter-explained.dev/posts/how-i-started-with-flutter/</link>
-      <pubDate>Tue, 11 Feb 2020 22:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/how-i-started-with-flutter/</guid>
-      <description></description>
+      <description>&lt;p&gt;I searched for a strongly typed language that shows me errors before I am
+falling for them. Now after one and a half year I can say that I transformed
+from an Angular 2+ engineer to a Flutter engineer and I even started my own
+Youtube Channel with the topic FlutterExplained.&lt;/p&gt;
+&lt;h2 id=&#34;first-steps&#34;&gt;First steps&lt;/h2&gt;
+&lt;p&gt;I started by creating some smaller prototypes. Without knowing the Dart
+Language, I wanted to create my first web app, which I did with the help of
+&lt;a href=&#34;https://dev.to/chingu&#34;&gt;Chingu&lt;/a&gt;. Chingu is a platform where you collaborate
+with other members of a community to create a new project.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I go on a Chingu Journey, with Flutter, Dart and Aqueduct</title>
+      <link>https://flutter-explained.dev/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</guid>
+      <description>&lt;p&gt;keywords:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Flutter&lt;/li&gt;
+&lt;li&gt;Dart&lt;/li&gt;
+&lt;li&gt;Personal Development
+tags:&lt;/li&gt;
+&lt;li&gt;Flutter&lt;/li&gt;
+&lt;li&gt;Dart&lt;/li&gt;
+&lt;li&gt;Aqueduct&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After six months of travel, we decided to stay in New Zealand, and I got some
+work as a software engineer very quickly. The work there is good with a lot of
+friendly people around me. But currently, I am not happy anymore with Angular
+as a technology stack. But to do private projects is quite hard, and somehow
+the motivation is missing that pushes you to completion until my girlfriend
+had an excellent idea.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

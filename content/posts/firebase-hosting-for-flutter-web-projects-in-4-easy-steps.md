@@ -94,15 +94,12 @@ will use npm to install it on mac. For that, I will open the Terminal and run
 the following command.
 
 ```bash
-
 npm install -g firebase-tools
-
 ```
 
 After executing this command I get directly an error message:
 
 ```bash
-
 npm WARN checkPermissions Missing write access to
 /Users/<<username>>/.npm-global/lib/node_modules/firebase-tools/node_modules/string_decoder
 
@@ -254,4 +251,4 @@ the Firebase Hosting, which is also possible in a couple of steps.
 I highly recommend you to give it a try and let me know in the comments about
 your experiences.
 
-Thanks for reading and think about supporting me on [Patreon](patreon.com/dev_cafe)! 🎉
+Thanks for reading and think about supporting me on [Patreon](https://patreon.com/dev_cafe)! 🎉

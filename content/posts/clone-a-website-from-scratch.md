@@ -123,3 +123,5 @@ version](https://www.lloyds.com/news-and-insights/risk-reports/library/taking-co
 of my [cloned website](https://mimifi.github.io/lloyds-clone/) and if you like
 to know more about my source code, check it
 [here](https://github.com/mt-tadayon/lloyds-clone) on my GitHub.
+
+Thank you for reading, stay curious and if you have time consider supporting me on [Patreon](https://patreon.com/dev_cafe).

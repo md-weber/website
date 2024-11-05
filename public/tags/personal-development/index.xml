@@ -23,9 +23,17 @@
     <item>
       <title>How I started with Flutter</title>
       <link>https://flutter-explained.dev/posts/how-i-started-with-flutter/</link>
-      <pubDate>Tue, 11 Feb 2020 22:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/how-i-started-with-flutter/</guid>
-      <description></description>
+      <description>&lt;p&gt;I searched for a strongly typed language that shows me errors before I am
+falling for them. Now after one and a half year I can say that I transformed
+from an Angular 2+ engineer to a Flutter engineer and I even started my own
+Youtube Channel with the topic FlutterExplained.&lt;/p&gt;
+&lt;h2 id=&#34;first-steps&#34;&gt;First steps&lt;/h2&gt;
+&lt;p&gt;I started by creating some smaller prototypes. Without knowing the Dart
+Language, I wanted to create my first web app, which I did with the help of
+&lt;a href=&#34;https://dev.to/chingu&#34;&gt;Chingu&lt;/a&gt;. Chingu is a platform where you collaborate
+with other members of a community to create a new project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clone a Website From Scratch</title>
@@ -35,11 +43,42 @@
       <description>In this article I want to tell you about my personal development story</description>
     </item>
     <item>
+      <title>I go on a Chingu Journey, with Flutter, Dart and Aqueduct</title>
+      <link>https://flutter-explained.dev/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/posts/i-go-on-a-chingu-journey-with-flutter-dart-and-aqueduct/</guid>
+      <description>&lt;p&gt;keywords:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Flutter&lt;/li&gt;
+&lt;li&gt;Dart&lt;/li&gt;
+&lt;li&gt;Personal Development
+tags:&lt;/li&gt;
+&lt;li&gt;Flutter&lt;/li&gt;
+&lt;li&gt;Dart&lt;/li&gt;
+&lt;li&gt;Aqueduct&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After six months of travel, we decided to stay in New Zealand, and I got some
+work as a software engineer very quickly. The work there is good with a lot of
+friendly people around me. But currently, I am not happy anymore with Angular
+as a technology stack. But to do private projects is quite hard, and somehow
+the motivation is missing that pushes you to completion until my girlfriend
+had an excellent idea.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Six Weeks with Chingu to feel like a Software Developer</title>
       <link>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</link>
-      <pubDate>Sun, 25 Aug 2019 22:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       <guid>https://flutter-explained.dev/posts/six-weeks-with-chingu-to-feel-like-a-software-developer/</guid>
-      <description></description>
+      <description>&lt;p&gt;In January 2018 I started to realize my dream and learn how to code with
+Udacity. I took a six-month Intro to Programming course and started to learn
+HTML, CSS, JavaScript and Python. At this time I had my full-time job in
+Germany in Sales with my background of M.Sc in Industrial Engineering.&lt;/p&gt;
+&lt;p&gt;That was a tough time for me to focus on learning every day after eight hours
+of work. Even if on weekends, I had to spend time to learn and submit my
+exercises and projects. I was never in such a short time so often frustrated
+and stuck in problems, like this six months. But I was never so amazed and
+motivated to learn something, that I couldn’t give it up. After six hard
+months, I managed to get my first certificate in programming from Udacity.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

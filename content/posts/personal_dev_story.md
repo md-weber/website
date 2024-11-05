@@ -88,3 +88,5 @@ During my time as a freelancer and while I was working on Flutter Explained, I n
 ## Reflections and Future Outlook
 
 I still love programming, I still enjoy it. Even though there are voices saying that AI will take it away and abstract it, I still have a blast discussing with ChatGPT better solutions. I am also finding an incredible joy in working with pipelines and pushing the running times as low as possible. I learned that being a Software Engineer is more than just writing code. Teaching others, finding problems to solve, and explaining why your tasks are important are really as important. I really hope that this short story about my career path will give you some insights and maybe help you in your way.
+
+Thank you for reading, stay curious and if you have time consider supporting me on [Patreon](https://patreon.com/dev_cafe).

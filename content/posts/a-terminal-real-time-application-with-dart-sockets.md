@@ -208,3 +208,5 @@ Server: Connection from 127.0.0.1:54415
 
 We now have a successful Socket Server running and multiple clients connected. After this tutorial, you should have the power to create excellent applications that need real-time experience. That can be integrated with Games but also in Tools where collaboration is vital.
 You can find the tutorial project on Codeberg. Feel free to check it out, and if there are any thoughts, please let us know. Thanks for reading, and till the next post.
+
+Thank you for reading, stay curious and if you have time consider supporting me on [Patreon](https://patreon.com/dev_cafe).
