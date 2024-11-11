@@ -115,10 +115,6 @@ me, and I started my journey by writing several hours code, reading the
 documentation and learned a hell more about [Dart](https://dart.dev/),
 [Flutter](https://flutter.dev/) and [Aqueduct](https://aqueduct.io/).
 
-<a href="https://giphy.com/embed/pOKrXLf9N5g76" class="embedly-card"
-  data-card-width="100%" data-card-controls="0">Embedded content:
-https://giphy.com/embed/pOKrXLf9N5g76</a>
-
 But this should be enough for this story, and I will keep you up to date how’s
 it going in the next couple of articles.
 

@@ -18,20 +18,6 @@ our app. It gives us the possibility to build our app, test our application
 and also to publish at the end our APK. The best thing is that you dont even
 have to leave your GitHub page.
 
-  <div style={{
-      width: "50%",
-      height: 0,
-      paddingBottom: "50%",
-      position: "relative",
-      margin: "0 auto",
-      boxShadow: "3px 3px 11px 0px rgba(0,0,0,0.75)"
-  }}>
-      <iframe src="https://giphy.com/embed/3zu6iXqMFQA05Ff1vg" width="100%" height="100%" style={{position: "absolute"}}
-              frameBorder="0" className="giphy-embed" allowFullScreen/>
-  </div>
-
-[via GIPHY](https://giphy.com/gifs/hacker-pOKrXLf9N5g76)
-
 So why should I use GitHub’s new service compared to all the others like
 [Travis CI](https://travis-ci.org/),
 [Bitbucket](https://bitbucket.org/product) or

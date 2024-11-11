@@ -66,8 +66,12 @@ name = "Posts"
 url = "posts"
 
 [[params.profileMode.buttons]]
-name = "Tags"
-url = "tags"
+name = "Podcast"
+url = "https://podcast.flutter-explained.dev"
+
+[[params.profileMode.buttons]]
+name = "Bitcoin Tracker App"
+url = "https://play.google.com/store/apps/details?id=dev.flutterexp.bitcoinTracker"
 
 [params.homeInfoParams]
 Title = "Hi there \U0001F44B"

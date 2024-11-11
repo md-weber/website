@@ -16,15 +16,11 @@ Hosting. If you want to publish it under [GitHub Pages](./github-actions), we
 have also an article for that.
 
 > Firebase Hosting provides fast and secure hosting for your web app, static
-> and dynamic content, and microservices." <br/>
+> and dynamic content, and microservices."
 
 > Firebase Documentation
 
 In this article, I would like to share my experience with you. So let’s start.
-
-<a href="https://giphy.com/embed/Ln2dAW9oycjgmTpjX9https://"
-  class="embedly-card" data-card-width="100%" data-card-controls="0">Embedded
-content: https://giphy.com/embed/Ln2dAW9oycjgmTpjX9https://</a>
 
 ## Prepare the Flutter web project
 
@@ -175,20 +171,20 @@ question and select our answer with the space key and after that hit the enter
 key. For the questions with a yes or no answer, we should type just “y” or
 “n”.
 
-1. Which Firebase CLI feature do you want to set up for your folder? <br/>
-   `Hosting`
+1. Which Firebase CLI feature do you want to set up for your folder?
+`Hosting`
 
 1. Select your default firebase project, if you have. In my case, I will
    select save-recipes project and hit enter.
 
-1. What do you want to use as your public directory? <br/> `build/web`
+1. What do you want to use as your public directory? `build/web`
 
 1. The answer to this question should be the path to our index.html file in
    our web bundle.
 
-1. Configure as a single-page app? <br/>`y`
+1. Configure as a single-page app? `y`
 
-1. File build/web/index.html already exists. Overwrite? <br/> `N`
+1. File build/web/index.html already exists. Overwrite? `N`
 
 ![Firebase CLI Project
   Setup](//images.ctfassets.net/573xlmlwok2s/57zhnW39UrvzHspx4wsk3v/c254ba42bdb4c47c325b45ef5f9f0941/project_setup.webp)

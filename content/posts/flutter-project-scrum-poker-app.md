@@ -24,18 +24,6 @@ about that topic.
 
 > It is like real poker, but everyone has the same cards. - Max Weber
 
-  <div style={{
-      width: "50%",
-      height: 0,
-      paddingBottom: "50%",
-      position: "relative",
-      margin: "0 auto",
-      boxShadow: "3px 3px 11px 0px rgba(0,0,0,0.75)"
-  }}>
-      <iframe src="https://giphy.com/embed/httS0Xzi9ZMQ0" width="100%" height="100%" style={{position: "absolute"}}
-              frameBorder="0" className="giphy-embed" allowFullScreen/>
-  </div>
-
 ## Visual guidance
 
 For me, it is always helpful in my projects to have visual guidance like a
@@ -178,20 +166,6 @@ with a Big ScrumCard Widget.
 
 Now comes the tough part so. Therefore make yourself ready, take a deep breath
 and then let’s get into it!
-
-  <div style={{
-      width: "50%",
-      height: 0,
-      paddingBottom: "50%",
-      position: "relative",
-      margin: "0 auto",
-      boxShadow: "3px 3px 11px 0px rgba(0,0,0,0.75)"
-  }}>
-      <iframe src="https://giphy.com/embed/l0K4jwyp6FZa9phyU" width="100%" height="100%" style={{position: "absolute"}}
-              frameBorder="0" className="giphy-embed" allowFullScreen/>
-  </div>
-
-[via GIPHY](https://giphy.com/embed/l0K4jwyp6FZa9phyU)
 
 ## State Management
 
