@@ -73,6 +73,10 @@ url = "https://podcast.flutter-explained.dev"
 name = "Bitcoin Tracker App"
 url = "https://play.google.com/store/apps/details?id=dev.flutterexp.bitcoinTracker"
 
+[[params.profileMode.buttons]]
+name = "YouTube"
+url = "https://youtube.com/flutterexplained"
+
 [params.homeInfoParams]
 Title = "Hi there \U0001F44B"
 Content = "Welcome to my blog"
