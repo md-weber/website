@@ -9,7 +9,7 @@
       <url>https://flutter-explained.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://flutter-explained.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.138.0</generator>
+    <generator>Hugo -- 0.136.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://flutter-explained.dev/index.xml" rel="self" type="application/rss+xml" />
@@ -227,10 +227,10 @@ months, I managed to get my first certificate in programming from Udacity.&lt;/p
 &lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;Welcome to flutter-explained.dev (the &amp;ldquo;Website&amp;rdquo;). We are committed to protecting your personal data and respecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you visit our Website.&lt;/p&gt;
 &lt;h2 id=&#34;2-data-controller&#34;&gt;2. Data Controller&lt;/h2&gt;
-&lt;p&gt;Max Weber
-Wilhelm-Leuschner-Str. 54
-76189 Karlsruhe
-Germany
+&lt;p&gt;Max Weber&lt;br&gt;
+Wilhelm-Leuschner-Str. 54&lt;br&gt;
+76189 Karlsruhe&lt;br&gt;
+Germany&lt;br&gt;
 Email: &lt;a href=&#34;mailto:privacy@flutter-explained.dev&#34;&gt;privacy@flutter-explained.dev&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;3-types-of-data-collected&#34;&gt;3. Types of Data Collected&lt;/h2&gt;
 &lt;h3 id=&#34;31-personal-data&#34;&gt;3.1 Personal Data&lt;/h3&gt;
@@ -255,6 +255,24 @@ Wilhelm-Leuschner-Str. 54
 &lt;p&gt;Disclaimer&lt;/p&gt;
 &lt;p&gt;Liability for Content
 As a service provider, we are responsible for our own content on these pages in accordance with § 7 Para.1 TMG under general laws. However, according to §§ 8 to 10 TMG, we are not obligated to monitor transmitted or stored external information.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy Policy for Bitcoin Wallet Tracker App</title>
+      <link>https://flutter-explained.dev/bitcoin-tracker/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://flutter-explained.dev/bitcoin-tracker/privacy-policy/</guid>
+      <description>&lt;p&gt;Last updated: 21.11.2024&lt;/p&gt;
+&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;Welcome to the Bitcoin Wallet Tracker App (the &amp;ldquo;App&amp;rdquo;). We are committed to protecting your personal data and respecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you use our App available on the Google Play Store.&lt;/p&gt;
+&lt;h2 id=&#34;2-data-controller&#34;&gt;2. Data Controller&lt;/h2&gt;
+&lt;p&gt;Max Weber&lt;br&gt;
+Wilhelm-Leuschner-Str. 54&lt;br&gt;
+76189 Karlsruhe&lt;br&gt;
+Germany&lt;br&gt;
+Email: &lt;a href=&#34;mailto:privacy@flutter-explained.dev&#34;&gt;privacy@flutter-explained.dev&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-types-of-data-collected&#34;&gt;3. Types of Data Collected&lt;/h2&gt;
+&lt;h3 id=&#34;31-personal-data&#34;&gt;3.1 Personal Data&lt;/h3&gt;
+&lt;p&gt;We do not collect any personal data that directly identifies you, such as your name, email address, or contact information, through the App.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

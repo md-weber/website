@@ -13,11 +13,11 @@ Welcome to flutter-explained.dev (the "Website"). We are committed to protecting
 
 ## 2. Data Controller
 
-Max Weber
-Wilhelm-Leuschner-Str. 54
-76189 Karlsruhe
-Germany
-Email: privacy@flutter-explained.dev
+Max Weber\
+Wilhelm-Leuschner-Str. 54\
+76189 Karlsruhe\
+Germany\
+Email: [privacy@flutter-explained.dev](mailto:privacy@flutter-explained.dev)
 
 ## 3. Types of Data Collected
 
