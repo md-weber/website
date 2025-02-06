@@ -82,8 +82,8 @@ Title = "Hi there \U0001F44B"
 Content = "Welcome to my blog"
 
 [[params.socialIcons]]
-name = "x"
-url = "https://x.com/"
+name = "bluesky"
+url = "https://bsky.app/profile/md-weber.bsky.social"
 
 [[params.socialIcons]]
 name = "stackoverflow"
@@ -118,7 +118,6 @@ keys = ["title", "permalink", "summary", "content"]
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
-
 
 [[menu.main]]
 identifier = "search"

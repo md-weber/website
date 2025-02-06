@@ -113,6 +113,13 @@ If we transfer your personal data outside the European Economic Area (EEA), we e
 
 Our App mashifty contain links to external sites not operated by us. We have no control over the content and practices of these sites and cannot accept responsibility or liability for their respective privacy policies.
 
+## 13.1 News Content
+Our app displays news content from various cryptocurrency news sources through their publicly available RSS feeds. We:
+- Do not modify the original content
+- Provide direct links to source articles
+- Don't store news content permanently
+- Attribute all content to original sources
+
 ## 14. Changes to This Privacy Policy
 
 We may update our Privacy Policy from time to time. We encourage you to review this Privacy Policy periodically for any changes.
