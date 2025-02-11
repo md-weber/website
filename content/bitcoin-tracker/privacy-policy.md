@@ -5,7 +5,7 @@ showToc: true
 searchHidden: true
 ---
 
-Last updated: 21.11.2024
+Last updated: 11.02.2025
 
 ## 1. Introduction
 
@@ -33,7 +33,7 @@ We collect information automatically when you use the App. This Usage Data may i
 - Unique device identifiers
 - Advertising identifiers
 - App interaction data
-- Crash reports and performance data
+- Crash reports and performance data through Firebase Crashlytics
 
 ## 4. Purpose of Data Processing
 
@@ -71,6 +71,22 @@ We utilize Google Play Store analytics to gather aggregated data such as:
 - Number of downloads
 - User engagement metrics
 - Crash reports
+
+### 6.3 Firebase Crashlytics
+
+We use Firebase Crashlytics, a crash reporting service provided by Google, to help us identify and fix technical issues and app crashes. Crashlytics collects:
+
+- Crash traces and exception details
+- Device state at the time of crashes
+- App Not Responding (ANR) reports
+- Installation UUID
+- Device information including:
+  - Model
+  - Operating system version
+  - Device orientation
+  - Free/used storage
+
+This data is used solely for debugging purposes and improving app stability. For more information about Crashlytics, please visit the [Firebase Privacy Policy](https://firebase.google.com/support/privacy).
 
 This information helps us improve the App's performance and user experience.
 
@@ -126,7 +142,8 @@ We may update our Privacy Policy from time to time. We encourage you to review t
 
 - **Effective Date**: This policy is effective as of 05.11.2024.
 - **Updates**: Any changes will be posted on this page with an updated revision date.
-- Update I - 07.02.2025: Added News Content 
+- Update I - 07.02.2025: Added News Content
+- Update II - 11.02.2025: Added Firebase Crashlytics
 
 ## 15. Contact Us
 
