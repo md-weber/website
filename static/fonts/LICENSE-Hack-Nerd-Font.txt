@@ -1,0 +1,7 @@
+Hack Nerd Font (Nerd Fonts patch of Hack)
+Source: https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack
+Hack original: https://sourcefoundry.org/hack/
+
+See the Hack and Nerd Fonts licenses in the upstream repositories. Files in this
+directory are converted to WOFF2 for web use; glyph data is unchanged from the
+Nerd Fonts distribution.

@@ -1,7 +1,22 @@
 {{ define "main" }}
+  {{- $latest := first 3 (where .Site.RegularPages "Type" "posts") -}}
   <section class="section-block not-found">
     <h1>404 - Lost in the Mana Woods</h1>
     <p>This page does not exist, but the next quest is one click away.</p>
-    <a class="btn btn-primary" href="{{ "/" | relURL }}">Return Home</a>
+    <p class="not-found-actions">
+      <a class="btn btn-primary" href="{{ "/" | relURL }}">Return Home</a>
+      <a class="btn" href="{{ "posts/" | relURL }}">All posts</a>
+      <a class="btn" href="{{ "tags/" | relURL }}">Tags</a>
+    </p>
+    {{- with $latest }}
+    <div class="not-found-latest">
+      <h2>Recent posts</h2>
+      <ul class="not-found-post-list">
+        {{- range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="not-found-post-date">{{ .Date.Format "Jan 2, 2006" }}</span></li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
   </section>
 {{ end }}

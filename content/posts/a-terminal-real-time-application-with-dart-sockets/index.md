@@ -22,7 +22,7 @@ Before we had the benefit of WebSockets or Sockets, we had to wait until the ser
 
 At the beginning of my journey, I tried to use [Shelf_WebSockets](https://pub.dev/packages/shelf_web_socket) and connect with my two Terminals, and the result was nothing. Interestingly, I could connect via the terminal clients to the server, but whenever I sent a message, it was just not visible, and the server did not show anything.
 
-![Example with Websockets](//images.ctfassets.net/573xlmlwok2s/4cCI6viOhHv1o4nz8u6KQV/f60b5cc79a91870e9aae17b9dde6f4cb/Screenshot_2022-07-04_at_16.15.26.png)
+![Example with Websockets](screenshot-websocket.png)
 
 After a long time of learning and debugging, I discovered that my Terminal used [dart:io](https://api.dart.dev/stable/2.17.3/dart-io/Socket-class.html) and needed a server to work with the same TCP Sockets. Unfortunately, while the WebSocket Server allowed the connections, it could not understand the messages the Terminals tried to send.
 
@@ -42,7 +42,7 @@ Now I deleted everything in the bin folder and created three files `client.dart`
 
 Last but not least, we have the terminal_service.dart is just a mini service containing different print functions for different colours. The result after the tutorial will look something like this.
 
-![Socket Server allows two connections - Solution](//images.ctfassets.net/573xlmlwok2s/E4jewvjn1J370kWe37HUZ/5bf8526d48f85911f779e296e2c8487a/Screenshot_2022-07-04_at_22.27.40.png)
+![Socket Server allows two connections - Solution](screenshot-socket-server.png)
 
 ### Setup the Server
 
@@ -142,7 +142,7 @@ We first define a variable username that could be null, and in the do-while-loop
 
 On the other hand, the Client does not listen to server messages and cannot show what the server sends. So let us make the Client smarter and allow it to receive messages sent by the server.
 
-````dart
+```dart
 socket.listen(
   (Uint8List data) {
     final serverResponse = String.fromCharCodes(data);
@@ -157,7 +157,7 @@ socket.listen(
       socket.destroy();
   },
 );
-`
+```
 
 If we check the socket, we can see that it also provides the `listen` method and also here, we have the chance to implement the same three methods as on the Server side. Therefore we implemented them nearly the same. The only difference is that the onData method now receives the message and directly prints them into the console.
 
@@ -167,7 +167,7 @@ If we start up now the Server and Client, we should be able to see something lik
 ➜ dart ./bin/server.dart
 Server is running on: 0.0.0.0:3000
 Server: Connection from 127.0.0.1:54384
-````
+```
 
 ```ssh
 ➜ dart ./bin/client.dart

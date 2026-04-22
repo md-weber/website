@@ -1,0 +1,91 @@
+/* Hack Nerd Font — site-wide. Propo = UI/body, Mono = code. WOFF2 in /static/fonts/ */
+
+@font-face {
+  font-family: "Hack Nerd Font Propo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/HackNerdFontPropo-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hack Nerd Font Propo";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/HackNerdFontPropo-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hack Nerd Font Propo";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/HackNerdFontPropo-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hack Nerd Font Propo";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/HackNerdFontPropo-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hack Nerd Font Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/HackNerdFontMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hack Nerd Font Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/HackNerdFontMono-Bold.woff2") format("woff2");
+}
+
+/* Load after theme.css: override body + every former JetBrains UI slot */
+body {
+  font-family: "Hack Nerd Font Propo", Inter, "Segoe UI", Roboto, sans-serif;
+}
+
+.hero-kicker,
+.character-sheet-header h2,
+.character-slot,
+.stat-label,
+.character-bar,
+.not-found-latest h2,
+.section-header h1,
+.section-header h2,
+.section-slot,
+.term-chip span {
+  font-family: "Hack Nerd Font Propo", Inter, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Code + code-block chrome (load after theme so this wins) */
+code,
+pre,
+kbd,
+samp,
+.chroma,
+.code-block,
+.code-block-header,
+.code-block-body,
+.code-lang,
+.code-title,
+.prose code,
+.prose pre {
+  font-family: "Hack Nerd Font Mono", ui-monospace, "JetBrains Mono", Menlo, monospace;
+}
+
+.prose strong {
+  font-weight: 700;
+}
+
+.prose em {
+  font-style: italic;
+}

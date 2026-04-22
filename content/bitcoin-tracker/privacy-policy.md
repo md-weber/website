@@ -90,6 +90,10 @@ This data is used solely for debugging purposes and improving app stability. For
 
 This information helps us improve the App's performance and user experience.
 
+### 6.4 Identifiers and analytics (audit, 2026-04)
+
+The App does **not** use a separate **Firebase Analytics** SDK for in-app behavioral analytics. Metrics come from **Google Play Console** (installs, ratings, aggregated stats), **AdMob** and advertising identifiers as described in §6.1, and **Crashlytics** as in §6.3. If a future version adds another SDK (for example additional analytics), this policy will be updated before that release.
+
 ## 7. Information Sharing and Disclosure
 
 We do not sell, trade, or rent your personal information to third parties. Information may be shared with third-party services like AdMob and Google Play Store solely for the purposes described in this Privacy Policy.
@@ -117,7 +121,7 @@ You have the following rights regarding your personal data:
 - Right to Data Portability: You can request to transfer your data to another organization or directly to you.
 - Right to Object: You can object to our processing of your personal data under certain conditions.
 
-To exercise any of these rights, please contact us at [privacy@flutter-explained.dev](mailto:shiftprivacy@flutter-explained.dev).
+To exercise any of these rights, please contact us at [privacy@flutter-explained.dev](mailto:privacy@flutter-explained.dev).
 
 ## 12. Data Transfers to Third Countries
 
@@ -127,7 +131,7 @@ If we transfer your personal data outside the European Economic Area (EEA), we e
 
 ## 13. Links to Other Websites
 
-Our App mashifty contain links to external sites not operated by us. We have no control over the content and practices of these sites and cannot accept responsibility or liability for their respective privacy policies.
+Our App may contain links to external sites not operated by us. We have no control over the content and practices of these sites and cannot accept responsibility or liability for their respective privacy policies.
 
 ### 13.1 News Content
 Our app displays news content from various cryptocurrency news sources through their publicly available RSS feeds. We:

@@ -16,7 +16,7 @@
     <div class="{{ $gridClass }}">
       {{ range $pages.ByDate.Reverse }}
         {{ $post := . }}
-        <article class="post-card{{ if .Params.image }} has-thumb{{ end }}">
+        <article class="post-card{{ if .Params.image }} has-thumb{{ else }} no-thumb{{ end }}">
           {{ with .Params.image }}
             {{ $src := . }}
             {{ with $post.Resources.GetMatch $src }}
@@ -25,6 +25,8 @@
             <div class="post-thumb-wrap">
               <img class="post-thumb" src="{{ $src | safeURL }}" alt="{{ $post.Title }}">
             </div>
+          {{ else }}
+            <div class="post-thumb-fallback" aria-hidden="true"></div>
           {{ end }}
           <div class="post-card-body">
             <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>

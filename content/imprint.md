@@ -10,8 +10,11 @@ Max Weber
 Wilhelm-Leuschner-Str. 54
 76189 Karlsruhe
 
-Contact:
-Email: [info@flutter-explained.dev](mailto:info@flutter-explained.dev)
+Contact (general & legal): [info@flutter-explained.dev](mailto:info@flutter-explained.dev)
+
+Privacy & data protection: [privacy@flutter-explained.dev](mailto:privacy@flutter-explained.dev) (see [Privacy Policy](/data-privacy))
+
+No phone number is published; reachability is by email only (common for small private sites; quick contact: **info@** for general questions, **privacy@** for data-protection topics).
 
 Responsible for content according to § 55 Abs. 2 RStV:
 Max Weber

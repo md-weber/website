@@ -1,0 +1,62 @@
+{{- $title := .Title -}}
+{{- if .IsHome }}{{- $title = .Site.Title -}}
+{{- else }}{{- $title = printf "%s | %s" .Title .Site.Title -}}{{- end -}}
+{{- $desc := or .Description .Site.Params.description -}}
+{{- if not $desc }}{{- $desc = .Site.Params.description -}}{{- end -}}
+{{- $desc = $desc | plainify | htmlUnescape -}}
+{{- $ogType := "website" -}}
+{{- if and .IsPage (eq .Type "posts") }}{{- $ogType = "article" -}}{{- end -}}
+{{- $ogImage := "" -}}
+{{- if and .IsPage (eq .Type "posts") .Params.image -}}
+  {{- with .Resources.GetMatch .Params.image }}{{- $ogImage = .Permalink -}}{{- end -}}
+  {{- if not $ogImage }}{{- $ogImage = absURL .Params.image -}}{{- end -}}
+{{- end -}}
+{{- if not $ogImage }}{{- with index .Site.Params.images 0 }}{{- $ogImage = absURL . }}{{- end }}{{- end -}}
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:type" content="{{ $ogType }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{- with $ogImage -}}
+<meta property="og:image" content="{{ . }}">
+<meta property="og:image:alt" content="{{ $title }}">
+{{- end -}}
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ or .Site.Language.Lang "en" }}_US">
+{{- if and .IsPage (eq .Type "posts") -}}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+{{- if and (not .Lastmod.IsZero) (ne .Lastmod.Unix .Date.Unix) -}}
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">
+{{- end -}}
+<meta property="article:author" content="{{ .Site.Params.author }}">
+{{- range .Params.tags -}}
+<meta property="article:tag" content="{{ . }}">
+{{- end -}}
+{{- end -}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{- with $ogImage -}}<meta name="twitter:image" content="{{ . }}">{{- end -}}
+<link rel="alternate" type="application/rss+xml" href="{{ "index.xml" | absURL }}" title="{{ .Site.Title }}">
+<link rel="alternate" type="application/json" href="{{ "index.json" | absURL }}">
+{{- with .Site.Params.themeColor -}}<meta name="theme-color" content="{{ . }}">{{- end -}}
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+{{ with .Site.Params.assets.apple_touch_icon }}<link rel="apple-touch-icon" href="{{ . | relURL }}">{{ end }}
+{{ with .Site.Params.assets.safari_pinned_tab -}}
+<link rel="mask-icon" href="{{ . | relURL }}" color="{{ $.Site.Params.themeColor | default "#0f1020" }}">
+{{- end }}
+{{- if and .IsPage (eq .Type "posts") -}}
+{{- $doc := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" .Title
+  "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
+  "author" (dict "@type" "Person" "name" .Site.Params.author)
+  "description" ($desc)
+  "url" .Permalink
+-}}
+{{- if $ogImage }}{{- $doc = merge $doc (dict "image" (slice $ogImage)) }}{{- end -}}
+{{- if and (not .Lastmod.IsZero) (ne .Lastmod.Unix .Date.Unix) -}}
+{{- $doc = merge $doc (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")) -}}
+{{- end -}}
+<script type="application/ld+json">{{ $doc | jsonify | safeHTML }}</script>
+{{- end -}}

@@ -10,63 +10,40 @@
       </div>
     </div>
 
+    {{- with .Site.Params.characterSheet -}}
     <aside class="panel character-sheet">
       <header class="character-sheet-header">
-        <h2>Character Sheet</h2>
-        <span class="character-slot" aria-label="Save slot">SAVE&nbsp;01</span>
+        <h2>{{ .title | default "Character Sheet" }}</h2>
+        <span class="character-slot" aria-label="Save slot">SAVE&nbsp;{{ .saveSlot | default "01" }}</span>
       </header>
 
       <ul class="character-stats">
+        {{- range .stats }}
         <li>
-          <span class="stat-icon" aria-hidden="true">⚔️</span>
+          <span class="stat-icon" aria-hidden="true">{{ partial "character-stat-icon.html" . }}</span>
           <div class="stat-body">
-            <span class="stat-label">Class</span>
-            <span class="stat-value">Software Engineer</span>
+            <span class="stat-label">{{ .label }}</span>
+            <span class="stat-value">{{ .value }}</span>
           </div>
         </li>
-        <li>
-          <span class="stat-icon" aria-hidden="true">📺</span>
-          <div class="stat-body">
-            <span class="stat-label">Guild</span>
-            <span class="stat-value">Flutter Explained · YouTube</span>
-          </div>
-        </li>
-        <li>
-          <span class="stat-icon" aria-hidden="true">👨‍👧‍👦</span>
-          <div class="stat-body">
-            <span class="stat-label">Party</span>
-            <span class="stat-value">Father of two</span>
-          </div>
-        </li>
-        <li>
-          <span class="stat-icon" aria-hidden="true">🐺</span>
-          <div class="stat-body">
-            <span class="stat-label">Questline</span>
-            <span class="stat-value">Scout trainer · Wolf Cubs</span>
-          </div>
-        </li>
-        <li>
-          <span class="stat-icon" aria-hidden="true">🗡️</span>
-          <div class="stat-body">
-            <span class="stat-label">Legendary Favorite</span>
-            <span class="stat-value">Secret of Mana (SNES)</span>
-          </div>
-        </li>
-        <li>
-          <span class="stat-icon" aria-hidden="true">🎮</span>
-          <div class="stat-body">
-            <span class="stat-label">Now Playing</span>
-            <span class="stat-value">Life is Strange &amp; story-rich games</span>
-          </div>
-        </li>
+        {{- end }}
       </ul>
 
+      {{- with .bar }}
+      <div class="character-bar" aria-label="Curiosity bar">
+        <span class="character-bar-label">{{ .label | default "CURIOSITY" }}</span>
+        <span class="character-bar-track"><span class="character-bar-fill"></span></span>
+        <span class="character-bar-value">{{ .value | default "∞ / ∞" }}</span>
+      </div>
+      {{- else }}
       <div class="character-bar" aria-label="Curiosity bar">
         <span class="character-bar-label">CURIOSITY</span>
         <span class="character-bar-track"><span class="character-bar-fill"></span></span>
         <span class="character-bar-value">∞ / ∞</span>
       </div>
+      {{- end }}
     </aside>
+    {{- end }}
   </section>
 
   <section class="section-block panel panel-loose">
@@ -77,7 +54,7 @@
     <div class="post-grid one-column">
       {{ range first 6 (where .Site.RegularPages "Type" "posts") }}
         {{ $post := . }}
-        <article class="post-card{{ if .Params.image }} has-thumb{{ end }}">
+        <article class="post-card{{ if .Params.image }} has-thumb{{ else }} no-thumb{{ end }}">
           {{ with .Params.image }}
             {{ $src := . }}
             {{ with $post.Resources.GetMatch $src }}
@@ -86,6 +63,8 @@
             <div class="post-thumb-wrap">
               <img class="post-thumb" src="{{ $src | safeURL }}" alt="{{ $post.Title }}">
             </div>
+          {{ else }}
+            <div class="post-thumb-fallback" aria-hidden="true"></div>
           {{ end }}
           <div class="post-card-body">
             <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>

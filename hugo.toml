@@ -7,8 +7,6 @@ enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
-pygmentsUseClasses = true
-
 [minify]
 disableXML = true
 minifyOutput = true
@@ -20,7 +18,8 @@ title = "Max Weber"
 description = "Developer, Publisher and Father"
 keywords = ["Flutter", "Rust", "hledger", "blog", "developer"]
 author = "Max Weber"
-images = ["/assets/favicon.png"]
+images = ["/assets/og-default.png"]
+themeColor = "#0f1020"
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
 disableThemeToggle = false
@@ -44,8 +43,48 @@ tocopen = false
 title = "Engineer & storyteller."
 subtitle = "I'm Max — software engineer by trade, creator of Flutter Explained on YouTube, dad of two, and a voluntary scout trainer for wolf cubs. I build apps in Flutter and tools in Rust, and I treat every great game as a masterclass in storytelling. This blog is where my code, my craft, and my side quests meet."
 
+[params.characterSheet]
+title = "Character Sheet"
+saveSlot = "01"
+
+[params.characterSheet.bar]
+label = "CURIOSITY"
+value = "∞ / ∞"
+
+[[params.characterSheet.stats]]
+icon = "swords"
+label = "Class"
+value = "Software Engineer"
+
+[[params.characterSheet.stats]]
+icon = "display"
+label = "Guild"
+value = "Flutter Explained · YouTube"
+
+[[params.characterSheet.stats]]
+icon = "users"
+label = "Party"
+value = "Father of two"
+
+[[params.characterSheet.stats]]
+icon = "wolf"
+label = "Questline"
+value = "Scout trainer · Wolf Cubs"
+
+[[params.characterSheet.stats]]
+icon = "dagger"
+label = "Legendary Favorite"
+value = "Secret of Mana (SNES)"
+
+[[params.characterSheet.stats]]
+icon = "gamepad"
+label = "Now Playing"
+value = "Life is Strange & story-rich games"
+
 [params.assets]
 favicon = "/assets/favicon.png"
+apple_touch_icon = "/apple-touch-icon.png"
+safari_pinned_tab = "/safari-pinned-tab.svg"
 
 [params.label]
 text = "Home"

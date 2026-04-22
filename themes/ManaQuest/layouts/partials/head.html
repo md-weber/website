@@ -1,7 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="robots" content="index, follow">
+{{- $robots := "index, follow" -}}
+{{- if and .IsPage (eq .Layout "search") }}{{ $robots = "noindex, follow" }}{{ end -}}
+<meta name="robots" content="{{ $robots }}">
 <title>
   {{- if .IsHome -}}
     {{ .Site.Title }}
@@ -9,9 +11,12 @@
     {{ printf "%s | %s" .Title .Site.Title }}
   {{- end -}}
 </title>
-{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+{{- $metaDesc := or .Description .Site.Params.description -}}
+{{ with $metaDesc }}<meta name="description" content="{{ . }}">{{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="stylesheet" href="{{ "css/theme.css" | relURL }}">
-{{ with .Site.Params.assets.favicon }}
-<link rel="icon" href="{{ . | relURL }}">
-{{ end }}
+<link rel="stylesheet" href="{{ "css/chroma-catppuccin-mocha.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/blog-fonts.css" | relURL }}">
+{{ with .Site.Params.assets.favicon }}<link rel="icon" href="{{ . | relURL }}" type="image/png">{{ end }}
+<script src="{{ "js/code-block.js" | relURL }}" defer></script>
+{{ partial "seo.html" . }}
