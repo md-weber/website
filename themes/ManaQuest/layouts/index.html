@@ -1,0 +1,106 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="panel hero-copy">
+      <p class="hero-kicker">▸ Player 1 — Max Weber</p>
+      <h1>{{ .Site.Params.hero.title | default "Software engineer, creator, dad, and scout trainer." }}</h1>
+      <p class="hero-sub">{{ .Site.Params.hero.subtitle | default "I build software, teach Flutter on YouTube, and collect stories from games and life." }}<span class="hero-cursor" aria-hidden="true">▮</span></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{ "posts/" | relURL }}">▶ Read the Adventure Log</a>
+        <a class="btn" href="https://youtube.com/flutterexplained" target="_blank" rel="noreferrer">⏵ Watch Flutter Explained</a>
+      </div>
+    </div>
+
+    <aside class="panel character-sheet">
+      <header class="character-sheet-header">
+        <h2>Character Sheet</h2>
+        <span class="character-slot" aria-label="Save slot">SAVE&nbsp;01</span>
+      </header>
+
+      <ul class="character-stats">
+        <li>
+          <span class="stat-icon" aria-hidden="true">⚔️</span>
+          <div class="stat-body">
+            <span class="stat-label">Class</span>
+            <span class="stat-value">Software Engineer</span>
+          </div>
+        </li>
+        <li>
+          <span class="stat-icon" aria-hidden="true">📺</span>
+          <div class="stat-body">
+            <span class="stat-label">Guild</span>
+            <span class="stat-value">Flutter Explained · YouTube</span>
+          </div>
+        </li>
+        <li>
+          <span class="stat-icon" aria-hidden="true">👨‍👧‍👦</span>
+          <div class="stat-body">
+            <span class="stat-label">Party</span>
+            <span class="stat-value">Father of two</span>
+          </div>
+        </li>
+        <li>
+          <span class="stat-icon" aria-hidden="true">🐺</span>
+          <div class="stat-body">
+            <span class="stat-label">Questline</span>
+            <span class="stat-value">Scout trainer · Wolf Cubs</span>
+          </div>
+        </li>
+        <li>
+          <span class="stat-icon" aria-hidden="true">🗡️</span>
+          <div class="stat-body">
+            <span class="stat-label">Legendary Favorite</span>
+            <span class="stat-value">Secret of Mana (SNES)</span>
+          </div>
+        </li>
+        <li>
+          <span class="stat-icon" aria-hidden="true">🎮</span>
+          <div class="stat-body">
+            <span class="stat-label">Now Playing</span>
+            <span class="stat-value">Life is Strange &amp; story-rich games</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="character-bar" aria-label="Curiosity bar">
+        <span class="character-bar-label">CURIOSITY</span>
+        <span class="character-bar-track"><span class="character-bar-fill"></span></span>
+        <span class="character-bar-value">∞ / ∞</span>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section-block panel panel-loose">
+    <header class="section-header">
+      <h2>Latest Posts</h2>
+      <span class="section-slot" aria-label="Section">ADVENTURE&nbsp;LOG</span>
+    </header>
+    <div class="post-grid one-column">
+      {{ range first 6 (where .Site.RegularPages "Type" "posts") }}
+        {{ $post := . }}
+        <article class="post-card{{ if .Params.image }} has-thumb{{ end }}">
+          {{ with .Params.image }}
+            {{ $src := . }}
+            {{ with $post.Resources.GetMatch $src }}
+              {{ $src = .RelPermalink }}
+            {{ end }}
+            <div class="post-thumb-wrap">
+              <img class="post-thumb" src="{{ $src | safeURL }}" alt="{{ $post.Title }}">
+            </div>
+          {{ end }}
+          <div class="post-card-body">
+            <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+            <h3><a class="post-card-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Summary | plainify | truncate 150 }}</p>
+            {{ with .Params.tags }}
+              <p class="tags">
+                {{ range first 4 . }}
+                  <a href="{{ printf "/tags/%s/" (. | urlize) | relURL }}">#{{ . }}</a>
+                {{ end }}
+              </p>
+            {{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

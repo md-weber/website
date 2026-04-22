@@ -1,0 +1,77 @@
+---
+description: Blog content conventions — front matter, page bundles, images, links, callouts. For markdown under content/.
+globs: content/**/*.md
+alwaysApply: false
+---
+
+# ManaQuest Content Conventions
+
+## Front matter (required)
+
+```yaml
+---
+author: "Max Weber"
+title: "Sharp, ≤70 chars, value-first"
+date: "YYYY-MM-DD"
+description: "1–2 sentence summary, includes core keyword. Used for SEO + card preview."
+image: cover.png   # bundle filename OR absolute /path
+tags: [kebab-case, lowercase]
+keywords:           # optional, SEO boost
+  - core term
+  - long-tail term
+ShowToc: true
+ShowBreadCrumbs: true
+---
+```
+
+## Page bundles (preferred for image-heavy posts)
+
+Use `content/posts/<slug>/index.md` + sibling images. `image:` accepts bare filename — theme resolves via `Resources.GetMatch`.
+
+```
+content/posts/ldash/
+  index.md
+  cover.png
+  portfolio.png
+```
+
+## Inline image
+
+Single image gets pixel frame + lightbox automatically:
+
+```md
+![Alt text describing the image](portfolio.png)
+```
+
+For 2–4 images side-by-side, use the gallery shortcode (see `manaquest-components`).
+
+## Code blocks
+
+Always tag the language → render hook adds language label + line numbers.
+
+````md
+```rust
+fn main() { println!("hello"); }
+```
+````
+
+## Callouts
+
+Use markdown blockquote — automatically styled as game-callout (✦ glyph + cyan corner):
+
+```md
+> Repo: [codeberg.org/...](https://codeberg.org/...)
+```
+
+## Links
+
+- One link per concept. No link spam.
+- External authoritative sources welcome (project homepages, ecosystem hubs).
+- Internal cross-links preferred over orphaning posts (`/posts/<slug>/`).
+- Always close posts with a "Stay in touch" block (YouTube, Nostr/Primal, Patreon).
+
+## Don'ts
+
+- No bare filenames in `tags:` — use kebab-case (`personal-development`, not `Personal Development`).
+- No future `date:` unless intentionally scheduled (Hugo skips them; use `hugo -F` to preview).
+- No HTML inside markdown when a shortcode or class exists.

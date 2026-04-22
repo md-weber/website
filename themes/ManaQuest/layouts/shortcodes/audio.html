@@ -1,0 +1,17 @@
+{{- /*
+  Audio shortcode — minimal HTML5 player.
+
+  Usage:
+    {{< audio src="/path/to/file.mp3" >}}
+
+  preload="none" keeps the file from being fetched until the visitor hits
+  play (useful for the 13 MB personal-story narration).
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- if $src -}}
+<audio class="audio-player" controls preload="none">
+  <source src="{{ $src | safeURL }}">
+  Your browser does not support the audio element.
+  <a href="{{ $src | safeURL }}">Download the audio file</a>.
+</audio>
+{{- end -}}

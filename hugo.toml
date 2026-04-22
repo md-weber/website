@@ -2,7 +2,7 @@ baseUrl = 'https://flutter-explained.dev/'
 languageCode = 'en-us'
 title = 'Max Weber - Developer, Publisher and Father'
 
-theme = "PaperMod"
+theme = "ManaQuest"
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
@@ -18,9 +18,9 @@ social = true
 env = "production"
 title = "Max Weber"
 description = "Developer, Publisher and Father"
-keywords = ["Blog", "Portfolio", "PaperMod"]
+keywords = ["Flutter", "Rust", "hledger", "blog", "developer"]
 author = "Max Weber"
-images = ["<link or path of image for opengraph, twitter-cards>"]
+images = ["/assets/favicon.png"]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
 disableThemeToggle = false
@@ -40,12 +40,12 @@ hideSummary = false
 showtoc = false
 tocopen = false
 
+[params.hero]
+title = "Engineer & storyteller."
+subtitle = "I'm Max — software engineer by trade, creator of Flutter Explained on YouTube, dad of two, and a voluntary scout trainer for wolf cubs. I build apps in Flutter and tools in Rust, and I treat every great game as a masterclass in storytelling. This blog is where my code, my craft, and my side quests meet."
+
 [params.assets]
-favicon = "<link / abs url>"
-favicon16x16 = "<link / abs url>"
-favicon32x32 = "<link / abs url>"
-apple_touch_icon = "<link / abs url>"
-safari_pinned_tab = "<link / abs url>"
+favicon = "/assets/favicon.png"
 
 [params.label]
 text = "Home"
@@ -55,7 +55,7 @@ iconHeight = 35
 [params.profileMode]
 enabled = true
 title = "Max Weber"
-subtitle = "Code is only a tool \n\n Website is Work in Progress 🚧"
+subtitle = "Code is only a tool"
 imageUrl = "profile_max.webp"
 imageWidth = 120
 imageHeight = 120
@@ -64,10 +64,6 @@ imageTitle = "Max Weber - Developer"
 [[params.profileMode.buttons]]
 name = "Posts"
 url = "posts"
-
-[[params.profileMode.buttons]]
-name = "Podcast"
-url = "https://podcast.flutter-explained.dev"
 
 [[params.profileMode.buttons]]
 name = "Bitcoin Tracker App"
@@ -82,8 +78,8 @@ Title = "Hi there \U0001F44B"
 Content = "Welcome to my blog"
 
 [[params.socialIcons]]
-name = "bluesky"
-url = "https://bsky.app/profile/md-weber.bsky.social"
+name = "bitcoin"
+url = "https://primal.net/p/nprofile1qqs2vxjufd5sqyfsfp7h8un4crd8nld5mt9e9sv59jcsxuw8kwctzwswn3er8"
 
 [[params.socialIcons]]
 name = "stackoverflow"
@@ -92,9 +88,6 @@ url = "https://stackoverflow.com/users/3690032/max-weber"
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/md-weber"
-
-[params.analytics.google]
-SiteVerificationTag = ""
 
 [params.cover]
 hidden = true

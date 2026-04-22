@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ "/" | relURL }}">
+      <span class="brand-title">{{ .Site.Params.title | default .Site.Title }}</span>
+      <span class="brand-subtitle">{{ .Site.Params.description | default "Engineering, gaming, and storytelling." }}</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="{{ "/" | relURL }}">Home</a></li>
+        <li><a href="{{ "posts/" | relURL }}">Posts</a></li>
+        <li><a href="{{ "tags/" | relURL }}">Tags</a></li>
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,32 @@
+{{- /*
+  Gallery shortcode — responsive image strip.
+
+  Usage:
+    {{< gallery
+      "theme-dark.png|Dark — default"
+      "theme-light.png|Light — works on any terminal"
+      "theme-solarized.png|Classic Solarized Dark"
+    >}}
+
+  Each positional arg is "<src>|<caption>". Caption is optional.
+  Image paths resolve against the page bundle first, then fall back to the raw value.
+*/ -}}
+<div class="gallery" data-count="{{ len .Params }}">
+  {{- range $i, $item := .Params -}}
+    {{- $parts := split $item "|" -}}
+    {{- $src := index $parts 0 | default "" -}}
+    {{- $caption := "" -}}
+    {{- if gt (len $parts) 1 -}}
+      {{- $caption = index $parts 1 -}}
+    {{- end -}}
+    {{- with $.Page.Resources.GetMatch $src -}}
+      {{- $src = .RelPermalink -}}
+    {{- end -}}
+    <figure class="gallery-item">
+      <img src="{{ $src | safeURL }}" alt="{{ $caption }}" loading="lazy">
+      {{- with $caption -}}
+        <figcaption>{{ . }}</figcaption>
+      {{- end -}}
+    </figure>
+  {{- end -}}
+</div>

@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <article class="post-single">
+    <header class="panel panel-loose post-header">
+      <div class="section-header">
+        <h2>Quest Log Entry</h2>
+        <span class="section-slot">{{ .Date.Format "2006 · 01 · 02" }}</span>
+      </div>
+      <h1 class="post-title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="post-description">{{ . }}</p>{{ end }}
+      {{ with .Params.tags }}
+        <p class="tags">
+          {{ range . }}
+            <a href="{{ printf "/tags/%s/" (. | urlize) | relURL }}">#{{ . }}</a>
+          {{ end }}
+        </p>
+      {{ end }}
+    </header>
+
+    {{ if .Params.ShowToc }}
+      <aside class="panel panel-loose toc">
+        <div class="section-header">
+          <h2>Table of Contents</h2>
+          <span class="section-slot">INDEX</span>
+        </div>
+        {{ .TableOfContents }}
+      </aside>
+    {{ end }}
+
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}

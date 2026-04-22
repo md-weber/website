@@ -5,11 +5,18 @@ showToc: true
 searchHidden: true
 ---
 
-Last updated: 05.11.2024
+Last updated: 22.04.2026
 
 ## 1. Introduction
 
-Welcome to flutter-explained.dev (the "Website"). We are committed to protecting your personal data and respecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you visit our Website.
+Welcome to flutter-explained.dev (the "Website"). This policy explains which
+personal data is processed when you visit this Website, on what legal basis,
+and which rights you have under the EU General Data Protection Regulation
+(GDPR).
+
+This Website is a privately operated, static blog. It does **not** use
+analytics, advertising, tracking cookies, contact forms, newsletters, or
+user accounts.
 
 ## 2. Data Controller
 
@@ -19,115 +26,162 @@ Wilhelm-Leuschner-Str. 54\
 Germany\
 Email: [privacy@flutter-explained.dev](mailto:privacy@flutter-explained.dev)
 
-## 3. Types of Data Collected
+## 3. Data Processed When You Visit the Website
 
-### 3.1 Personal Data
+When you access this Website, your browser automatically transmits technical
+information that is required for delivering the page. This data may include:
 
-We may collect personal data that you voluntarily provide to us when you:
+- IP address
+- Date and time of the request
+- Requested URL / referrer
+- HTTP status code and transferred data volume
+- Browser type, version and operating system
 
-- Contact us via email or contact forms
-- Subscribe to newsletters or updates
+This data is processed in server log files by the hosting providers listed
+in section 5.
 
-This data may include:
+**Legal basis:** Art. 6(1)(f) GDPR — legitimate interest in operating a
+secure and stable website.
 
-- Name
-- Email address
-- Any other information you choose to provide
+**Retention:** Determined by the hosting providers (see section 5). The
+controller does not run any additional analytics, profiling or tracking on
+this data.
 
-### 3.2 Usage Data
+## 4. Contact by Email
 
-We collect information that your browser sends whenever you visit our Website. This Usage Data may include information such as:
+If you contact me by email (e.g. via the addresses on the imprint or this
+page), the email content and your address are processed solely to handle
+your request.
 
-- Your computer's Internet Protocol (IP) address
-- Browser type and version
-- Pages visited on our Website
-- Date and time of your visit
-- Time spent on pages
-- Other diagnostic data
+**Legal basis:** Art. 6(1)(f) GDPR (legitimate interest in answering
+inquiries) or Art. 6(1)(b) GDPR if your message relates to a (pre-)
+contractual matter.
 
-## 4. Purpose of Data Processing
+**Retention:** Until your inquiry is fully resolved, plus statutory
+retention periods where applicable.
 
-We use the collected data for various purposes:
+## 5. Hosting
 
-- To provide and maintain our Website
-- To notify you about changes to our Website
-- To allow you to participate in interactive features
-- To provide customer support
-- To gather analysis or valuable information so that we can improve our Website
-- To monitor the usage of our Website
-- To detect, prevent, and address technical issues
+### 5.1 Website hosting — Firebase Hosting (Google)
 
-## 5. Legal Basis for Processing Personal Data
+The Website is hosted on **Firebase Hosting**, operated by **Google Ireland
+Limited**, Gordon House, Barrow Street, Dublin 4, Ireland (parent: Google
+LLC, USA). Firebase Hosting receives every HTTP request and processes it in
+order to deliver the Website. This includes the request data listed in
+section 3.
 
-We process your personal data based on the following legal grounds under the GDPR:
+For requests served by Firebase, data may be transferred to or processed in
+the United States. Google relies on the EU–US Data Privacy Framework and on
+EU Standard Contractual Clauses (Art. 46 GDPR) for such transfers. A Data
+Processing Addendum under Art. 28 GDPR is in place between Google and the
+controller.
 
-- Consent (Article 6(1)(a)): When you have given consent for processing your personal data.
-- Legitimate Interests (Article 6(1)(f)): Processing is necessary for our legitimate interests, such as improving our services.
+More information:
 
-## 6. Your Rights Under GDPR
+- [Firebase Privacy and Security](https://firebase.google.com/support/privacy)
+- [Google Privacy Policy](https://policies.google.com/privacy?hl=en-US)
+
+### 5.2 Domain & DNS — Hetzner
+
+The domain `flutter-explained.dev` is managed via **Hetzner Online GmbH**,
+Industriestr. 25, 91710 Gunzenhausen, Germany. Hetzner processes DNS
+queries for the domain. Hetzner servers are located in Germany / the EU.
+
+A Data Processing Agreement under Art. 28 GDPR is in place. More
+information: [Hetzner Privacy Policy](https://www.hetzner.com/legal/privacy-policy).
+
+## 6. Cookies and Similar Technologies
+
+This Website does **not** set tracking cookies and does **not** use local
+storage for tracking purposes. No consent banner is displayed because no
+non-essential cookies are used.
+
+If you decide to load an embedded YouTube video (see section 7), YouTube
+may set its own cookies and use local storage in your browser.
+
+## 7. Embedded YouTube Videos (Click-to-Load)
+
+Some posts contain embedded YouTube videos. To protect your privacy, these
+embeds are implemented as a **click-to-load placeholder**: no connection
+to YouTube or Google servers is established and no data is transmitted
+**until you actively click the "Load video" button**.
+
+If you choose to load a video:
+
+- The connection is made to `youtube-nocookie.com` (YouTube's privacy-
+  enhanced mode), operated by Google Ireland Limited / Google LLC.
+- YouTube receives your IP address, the URL of the page you came from,
+  user-agent information, and may set cookies once the video is loaded
+  or played.
+- Data may be transferred to the United States; Google relies on the
+  EU–US Data Privacy Framework and Standard Contractual Clauses.
+
+**Legal basis:** Art. 6(1)(a) GDPR — your consent, given by clicking the
+button. You can revoke this consent at any time by leaving or reloading
+the page.
+
+More information: [YouTube Privacy Policy](https://www.youtube.com/howyoutubeworks/our-commitments/protecting-user-data/).
+
+## 8. Search
+
+The on-site search runs entirely in your browser (client-side, using
+Fuse.js). Your search queries are **not** sent to any server and are not
+logged.
+
+## 9. RSS / JSON Feeds
+
+This Website provides RSS feeds (`/index.xml`, per-section feeds) and a
+JSON index (`/index.json`) used by the search. Requests for these files
+are processed by the hosting providers in the same way as any other page
+request (see sections 3 and 5).
+
+## 10. Your Rights Under the GDPR
 
 You have the following rights regarding your personal data:
 
-- Right to Access: You can request copies of your personal data.
-- Right to Rectification: You can request that we correct any inaccurate or incomplete data.
-- Right to Erasure: You can request that we delete your personal data under certain conditions.
-- Right to Restrict Processing: You can request that we restrict the processing of your personal data under certain conditions.
-- Right to Data Portability: You can request to transfer your data to another organization or directly to you.
-- Right to Object: You can object to our processing of your personal data under certain conditions.
+- Right of access (Art. 15)
+- Right to rectification (Art. 16)
+- Right to erasure (Art. 17)
+- Right to restriction of processing (Art. 18)
+- Right to data portability (Art. 20)
+- Right to object to processing based on legitimate interest (Art. 21)
+- Right to withdraw consent at any time (Art. 7(3)) without affecting the
+  lawfulness of processing carried out before withdrawal
 
-To exercise any of these rights, please contact us at [privacy@flutter-explained.dev](mailto:privacy@flutter-explained.dev).
+To exercise any of these rights, please contact
+[privacy@flutter-explained.dev](mailto:privacy@flutter-explained.dev).
 
-## 7. Data Security
+You also have the right to lodge a complaint with a supervisory authority,
+in particular in the EU/EEA member state of your habitual residence,
+place of work, or place of the alleged infringement. The competent
+authority for the controller is:
 
-We take appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.
+> Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit
+> Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttgart, Germany.
 
-## 8. Data Retention
+## 11. Data Security
 
-We will retain your personal data only for as long as necessary for the purposes set out in this Privacy Policy, and to the extent necessary to comply with our legal obligations.
-
-## 9. Third-Party Services
-
-### 9.1 Google Search Console
-
-We use Google Search Console to monitor our Website's presence in Google Search results. This service collects anonymized data and does not use cookies on our Website.
-
-For more information, please visit the [Google Privacy Policy](https://policies.google.com/privacy?hl=en-US).
-
-### 9.2 YouTube Embeds
-
-Our Website embeds videos from YouTube. We use YouTube's privacy-enhanced mode (youtube-nocookie.com), which means that YouTube won't store information about visitors on our Website unless they play the video.
-
-When you choose to play an embedded video, YouTube may collect your IP address and track your interactions.
-
-For more information, please visit the [YouTube Privacy Policy](https://www.youtube.com/howyoutubeworks/our-commitments/protecting-user-data/).
-
-## 10. Cookies and Similar Technologies
-
-Our Website uses minimal cookies necessary for its functioning. We do not use cookies for tracking purposes.
-
-Managing Cookies
-Most web browsers allow you to control cookies through their settings. However, disabling cookies may affect the functionality of our Website.
-
-## 11. Data Transfers to Third Countries
-
-Your information, including personal data, may be transferred to and maintained on servers located outside of your state, province, country, or other governmental jurisdiction where data protection laws may differ.
-
-If we transfer your personal data outside the European Economic Area (EEA), we ensure that appropriate safeguards are in place.
+Appropriate technical and organisational measures are in place to protect
+your data against unauthorised access, alteration, disclosure or
+destruction. The Website is served exclusively over HTTPS (TLS).
 
 ## 12. Links to Other Websites
 
-Our Website may contain links to external sites not operated by us. We have no control over the content and practices of these sites and cannot accept responsibility or liability for their respective privacy policies.
+This Website contains links to external sites (e.g. YouTube, GitHub,
+Stack Overflow, Google Play, Nostr / Primal). The controller has no
+influence on the content or privacy practices of these third parties.
+Please review their respective privacy policies before interacting with
+them.
 
-## 13. Changes to This Privacy Policy
+## 13. Changes to This Policy
 
-We may update our Privacy Policy from time to time. We encourage you to review this Privacy Policy periodically for any changes.
+This Privacy Policy may be updated to reflect changes to the Website or
+to the legal framework. The current version is always available at
+`/data-privacy`. The "Last updated" date at the top reflects the most
+recent change.
 
-Effective Date: This policy is effective as of 05.11.2024. Updates: Any changes will be posted on this page with an updated revision date.
+## 14. Contact
 
-## 14. Contact Us
-
-If you have any questions or concerns about this Privacy Policy, please contact us:
-
-Max Weber
-Email: [privacy@flutter-explained.dev](mailto:privacy@flutter-explained.dev)
+Max Weber\
+Email: [privacy@flutter-explained.dev](mailto:privacy@flutter-explained.dev)\
 Address: Wilhelm-Leuschner-Str. 54, 76189 Karlsruhe, Germany

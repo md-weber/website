@@ -1,0 +1,45 @@
+{{ define "main" }}
+  {{ $pages := .Pages }}
+  {{ if eq .Kind "section" }}
+    {{ $pages = .RegularPages }}
+  {{ end }}
+  {{ $gridClass := "post-grid" }}
+  {{ if and (eq .Kind "section") (eq .Section "posts") }}
+    {{ $gridClass = "post-grid one-column" }}
+  {{ end }}
+  <section class="section-block panel panel-loose">
+    <header class="section-header">
+      <h1>{{ .Title }}</h1>
+      <span class="section-slot">{{ len $pages }}&nbsp;ENTRIES</span>
+    </header>
+    {{ with .Content }}<div class="page-intro">{{ . }}</div>{{ end }}
+    <div class="{{ $gridClass }}">
+      {{ range $pages.ByDate.Reverse }}
+        {{ $post := . }}
+        <article class="post-card{{ if .Params.image }} has-thumb{{ end }}">
+          {{ with .Params.image }}
+            {{ $src := . }}
+            {{ with $post.Resources.GetMatch $src }}
+              {{ $src = .RelPermalink }}
+            {{ end }}
+            <div class="post-thumb-wrap">
+              <img class="post-thumb" src="{{ $src | safeURL }}" alt="{{ $post.Title }}">
+            </div>
+          {{ end }}
+          <div class="post-card-body">
+            <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+            <h2><a class="post-card-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Summary | plainify | truncate 180 }}</p>
+            {{ with .Params.tags }}
+              <p class="tags">
+                {{ range first 5 . }}
+                  <a href="{{ printf "/tags/%s/" (. | urlize) | relURL }}">#{{ . }}</a>
+                {{ end }}
+              </p>
+            {{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

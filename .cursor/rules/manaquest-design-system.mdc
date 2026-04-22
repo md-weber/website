@@ -1,0 +1,46 @@
+---
+description: ManaQuest design tokens — colors, typography, motifs. Source of truth for the site's look and feel.
+alwaysApply: true
+---
+
+# ManaQuest Design System
+
+Retro game-UI aesthetic. Dark base + neon accents + pixel-corner motifs. All defined in `themes/ManaQuest/static/css/theme.css` as CSS variables — never hardcode colors elsewhere, use the tokens.
+
+## Color tokens (CSS vars)
+
+| Var | Value | Use |
+|---|---|---|
+| `--bg` | `#0f1020` | Page background base |
+| `--panel` | `#1a1c33` | Card / panel solid bg |
+| `--panel-soft` | `#242848` | Panel gradient top |
+| `--text` | `#eef0ff` | Primary text |
+| `--muted` | `#b7b9d3` | Secondary text, meta, labels |
+| `--accent` | `#9dff6a` | Primary accent (mana green) — top-left corners, h2 bars, CTA glow |
+| `--accent-2` | `#7ad7ff` | Secondary accent (cyan) — bottom-right corners, links, hover glow |
+| `--border` | `#3a3f67` | Borders, dividers, inset rings |
+
+## Accent rules
+
+- **Top-left** corner / **left** rail / **first** glyph → `--accent` (green)
+- **Bottom-right** corner / **right** glow / **secondary** highlight → `--accent-2` (cyan)
+- Links default `--accent-2`; hover `--accent`. Never invert.
+
+## Typography
+
+- **UI mono** (labels, slot chips, kickers, section headers, code-block lang): `"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace`. Uppercase, `letter-spacing: 0.14em–0.16em`.
+- **Body**: `Inter, "Segoe UI", Roboto, sans-serif`. Line-height `1.65`.
+- **Hero h1**: gradient text fill `--text → --accent-2 → --accent`, weight `800`.
+
+## Motifs (must reuse, never reinvent)
+
+- **`.panel`** — pixel corner brackets (green TL, cyan BR), scanline grid bg, inset glow + drop shadow.
+- **`.section-header`** — `▣` glyph + mono uppercase title + dashed bottom divider + right-side `.section-slot` chip.
+- **`.btn`** — gradient body + inner highlight + outer shadow. Hover lifts + cyan glow. `.btn-primary` adds green identity.
+
+## Don'ts
+
+- No hardcoded `#hex` outside `theme.css` — extend tokens instead.
+- No new accent colors. If a third needed, add a token, document here.
+- No solid white text — use `--text` (off-white).
+- Never reverse corner color order (TL = green, BR = cyan, always).

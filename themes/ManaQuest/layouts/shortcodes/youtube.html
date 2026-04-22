@@ -1,0 +1,29 @@
+{{- /*
+  Custom YouTube shortcode — GDPR-friendly click-to-load.
+
+  No request to youtube.com / google.com is made until the visitor
+  explicitly clicks "Load video". The placeholder is fully self-contained
+  (no thumbnail fetch from i.ytimg.com — that would already leak the IP).
+
+  Usage (positional, drop-in compatible with Hugo's built-in shortcode):
+    {{< youtube cpEYw8HuoxI >}}
+
+  Usage (named):
+    {{< youtube id="cpEYw8HuoxI" title="Optional video title" >}}
+*/ -}}
+{{- $id := .Get "id" | default (.Get 0) -}}
+{{- $title := .Get "title" | default "YouTube video" -}}
+{{- if $id -}}
+<div class="yt-embed" data-yt-id="{{ $id }}" data-yt-title="{{ $title }}">
+  <button type="button" class="yt-embed__btn" aria-label="Load YouTube video: {{ $title }}">
+    <span class="yt-embed__play" aria-hidden="true">▶</span>
+    <span class="yt-embed__label">
+      <span class="yt-embed__title">{{ $title }}</span>
+      <span class="yt-embed__hint">Click to load — this will contact YouTube (Google LLC) and may set cookies and transmit your IP address.</span>
+    </span>
+  </button>
+  <noscript>
+    <p><a href="https://www.youtube.com/watch?v={{ $id }}" rel="noreferrer noopener" target="_blank">Watch on YouTube</a></p>
+  </noscript>
+</div>
+{{- end -}}

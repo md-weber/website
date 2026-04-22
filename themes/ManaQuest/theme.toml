@@ -1,0 +1,12 @@
+name = "ManaQuest"
+license = "MIT"
+licenselink = "https://opensource.org/license/mit"
+description = "A personal retro-inspired Hugo theme for Max Weber."
+homepage = "https://flutter-explained.dev/"
+tags = ["blog", "retro", "personal", "portfolio"]
+features = ["blog", "taxonomy", "responsive"]
+min_version = "0.120.0"
+
+[author]
+  name = "Max Weber"
+  homepage = "https://flutter-explained.dev/"

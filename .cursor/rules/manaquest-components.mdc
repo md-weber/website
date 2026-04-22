@@ -1,0 +1,64 @@
+---
+description: ManaQuest component patterns — panel, button, post card, code block, gallery, lightbox. For theme template + CSS work.
+globs: themes/ManaQuest/**/*.{html,css,js}
+alwaysApply: false
+---
+
+# ManaQuest Components
+
+Reuse existing classes. Never duplicate styling — extend.
+
+## Panel (`.panel`)
+
+Wrap any framed surface (hero, character sheet, latest posts, post header, TOC, list pages, taxonomy pages).
+
+```html
+<section class="panel panel-loose">
+  <header class="section-header">
+    <h2>Section Name</h2>
+    <span class="section-slot">SLOT&nbsp;LABEL</span>
+  </header>
+  …content…
+</section>
+```
+
+- `.panel-loose` adds extra padding when nesting cards inside.
+- `.section-slot` always mono uppercase, short (1–2 words or count).
+
+## Button (`.btn` / `.btn-primary`)
+
+Use `.btn-primary` only for the page's main CTA. Everything else is plain `.btn`. Add a leading pixel glyph for game feel: `▶ Play`, `⏵ Watch`, `▣ View`.
+
+## Post card (`.post-card`)
+
+- Always use `.post-card-link` overlay for whole-card click.
+- Tag chips inside `.tags` stay on top via z-index 3.
+- Add `.has-thumb` class when image present, image rendered via `Resources.GetMatch` (page bundle) with raw URL fallback.
+
+## Code blocks
+
+Handled by render hook `layouts/_default/_markup/render-codeblock.html`. Outputs `<figure class="code-block">` with header (lang + optional title) + line numbers (catppuccin-mocha, inline styles). Don't bypass — write fenced markdown with language.
+
+## Images in prose
+
+Standalone `<img>` inside `<p>` auto-wrapped via `:has()` selector → pixel-corner frame + lightbox click-to-zoom (vanilla JS in `static/js/lightbox.js`). To opt out: `data-no-zoom` attr.
+
+## Gallery shortcode
+
+For multi-image strips:
+
+```md
+{{< gallery
+  "image-a.png|Caption A"
+  "image-b.png|Caption B"
+  "image-c.png|Caption C"
+>}}
+```
+
+Auto-grid 1–4 columns via `data-count`, stacks <720px. Resolves bundle resources first.
+
+## Don'ts
+
+- No new card variants — extend `.post-card` with modifier class.
+- No inline `<style>` in templates.
+- No new lightbox / no Fancybox / no jQuery.

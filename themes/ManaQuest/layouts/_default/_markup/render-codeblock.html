@@ -1,0 +1,19 @@
+{{- $lang := .Type | default "text" -}}
+{{- $opts := dict
+  "lineNos" true
+  "lineNumbersInTable" true
+  "tabWidth" 2
+  "guessSyntax" true
+  "noClasses" true
+  "style" "catppuccin-mocha"
+-}}
+{{- $highlighted := transform.Highlight (trim .Inner "\n") $lang $opts -}}
+<figure class="code-block" data-lang="{{ $lang }}">
+  <figcaption class="code-block-header">
+    <span class="code-lang">{{ $lang }}</span>
+    {{ with .Attributes.title }}<span class="code-title">{{ . }}</span>{{ end }}
+  </figcaption>
+  <div class="code-block-body">
+    {{ $highlighted }}
+  </div>
+</figure>

@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <section class="section-block panel panel-loose">
+    <header class="section-header">
+      <h1>#{{ .Title }}</h1>
+      <span class="section-slot">{{ len .Pages }}&nbsp;ENTRIES</span>
+    </header>
+    <p class="page-intro">Posts tagged with this topic.</p>
+    <div class="post-grid one-column">
+      {{ range .Pages.ByDate.Reverse }}
+        {{ $post := . }}
+        <article class="post-card{{ if .Params.image }} has-thumb{{ end }}">
+          {{ with .Params.image }}
+            {{ $src := . }}
+            {{ with $post.Resources.GetMatch $src }}
+              {{ $src = .RelPermalink }}
+            {{ end }}
+            <div class="post-thumb-wrap">
+              <img class="post-thumb" src="{{ $src | safeURL }}" alt="{{ $post.Title }}">
+            </div>
+          {{ end }}
+          <div class="post-card-body">
+            <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+            <h2><a class="post-card-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Summary | plainify | truncate 170 }}</p>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
