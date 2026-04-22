@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://flutter-explained.dev/sitemap.xml
